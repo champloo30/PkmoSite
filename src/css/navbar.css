@@ -1,0 +1,54 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #7C5296;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .wrapper {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .wrapper .left .logo-sec {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  align-items: center;
+}
+.navbar .wrapper .left .logo-sec .logo-ph {
+  height: 55px;
+  width: 55px;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+  display: inline-block;
+}
+.navbar .wrapper .left .logo-sec h2 {
+  font-size: 35px;
+  margin-left: 10px;
+  color: white;
+}
+.navbar .wrapper .right {
+  display: flex;
+  align-items: center;
+}
+.navbar .wrapper .right .hamburger {
+  width: 32px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar .wrapper .right .hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transform-origin: right;
+}
+
+/*# sourceMappingURL=navbar.css.map */

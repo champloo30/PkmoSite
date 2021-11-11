@@ -1,0 +1,13 @@
+@import "./global.scss";
+
+.app {
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        background-color: $silverColor;
+        position: relative;
+        top: 70px;
+    }
+    
+}
