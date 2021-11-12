@@ -1,6 +1,17 @@
-.welcome {
-  height: calc(100vh - 70px);
-  background-color: #7C5296;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 23 |             font-family: $qFont;
+ *    |                          ^^^^^^
+ *    '
+ *   src/scss/welcome.scss 23:26  root stylesheet */
 
-/*# sourceMappingURL=welcome.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 23 \2502              font-family: $qFont;\a    \2502                           ^^^^^^\a    \2575 \a   src/scss/welcome.scss 23:26  root stylesheet";
+}

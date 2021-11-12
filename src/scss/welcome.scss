@@ -3,4 +3,59 @@
 .welcome{
     height: calc(100vh - 70px);
     background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    .location-box{
+        width: 55%;
+        height: 35%;
+        background-color: $silverColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        h2{
+            font-size: 48px;
+            font-family: $qFont;
+            font-weight: 200;
+            color: $mainColor;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .item{
+                width: 140px;
+                height: 60px;
+                background-color: $mainColor;
+                margin: 0 100px;
+                text-align: center;
+                border: 5px solid $mainColor;
+                cursor: pointer;
+
+                h3{
+                    font-size: 30px;
+                    padding: 10px 0 10px;
+                    color: white;
+                    font-weight: 300;
+                }
+
+                &:hover{
+                    border: 5px solid $silverColor;
+                }
+            }
+        }
+    }
+
+    h1{
+        font-size: 60px;
+        font-weight: 400;
+        color: white;
+    }
 }

@@ -1,0 +1,21 @@
+.menu {
+  height: 100vh;
+  width: 300px;
+  background-color: #7C5296;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1.5s ease;
+}
+.menu.active {
+  right: 0;
+  z-index: 2;
+  background-color: #7C5296;
+}
+
+/*# sourceMappingURL=menu.css.map */
