@@ -1,5 +1,5 @@
 .welcome {
-  height: calc(100vh - 70px);
+  height: 100vh;
   background-color: #7C5296;
   display: flex;
   flex-direction: column;

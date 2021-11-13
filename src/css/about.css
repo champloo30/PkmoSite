@@ -1,5 +1,5 @@
 .about {
-  height: calc(100vh - 70px);
+  height: 100vh;
   background-color: white;
   display: flex;
 }
