@@ -1,17 +1,81 @@
-/* Error: Undefined variable.
- *    ,
- * 40 |                 font-family: $qFont;
- *    |                              ^^^^^^
- *    '
- *   src/scss/navbar.scss 40:30  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 40 \2502                  font-family: $qFont;\a    \2502                               ^^^^^^\a    \2575 \a   src/scss/navbar.scss 40:30  root stylesheet";
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
 }
+.navbar .wrapper {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .left {
+  margin-top: 7.5px;
+}
+.navbar .left .logo-sec {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  align-items: center;
+}
+.navbar .left .logo-sec .logo-ph {
+  height: 55px;
+  width: 55px;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+  display: inline-block;
+}
+.navbar .left .logo-sec h2 {
+  font-size: 35px;
+  margin-left: 10px;
+  color: black;
+  font-family: "Quattrocento", serif;
+  font-weight: 600;
+}
+.navbar .center .nav-links a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  font-size: 24px;
+}
+.navbar .right {
+  display: flex;
+  align-items: center;
+}
+.navbar .right .hamburger {
+  width: 32px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar .right .hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transform-origin: left;
+  transition: all 1.5s ease;
+}
+.navbar.active {
+  background-color: #7C5296;
+  color: white;
+}
+.navbar.active .hamburger span:first-child {
+  background-color: white;
+  transform: rotate(45deg);
+}
+.navbar.active .hamburger span:nth-child(2) {
+  background-color: white;
+  opacity: 0;
+}
+.navbar.active .hamburger span:last-child {
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+/*# sourceMappingURL=navbar.css.map */

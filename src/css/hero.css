@@ -1,17 +1,34 @@
-/* Error: Undefined variable.
- *    ,
- * 22 |             font-family: $qFont;
- *    |                          ^^^^^^
- *    '
- *   src/scss/hero.scss 22:26  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 22 \2502              font-family: $qFont;\a    \2502                           ^^^^^^\a    \2575 \a   src/scss/hero.scss 22:26  root stylesheet";
+.hero {
+  height: 100vh;
+  background-image: url("../img-icon/columbus_skyline.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.hero .hero-text h1 {
+  font-size: 80px;
+  font-family: "Quattrocento", serif;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+.hero .hero-text h2 {
+  font-size: 64px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.hero .hero-text h3 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+/*# sourceMappingURL=hero.css.map */

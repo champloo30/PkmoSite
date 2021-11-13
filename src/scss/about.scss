@@ -3,4 +3,67 @@
 .about{
     height: calc(100vh - 70px);
     background-color: white;
+    display: flex;
+    
+
+    .left{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            width: 500px;
+            height: 500px;
+            background-color: $silverColor;
+            border-radius: 50%;
+        }
+    }
+
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .top-text{
+            text-align: center;
+            
+            h2{
+                font-weight: 200;
+                font-size: 28px;
+            }
+        }
+        .bottom-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1{
+                font-size: 48px;
+                font-weight: 400;
+                text-align: center;
+                color: $mainColor;
+            }
+        }
+
+        .button{
+            margin-top: -50px;
+            width: 160px;
+            height: 60px;
+            background-color: $mainColor;
+            text-align: center;
+            border: 5px solid $mainColor;
+            cursor: pointer;
+            font-size: 30px;
+            color: white;
+            font-weight: 300;
+
+            &:hover{
+                border: 5px solid white;
+            }
+        }
+    }
 }

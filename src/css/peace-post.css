@@ -1,6 +1,44 @@
 .peace-post {
-  height: calc(100vh - 70px);
+  height: 70vh;
   background-color: #d8d8d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.peace-post .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 55%;
+  justify-content: space-evenly;
+}
+.peace-post .container h1 {
+  font-size: 96px;
+  font-family: "Quattrocento", serif;
+  color: #7C5296;
+  font-weight: 500;
+}
+.peace-post .container .line {
+  width: 110%;
+  height: 5px;
+  background-color: white;
+}
+.peace-post .container h3 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 200;
+}
+.peace-post .container .button {
+  width: 150px;
+  height: 60px;
+  background-color: #7C5296;
+  border: 5px solid #7C5296;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+.peace-post .container .button:hover {
+  border: 5px solid #d8d8d8;
 }
 
 /*# sourceMappingURL=peace-post.css.map */

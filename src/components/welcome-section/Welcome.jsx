@@ -6,12 +6,12 @@ export default function Welcome() {
             <div className="location-box">
                 <h2>Join us how ever you can!</h2>
                 <div className="container">
-                    <div className="item">
+                    <button className="button">
                         <h3>In Person</h3>
-                    </div>
-                    <div className="item">
+                    </button>
+                    <button className="button">
                         <h3>Online</h3>
-                    </div>
+                    </button>
                 </div>
             </div>
             <h1>Welcome to the Kingdom</h1>
