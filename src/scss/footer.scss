@@ -3,4 +3,28 @@
 .footer{
     height: 10vh;
     background-color: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo{
+        width: 55px;
+        height: 55px;
+        background-color: $silverColor;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    h2{
+        font-family: $qFont;
+        font-weight: 500;
+        font-size: 20px;
+        color: white;
+        margin-right: 10px;
+    }
+
+    .icon{
+        margin-right: 5px;
+        cursor: pointer;
+    }
 }
