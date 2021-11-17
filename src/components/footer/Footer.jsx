@@ -1,4 +1,4 @@
-import '../../scss/footer.scss'
+import "../../scss/footer.scss"
 import facebook from "../../img-icon/icons8-facebook.svg"
 import youtube from "../../img-icon/icons8-youtube.svg"
 
@@ -13,7 +13,6 @@ export default function Footer() {
             <a href="http://www.youtube.com/user/PeaceMBChurch" target="_blank" rel="noopener noreferrer">
                 <img className="icon" src={youtube} alt="Youtube Logo" />
             </a>
-            
         </div>
     )
 }

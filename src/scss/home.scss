@@ -1,0 +1,225 @@
+@import "../global.scss";
+
+.hero{
+    height: 100vh;
+    background-image: url("../img-icon/columbus_skyline.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+
+        h1{
+            font-size: 80px;
+            font-family: $qFont;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        h2{
+            font-size: 64px;
+            font-weight: 300;
+            margin-bottom: 50px;
+        }
+
+        h3{
+            font-size: 24px;
+            font-weight: 200;
+        }
+    }
+}
+
+.welcome{
+    height: 100vh;
+    background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    .location-box{
+        width: 55%;
+        height: 35%;
+        background-color: $silverColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        h2{
+            font-size: 48px;
+            font-family: $qFont;
+            font-weight: 200;
+            color: $mainColor;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .button{
+                width: 150px;
+                height: 60px;
+                background-color: $mainColor;
+                margin: 0 100px;
+                text-align: center;
+                border: 5px solid $mainColor;
+                cursor: pointer;
+
+                h3{
+                    font-size: 30px;
+                    padding: 4px 0 4px;
+                    color: white;
+                    font-weight: 300;
+                }
+
+                &:hover{
+                    border: 5px solid $silverColor;
+                }
+            }
+        }
+    }
+
+    h1{
+        font-size: 60px;
+        font-weight: 400;
+        color: white;
+    }
+}
+
+.about{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    
+
+    .left{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            width: 500px;
+            height: 500px;
+            background-color: $silverColor;
+            border-radius: 50%;
+        }
+    }
+
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .top-text{
+            text-align: center;
+            
+            h2{
+                font-weight: 200;
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+        }
+        .bottom-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1{
+                font-size: 48px;
+                font-weight: 400;
+                text-align: center;
+                color: $mainColor;
+                margin-top: -10px;
+            }
+        }
+
+        .button{
+            margin-top: -50px;
+            width: 160px;
+            height: 60px;
+            background-color: $mainColor;
+            text-align: center;
+            border: 5px solid $mainColor;
+            cursor: pointer;
+            font-size: 30px;
+            color: white;
+            font-weight: 300;
+
+            &:hover{
+                border: 5px solid white;
+            }
+        }
+    }
+}
+
+.peace-post{
+    height: 70vh;
+    background-color: $silverColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 65%;
+        justify-content: space-evenly;
+        margin-right: 50px;
+
+        h1{
+            font-size: 96px;
+            font-family: $qFont;
+            color: $mainColor;
+            font-weight: 500;
+        }
+
+        .line{
+            width: 110%;
+            height: 5px;
+            background-color: white;
+        }
+
+        h3{
+            font-size: 36px;
+            text-align: center;
+            font-weight: 200;
+            margin-bottom: 20px;
+        }
+
+        .button{
+            width: 150px;
+            height: 60px;
+            background-color: $mainColor;
+            border: 5px solid $mainColor;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+
+            &:hover{
+                border: 5px solid $silverColor;
+            }
+        }
+    }
+
+    img{
+        height: 400px;
+        width: 400px;
+        margin-left: 50px;
+    }
+}

@@ -1,29 +1,32 @@
 import Navbar from "./components/navbar/Navbar";
-import Hero from "./components/hero/Hero";
-import Menu from "./components/menu/Menu"
-import Welcome from "./components/welcome-section/Welcome";
-import PeacePost from "./components/peace-posts/PeacePost";
 import About from "./components/about/About";
+import Home from "./components/home/Home";
+import Menu from "./components/menu/Menu";
+import Message from "./components/message/Message"
 import Footer from "./components/footer/Footer";
+import PeacePost from "./components/peacepost/PeacePost";
+import Connect from "./components/connect/Connect";
 import "./app.scss";
 import { useState } from "react"
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
     <div className="app">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <div className="sections">
-        <Hero />
-        <Welcome />
-        <About />
-        <PeacePost />
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} index />
+        <Route path="/about" element={<About />} />
+        <Route path="/message" element={<Message />} />
+        <Route path="/peacepost" element={<PeacePost />} />
+        <Route path="/connect" element={<Connect />} /> 
+      </Routes>
+      <Footer />
     </div>
   );
 }
 
-export default App;
+
