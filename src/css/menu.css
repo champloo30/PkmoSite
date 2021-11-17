@@ -12,6 +12,49 @@
   align-items: center;
   justify-content: center;
   transition: all 1s ease;
+  overflow-y: scroll;
+}
+.menu .menu-items {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.menu .menu-items .menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  list-style-type: none;
+}
+.menu .menu-items .menu-links .link-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  color: white;
+}
+.menu .menu-items .menu-links .link-name .title {
+  margin: 20px 0;
+}
+.menu .menu-items .menu-links .link-name .title hr {
+  border: 1px solid #d8d8d8;
+  width: 220px;
+  margin: 5px 0;
+}
+.menu .menu-items .menu-links .link-name .title h1 {
+  font-size: 30px;
+  font-family: "Quattrocento", serif;
+  font-weight: 500;
+}
+.menu .menu-items .menu-links .link-name .link {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+.menu .menu-items .menu-links .link-name .link:hover {
+  text-decoration: underline;
 }
 .menu.active {
   right: 0;

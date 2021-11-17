@@ -172,7 +172,7 @@
     background-color: $silverColor;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     .container{
         display: flex;
@@ -180,7 +180,7 @@
         align-items: center;
         height: 65%;
         justify-content: space-evenly;
-        margin-right: 50px;
+        //margin-right: 50px;
 
         h1{
             font-size: 96px;
@@ -220,6 +220,6 @@
     img{
         height: 400px;
         width: 400px;
-        margin-left: 50px;
+        //margin-left: 50px;
     }
 }

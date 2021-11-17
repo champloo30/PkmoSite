@@ -14,6 +14,56 @@
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
+    overflow-y: scroll;
+
+    .menu-items{
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 20px;
+
+        .menu-links{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            list-style-type: none;
+
+            .link-name{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                color: white;
+
+                .title{
+                    margin: 20px 0;
+                    hr{
+                        border: 1px solid $silverColor;
+                        width: 220px;
+                        margin: 5px 0;
+                    }
+
+                    h1{
+                        font-size: 30px; 
+                        font-family: $qFont;
+                        font-weight: 500;
+                    }
+                }
+
+                .link{
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-bottom: 5px;
+                    text-decoration: none;
+                    color: inherit;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
 
     &.active{
         right: 0;

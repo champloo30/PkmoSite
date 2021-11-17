@@ -41,7 +41,7 @@ export default function Home() {
                     <a href="/about"><button className="button">About Us</button></a>
                 </div>
             </div>
-            <div className="peace-post" id="peace-post">
+            <div className="peace-post" id="peacepost">
                 <div className="container">
                     <h1>Peace Post</h1>
                     <span className="line"></span>

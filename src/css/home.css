@@ -149,7 +149,7 @@
   background-color: #d8d8d8;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .peace-post .container {
   display: flex;
@@ -157,7 +157,6 @@
   align-items: center;
   height: 65%;
   justify-content: space-evenly;
-  margin-right: 50px;
 }
 .peace-post .container h1 {
   font-size: 96px;
@@ -191,7 +190,6 @@
 .peace-post img {
   height: 400px;
   width: 400px;
-  margin-left: 50px;
 }
 
 /*# sourceMappingURL=home.css.map */
