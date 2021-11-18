@@ -15,7 +15,9 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                         <li onClick={()=>setMenuOpen(false)}>
                             <a className="link" href="/about">About PKMO</a>
                         </li>
-                        <li className="link">Our Leadership</li>
+                        <li onClick={()=>setMenuOpen(false)}>
+                            <Link className="link" to="/leadership">Our Leadership</Link>
+                        </li>
                         <li className="link">Location & Directions</li>
                     </li>
                     <li className="link-name">

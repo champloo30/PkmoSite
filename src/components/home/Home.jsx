@@ -16,12 +16,8 @@ export default function Home() {
                 <div className="location-box">
                     <h2>Join us how ever you can!</h2>
                     <div className="container">
-                        <button className="button">
-                            <h3>In Person</h3>
-                        </button>
-                        <button className="button">
-                            <h3>Online</h3>
-                        </button>
+                        <button className="button">In Person</button>
+                        <button className="button">Online</button>
                     </div>
                 </div>
                 <h1>Welcome to the Kingdom</h1>

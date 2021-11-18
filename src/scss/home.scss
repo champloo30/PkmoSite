@@ -68,20 +68,16 @@
             justify-content: space-between;
 
             .button{
-                width: 150px;
+                width: 160px;
                 height: 60px;
                 background-color: $mainColor;
                 margin: 0 100px;
+                color: white;
+                font-size: 30px;
+                font-weight: 300;
                 text-align: center;
                 border: 5px solid $mainColor;
                 cursor: pointer;
-
-                h3{
-                    font-size: 30px;
-                    padding: 4px 0 4px;
-                    color: white;
-                    font-weight: 300;
-                }
 
                 &:hover{
                     border: 5px solid $silverColor;
@@ -178,12 +174,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 65%;
+        height: 55%;
         justify-content: space-evenly;
-        //margin-right: 50px;
+        margin-right: -50px;
 
         h1{
-            font-size: 96px;
+            font-size: 76px;
             font-family: $qFont;
             color: $mainColor;
             font-weight: 500;
@@ -196,7 +192,7 @@
         }
 
         h3{
-            font-size: 36px;
+            font-size: 24px;
             text-align: center;
             font-weight: 200;
             margin-bottom: 20px;
@@ -220,6 +216,6 @@
     img{
         height: 400px;
         width: 400px;
-        //margin-left: 50px;
+        margin-left: -50px;
     }
 }

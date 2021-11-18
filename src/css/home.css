@@ -60,19 +60,16 @@
   justify-content: space-between;
 }
 .welcome .location-box .container .button {
-  width: 150px;
+  width: 160px;
   height: 60px;
   background-color: #7C5296;
   margin: 0 100px;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
   text-align: center;
   border: 5px solid #7C5296;
   cursor: pointer;
-}
-.welcome .location-box .container .button h3 {
-  font-size: 30px;
-  padding: 4px 0 4px;
-  color: white;
-  font-weight: 300;
 }
 .welcome .location-box .container .button:hover {
   border: 5px solid #d8d8d8;
@@ -155,11 +152,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 65%;
+  height: 55%;
   justify-content: space-evenly;
+  margin-right: -50px;
 }
 .peace-post .container h1 {
-  font-size: 96px;
+  font-size: 76px;
   font-family: "Quattrocento", serif;
   color: #7C5296;
   font-weight: 500;
@@ -170,7 +168,7 @@
   background-color: white;
 }
 .peace-post .container h3 {
-  font-size: 36px;
+  font-size: 24px;
   text-align: center;
   font-weight: 200;
   margin-bottom: 20px;
@@ -190,6 +188,7 @@
 .peace-post img {
   height: 400px;
   width: 400px;
+  margin-left: -50px;
 }
 
 /*# sourceMappingURL=home.css.map */

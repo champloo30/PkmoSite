@@ -9,6 +9,7 @@ import Connect from "./components/connect/Connect";
 import "./app.scss";
 import { useState } from "react"
 import { Route, Routes } from "react-router-dom";
+import Leadership from "./components/about/Leadership";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -20,6 +21,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} index />
         <Route path="/about" element={<About />} />
+        <Route path="/leadership" element={<Leadership />} />
         <Route path="/message" element={<Message />} />
         <Route path="/peacepost" element={<PeacePost />} />
         <Route path="/connect" element={<Connect />} /> 
