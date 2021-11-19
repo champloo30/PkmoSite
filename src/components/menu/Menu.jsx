@@ -18,7 +18,9 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                         <li onClick={()=>setMenuOpen(false)}>
                             <Link className="link" to="/leadership">Our Leadership</Link>
                         </li>
-                        <li className="link">Location & Directions</li>
+                        <li onClick={()=>setMenuOpen(false)}>
+                            <Link className="link" to="/location">Location & Directions</Link>
+                        </li>
                     </li>
                     <li className="link-name">
                         <div className="title">

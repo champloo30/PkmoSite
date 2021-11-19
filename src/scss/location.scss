@@ -1,0 +1,94 @@
+@import "../global.scss";
+
+.loc-head{
+    height: 130vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h1{
+        font-size: 80px;
+        font-weight: 500;
+        font-family: $qFont;
+        color: $mainColor;
+        //margin-top: 20px;
+    }
+
+    .googlemaps{
+        border: 0;
+    }
+}
+
+.direction{
+    height: 60vh;
+    background-color: $silverColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .loc-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //justify-content: center;
+
+        h2{
+            font-size: 48px;
+            font-weight: 400;
+            color: $mainColor;
+        }
+
+        h3{
+            font-size: 24px;
+            font-weight: 300;
+
+            span{
+                color: $mainColor;
+            }
+        }
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        //justify-content: space-evenly;
+
+        .item{
+            height: 150px;
+            width: 400px;
+            background-color: white;
+            margin: 0 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            h3{
+                font-size: 28px;
+                font-weight: 400;
+
+                span{
+                    color: $mainColor;
+                }
+            }
+
+            .button{
+                height: 60px;
+                width: 160px;
+                background-color: $mainColor;
+                color: white;
+                font-size: 30px;
+                font-weight: 300;
+                border: 5px solid $mainColor;
+                cursor: pointer;
+
+                &:hover{
+                    border: 5px solid white;
+                }
+            }
+        }
+    }
+}

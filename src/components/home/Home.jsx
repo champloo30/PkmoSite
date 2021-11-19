@@ -1,5 +1,6 @@
 import "../../scss/home.scss"
 import dove from "../../img-icon/dove-png-41736.png"
+import { Link } from "react-router-dom"
 
 export default function Home() {
     return (
@@ -16,7 +17,7 @@ export default function Home() {
                 <div className="location-box">
                     <h2>Join us how ever you can!</h2>
                     <div className="container">
-                        <button className="button">In Person</button>
+                        <Link to="/location"><button className="button">In Person</button></Link>
                         <button className="button">Online</button>
                     </div>
                 </div>

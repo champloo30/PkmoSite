@@ -1,1 +1,104 @@
-@import "../global.scss"
+@import "../global.scss";
+
+.l-hero{
+    height: 100vh;
+    width: 100%;
+    background-color: $silverColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        font-size: 80px;
+        font-weight: 500;
+        font-family: $qFont;
+        color: white;
+    }
+}
+
+.bio{
+    height: 160vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bio-fp{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-right: -100px;
+
+        .img{
+            height: 300px;
+            width: 300px;
+            background-color: $silverColor;
+            margin-bottom: 20px;
+        }
+
+        h2{
+            font-size: 36px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .text{
+            height: 600px;
+            width: 50%;
+            background-color: $mainColor;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+
+            p{
+                color: white;
+                font-size: 20px;
+                margin: 0 30px;
+            }
+        }
+    }
+
+    .bio-cp{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: -100px;
+
+        .img{
+            height: 300px;
+            width: 300px;
+            background-color: $silverColor;
+            margin-bottom: 20px;
+        }
+
+        h2{
+            font-size: 36px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .text{
+            height: 600px;
+            width: 50%;
+            background-color: $mainColor;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+
+            p{
+                color: white;
+                font-size: 20px;
+                margin: 0 30px;
+            }
+        }
+    }
+}

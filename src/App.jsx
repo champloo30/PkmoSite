@@ -1,6 +1,8 @@
 import Navbar from "./components/navbar/Navbar";
 import About from "./components/about/About";
 import Home from "./components/home/Home";
+import Leadership from "./components/about/Leadership";
+import Location from "./components/about/Location";
 import Menu from "./components/menu/Menu";
 import Message from "./components/message/Message"
 import Footer from "./components/footer/Footer";
@@ -9,7 +11,7 @@ import Connect from "./components/connect/Connect";
 import "./app.scss";
 import { useState } from "react"
 import { Route, Routes } from "react-router-dom";
-import Leadership from "./components/about/Leadership";
+
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -22,6 +24,7 @@ export default function App() {
         <Route path="/" element={<Home />} index />
         <Route path="/about" element={<About />} />
         <Route path="/leadership" element={<Leadership />} />
+        <Route path="/location" element={<Location />} />
         <Route path="/message" element={<Message />} />
         <Route path="/peacepost" element={<PeacePost />} />
         <Route path="/connect" element={<Connect />} /> 

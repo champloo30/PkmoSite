@@ -22,7 +22,7 @@
   background-color: #d8d8d8;
 }
 .wwb h2 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 300;
 }
 .wwb .container {
@@ -38,6 +38,7 @@
   justify-content: space-evenly;
   height: 300px;
   width: 500px;
+  border-radius: 10px;
   background-color: #7C5296;
   margin: 10px 10px;
   color: white;
@@ -112,7 +113,7 @@
   border: 5px solid #d8d8d8;
 }
 
-.location {
+.about-location {
   height: 25vh;
   background-color: white;
   display: flex;
@@ -120,11 +121,11 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.location h2 {
+.about-location h2 {
   font-size: 34px;
   font-weight: 300;
 }
-.location .button {
+.about-location .button {
   height: 60px;
   width: 160px;
   background-color: #7C5296;
@@ -135,7 +136,7 @@
   border: 5px solid #7C5296;
   cursor: pointer;
 }
-.location .button:hover {
+.about-location .button:hover {
   border: 5px solid white;
 }
 

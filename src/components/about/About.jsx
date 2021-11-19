@@ -36,9 +36,9 @@ export default function About() {
                 <h2>Get to know our Kingdom Leaders</h2>
                 <Link to="/leadership"><button className="button">Here</button></Link>
             </div>
-            <div className="location">
+            <div className="about-location">
                 <h2>Our Location & Directions</h2>
-                <button className="button">Here</button>
+                <Link to="/location"><button className="button">Here</button></Link>
             </div>
         </>
     )
