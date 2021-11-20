@@ -4,7 +4,7 @@ import Home from "./components/home/Home";
 import Leadership from "./components/about/Leadership";
 import Location from "./components/about/Location";
 import Menu from "./components/menu/Menu";
-import Message from "./components/message/Message"
+import Messages from "./components/messages/Messages"
 import Footer from "./components/footer/Footer";
 import PeacePost from "./components/peacepost/PeacePost";
 import Connect from "./components/connect/Connect";
@@ -25,7 +25,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/location" element={<Location />} />
-        <Route path="/message" element={<Message />} />
+        <Route path="/messages" element={<Messages />} />
         <Route path="/peacepost" element={<PeacePost />} />
         <Route path="/connect" element={<Connect />} /> 
       </Routes>

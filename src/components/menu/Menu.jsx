@@ -28,7 +28,9 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                             <h1>Messages</h1>
                             <hr />
                         </div>
-                        <li className="link">Our Sunday Services</li>
+                        <li onClick={()=>setMenuOpen(false)}>
+                            <a className="link" href="/messages">Our Sunday Services</a>
+                        </li>
                         <li className="link">Bible Teachings</li>
                         <li className="link">Church Online</li>
                     </li>
