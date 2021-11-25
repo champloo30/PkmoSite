@@ -55,11 +55,11 @@
   text-decoration: underline;
 }
 .messages .catalog {
-  height: 120vh;
+  height: 140vh;
   width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   overflow: hidden;
 }
@@ -68,21 +68,34 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
+  margin-top: 25px;
 }
 .messages .catalog .current-month h2 {
   font-size: 64px;
   font-weight: 300;
 }
 .messages .catalog .current-month .carousel {
+  height: 500px;
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+.messages .catalog .current-month .carousel.active {
+  height: 300px;
+  width: 500px;
 }
 .messages .catalog .current-month .carousel .carousel-video {
-  height: 250px;
-  width: 390px;
+  height: 150px;
+  width: 250px;
   background-color: #d8d8d8;
   margin-right: 20px;
+  cursor: pointer;
+}
+.messages .catalog .current-month .carousel .carousel-video:hover {
+  height: 225px;
+  width: 425px;
 }
 .messages .catalog .previous-month {
   display: flex;
@@ -95,21 +108,39 @@
   font-weight: 300;
 }
 .messages .catalog .previous-month .carousel {
+  height: 250px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+.messages .catalog .previous-month .carousel.active {
+  height: 300px;
+  width: 500px;
 }
 .messages .catalog .previous-month .carousel .carousel-video {
-  height: 250px;
-  width: 390px;
+  height: 150px;
+  width: 250px;
   background-color: #d8d8d8;
   margin-right: 20px;
+  cursor: pointer;
+}
+.messages .catalog .previous-month .carousel .carousel-video:hover {
+  height: 225px;
+  width: 425px;
 }
 .messages .catalog h4 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 200;
   text-align: center;
 }
-.messages .catalog h4 span {
+.messages .catalog h5 {
+  font-size: 24px;
+  font-weight: 200;
+  margin-left: 140px;
+  margin-bottom: 75px;
+  text-align: center;
+}
+.messages .catalog h5 span {
   color: #7C5296;
   text-decoration: underline;
   font-weight: 400;

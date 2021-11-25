@@ -18,23 +18,52 @@ export default function Messages() {
                     <div className="current-month">
                         <h2>December</h2>
                         <div className="carousel">
-                            <div className="carousel-video"></div>
-                            <div className="carousel-video"></div>
-                            <div className="carousel-video"></div>
-                            <div className="carousel-video"></div>
-                            <div className="carousel-video"></div>
+                            <div className="carousel-video">
+                                <div className="title">
+                                    <h4>Title</h4>
+                                    <h4>Date</h4>
+                                </div>
+                            </div>
+                            <div className="carousel-video">
+                                <h4>Title</h4>
+                                <h4>Date</h4>
+                            </div>
+                            <div className="carousel-video">
+                                <h4>Title</h4>
+                                <h4>Date</h4>
+                            </div>
+                            <div className="carousel-video">
+                                <h4>Title</h4>
+                                <h4>Date</h4>
+                            </div>
+                            <div className="carousel-video">
+                                <h4>Title</h4>
+                                <h4>Date</h4>
+                            </div>
                         </div>
                     </div>
                     <div className="previous-month">
                     <h2>November</h2>
                         <div className="carousel">
-                            <div className="carousel-video"></div>
-                            <div className="carousel-video"></div>
-                            <div className="carousel-video"></div>
-                            <div className="carousel-video"></div>
+                            <div className="carousel-video">
+                                <h4>Title</h4>
+                                <h4>Date</h4>
+                            </div>
+                            <div className="carousel-video">
+                                <h4>Title</h4>
+                                <h4>Date</h4>
+                            </div>
+                            <div className="carousel-video">
+                                <h4>Title</h4>
+                                <h4>Date</h4>
+                            </div>
+                            <div className="carousel-video">
+                                <h4>Title</h4>
+                                <h4>Date</h4>
+                            </div>
                         </div>
                     </div>
-                    <h4>Can't find the service you're looking for? Click <span>here</span> to go to our Facebook page for all our past services.</h4>
+                    <h5>Can't find the service you're looking for? Click <span>here</span> to go to our Facebook page for all our past services.</h5>
                 </div>
             </div>
         </>
