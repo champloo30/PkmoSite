@@ -10,7 +10,7 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
                 <div className="center">
                     <div className="nav-links">
                         <a className="link" href="/about">About</a>
-                        <a className="link" href="/message">Messages</a>
+                        <a className="link" href="/messages">Messages</a>
                         <a className="link" href="/peacepost">Peace Post</a>
                         <a className="link" href="/connect">Connect</a>
                     </div>

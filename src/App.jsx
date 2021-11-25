@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar/Navbar";
 import About from "./components/about/About";
+import BibleTeach from "./components/messages/BibleTeach";
 import Home from "./components/home/Home";
 import Leadership from "./components/about/Leadership";
 import Location from "./components/about/Location";
@@ -11,7 +12,6 @@ import Connect from "./components/connect/Connect";
 import "./app.scss";
 import { useState } from "react"
 import { Route, Routes } from "react-router-dom";
-
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -26,6 +26,7 @@ export default function App() {
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/location" element={<Location />} />
         <Route path="/messages" element={<Messages />} />
+        <Route path="/bibleteachings" element={<BibleTeach />} />
         <Route path="/peacepost" element={<PeacePost />} />
         <Route path="/connect" element={<Connect />} /> 
       </Routes>

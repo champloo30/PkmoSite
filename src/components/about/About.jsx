@@ -28,7 +28,7 @@ export default function About() {
                 <h1>The Declaration of the Spirit of Peace</h1>
                 <h2>Our Vision</h2>
                 <h3>As people of Peace and in accordance with our Vision we declare we are: A <span>Prepared People</span> perservering through our Experiences; An <span>Instructed People</span> submiting to God-given leadership; A <span>Directed People</span> secure in our Structure; A <span>Sanctified People</span> sublime in our Holiness; A <span>Victorious People</span> living a life of Empowerment.</h3>
-                <span>Joushua 3</span>
+                <span>"Joushua 3"</span>
                 <h2>Our Mission</h2>
                 <h3>We our a family-oriented and holistic ministry seeking to touch every aspect of humanity (psychologically, emotionally, spiritually, physiologically and financially) through the inexhaustible riches of the Word of God. We are a unified body, triumphant in spirit and growing in grace. We are empowered through worship, steadfast in stewardship and fervent in fellowship. We are purposed and driven to evangelize our homes, our community and our world for the cause of Christ.</h3>
             </div>

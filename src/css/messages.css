@@ -68,14 +68,14 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-top: 25px;
+  margin-top: 75px;
 }
 .messages .catalog .current-month h2 {
   font-size: 64px;
   font-weight: 300;
 }
 .messages .catalog .current-month .carousel {
-  height: 500px;
+  height: 475px;
   display: flex;
   flex-direction: row;
   align-items: center;
