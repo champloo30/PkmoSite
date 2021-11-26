@@ -31,7 +31,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                         <li onClick={()=>setMenuOpen(false)}>
                             <a className="link" href="/messages">Our Sunday Services</a>
                         </li>
-                        <li>
+                        <li onClick={()=>setMenuOpen(false)}>
                             <Link className="link" to="/bibleteachings">Bible Teachings</Link>
                         </li>
                         <li className="link">Church Online</li>
