@@ -12,7 +12,10 @@
   border-radius: 50%;
   margin-right: 10px;
 }
-.footer h2 {
+.footer a {
+  text-decoration: none;
+}
+.footer a h2 {
   font-family: "Quattrocento", serif;
   font-weight: 500;
   font-size: 20px;

@@ -6,7 +6,9 @@ export default function Footer() {
     return (
         <div className="footer" id="footer">
             <div className="logo"></div>
-            <h2>Peace Kingdom Ministries of Ohio</h2>
+            <a href="/">
+                <h2>Peace Kingdom Ministries of Ohio</h2>
+            </a>
             <a href="http://www.facebook.com/PeaceMissionaryBaptistChurch" target="_blank" rel="noopener noreferrer">
                 <img className="icon" src={facebook} alt="Facebook Logo" />
             </a>

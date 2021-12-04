@@ -15,12 +15,17 @@
         margin-right: 10px;
     }
 
-    h2{
-        font-family: $qFont;
-        font-weight: 500;
-        font-size: 20px;
-        color: white;
-        margin-right: 10px;
+    a{
+        text-decoration: none;
+
+        h2{
+            font-family: $qFont;
+            font-weight: 500;
+            font-size: 20px;
+            color: white;
+            margin-right: 10px;
+            //text-decoration: none;
+        }
     }
 
     .icon{

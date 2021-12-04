@@ -41,9 +41,30 @@ export default function Messages() {
                                 <h4>Date</h4>
                             </div>
                         </div>
+                        <div className="bible-study">
+                            <h2>Bible Study</h2>
+                            <div className="bs-videos">
+                                <div className="videos">
+                                    <h3>Title</h3>
+                                    <h3>Date</h3>
+                                </div>
+                                <div className="videos">
+                                    <h3>Title</h3>
+                                    <h3>Date</h3>
+                                </div>
+                                <div className="videos">
+                                    <h3>Title</h3>
+                                    <h3>Date</h3>
+                                </div>
+                                <div className="videos">
+                                    <h3>Title</h3>
+                                    <h3>Date</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="previous-month">
-                    <h2>November</h2>
+                        <h2>November</h2>
                         <div className="carousel">
                             <div className="carousel-video">
                                 <h4>Title</h4>
@@ -62,9 +83,30 @@ export default function Messages() {
                                 <h4>Date</h4>
                             </div>
                         </div>
+                        <div className="bible-study">
+                            <h2>Bible Study</h2>
+                            <div className="bs-videos">
+                                <div className="videos">
+                                    <h3>Title</h3>
+                                    <h3>Date</h3>
+                                </div>
+                                <div className="videos">
+                                    <h3>Title</h3>
+                                    <h3>Date</h3>
+                                </div>
+                                <div className="videos">
+                                    <h3>Title</h3>
+                                    <h3>Date</h3>
+                                </div>
+                                <div className="videos">
+                                    <h3>Title</h3>
+                                    <h3>Date</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h5>Can't find the service you're looking for? Click <span>here</span> to go to our Facebook page for all our past services.</h5>
                 </div>
+                <h5>Can't find the service you're looking for? Click <a href="https://www.facebook.com/PeaceMissionaryBaptistChurch/videos" target="_blank" rel="noopener noreferrer"><span>here</span></a> to go to our Facebook page for all our past services.</h5>
             </div>
         </>
     )

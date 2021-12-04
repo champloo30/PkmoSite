@@ -67,7 +67,7 @@
     }
 
     .catalog{
-        height: 140vh;
+        height: 225vh;
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -75,6 +75,8 @@
         justify-content: space-evenly;
         //margin-left: 100px;
         overflow: hidden;
+        background-color: $silverColor;
+
 
         .current-month{
             //height: 60vh;
@@ -82,7 +84,8 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-evenly;
-            margin-top: 75px;
+            margin-top: 30px;
+            margin-left: 30px;
 
             h2{
                 font-size: 64px;
@@ -106,13 +109,57 @@
                 .carousel-video{
                     height: 150px;
                     width: 250px;
-                    background-color: $silverColor;
+                    background-color: black;
                     margin-right: 20px;
                     cursor: pointer;
+                    color: white;
 
                     &:hover{
                         height: 225px;
                         width: 425px;
+                    }
+                }
+            }
+
+            .bible-study{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 30px;
+        
+                h2{
+                    font-size: 40px;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                }
+        
+                .bs-videos{
+                    height: 200px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    cursor: pointer;
+            
+                    .videos{
+                        height: 150px;
+                        width: 250px;
+                        background-color: black;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-right: 20px;
+                        color: white;
+        
+                        &:hover{
+                            height: 225px;
+                            width: 425px;
+                        }
+                    }
+        
+                    h3{
+                        font-size: 20px;
+                        font-weight: 200;
+                        text-align: center;
                     }
                 }
             }
@@ -124,6 +171,7 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-evenly;
+            margin-left: 30px;
 
             h2{
                 font-size: 64px;
@@ -145,13 +193,57 @@
                 .carousel-video{
                     height: 150px;
                     width: 250px;
-                    background-color: $silverColor;
+                    background-color: black;
                     margin-right: 20px;
                     cursor: pointer;
+                    color: white;
 
                     &:hover{
                         height: 225px;
                         width: 425px;
+                    }
+                }
+            }
+
+            .bible-study{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 50px;
+        
+                h2{
+                    font-size: 40px;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                }
+        
+                .bs-videos{
+                    height: 200px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    cursor: pointer;
+            
+                    .videos{
+                        height: 150px;
+                        width: 250px;
+                        background-color: black;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-right: 20px;
+                        color: white;
+        
+                        &:hover{
+                            height: 225px;
+                            width: 425px;
+                        }
+                    }
+        
+                    h3{
+                        font-size: 20px;
+                        font-weight: 200;
+                        text-align: center;
                     }
                 }
             }
@@ -162,19 +254,21 @@
             font-weight: 200;
             text-align: center;
         }
+    }
 
-        h5{
-            font-size: 24px;
-            font-weight: 200;
-            margin-left: 140px;
-            margin-bottom: 75px;
-            text-align: center;
+    h5{
+        font-size: 24px;
+        font-weight: 200;
+        margin-top: 30px;
+        margin-left: 140px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: white;
 
-            span{
-                color: $mainColor;
-                text-decoration: underline;
-                font-weight: 400;
-            }
+        span{
+            color: $mainColor;
+            text-decoration: underline;
+            font-weight: 400;
         }
     }
 }

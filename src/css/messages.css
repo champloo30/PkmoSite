@@ -55,20 +55,22 @@
   text-decoration: underline;
 }
 .messages .catalog {
-  height: 140vh;
+  height: 225vh;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
   overflow: hidden;
+  background-color: #d8d8d8;
 }
 .messages .catalog .current-month {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-top: 75px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .messages .catalog .current-month h2 {
   font-size: 64px;
@@ -89,19 +91,58 @@
 .messages .catalog .current-month .carousel .carousel-video {
   height: 150px;
   width: 250px;
-  background-color: #d8d8d8;
+  background-color: black;
   margin-right: 20px;
   cursor: pointer;
+  color: white;
 }
 .messages .catalog .current-month .carousel .carousel-video:hover {
   height: 225px;
   width: 425px;
+}
+.messages .catalog .current-month .bible-study {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.messages .catalog .current-month .bible-study h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.messages .catalog .current-month .bible-study .bs-videos {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.messages .catalog .current-month .bible-study .bs-videos .videos {
+  height: 150px;
+  width: 250px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  color: white;
+}
+.messages .catalog .current-month .bible-study .bs-videos .videos:hover {
+  height: 225px;
+  width: 425px;
+}
+.messages .catalog .current-month .bible-study .bs-videos h3 {
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
 }
 .messages .catalog .previous-month {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
+  margin-left: 30px;
 }
 .messages .catalog .previous-month h2 {
   font-size: 64px;
@@ -120,27 +161,67 @@
 .messages .catalog .previous-month .carousel .carousel-video {
   height: 150px;
   width: 250px;
-  background-color: #d8d8d8;
+  background-color: black;
   margin-right: 20px;
   cursor: pointer;
+  color: white;
 }
 .messages .catalog .previous-month .carousel .carousel-video:hover {
   height: 225px;
   width: 425px;
+}
+.messages .catalog .previous-month .bible-study {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.messages .catalog .previous-month .bible-study h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.messages .catalog .previous-month .bible-study .bs-videos {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.messages .catalog .previous-month .bible-study .bs-videos .videos {
+  height: 150px;
+  width: 250px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  color: white;
+}
+.messages .catalog .previous-month .bible-study .bs-videos .videos:hover {
+  height: 225px;
+  width: 425px;
+}
+.messages .catalog .previous-month .bible-study .bs-videos h3 {
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
 }
 .messages .catalog h4 {
   font-size: 20px;
   font-weight: 200;
   text-align: center;
 }
-.messages .catalog h5 {
+.messages h5 {
   font-size: 24px;
   font-weight: 200;
+  margin-top: 30px;
   margin-left: 140px;
-  margin-bottom: 75px;
+  margin-bottom: 30px;
   text-align: center;
+  background-color: white;
 }
-.messages .catalog h5 span {
+.messages h5 span {
   color: #7C5296;
   text-decoration: underline;
   font-weight: 400;
