@@ -67,7 +67,7 @@
     }
 
     .catalog{
-        height: 225vh;
+        height: 230vh;
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -79,13 +79,14 @@
 
 
         .current-month{
-            //height: 60vh;
+            //height: 160vh;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-evenly;
-            margin-top: 30px;
+            margin-top: 75px;
             margin-left: 30px;
+            //margin-bottom: 30px;
 
             h2{
                 font-size: 64px;
@@ -99,24 +100,19 @@
                 align-items: center;
                 flex-wrap: wrap;
                 //justify-content: center;
-                overflow-x: auto;
-                
-                &.active{
-                    height: 300px;
-                    width: 500px;
-                }
+                //overflow-x: auto;
 
                 .carousel-video{
-                    height: 150px;
-                    width: 250px;
-                    background-color: black;
                     margin-right: 20px;
-                    cursor: pointer;
-                    color: white;
+                    //margin-top: 10px;
 
-                    &:hover{
-                        height: 225px;
-                        width: 425px;
+                    .video{
+                        height: 150px;
+                        width: 250px;
+                        background-color: black;
+                        color: white;
+                        cursor: pointer;
+                        //margin-bottom: 10px;
                     }
                 }
             }
@@ -125,7 +121,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                margin-bottom: 30px;
+                //margin-top: 30px;
         
                 h2{
                     font-size: 40px;
@@ -133,26 +129,23 @@
                     margin-bottom: 20px;
                 }
         
-                .bs-videos{
-                    height: 200px;
+                .bs-catalog{
+                    //height: 200px;
                     display: flex;
                     flex-direction: row;
                     align-items: flex-start;
                     cursor: pointer;
             
-                    .videos{
-                        height: 150px;
-                        width: 250px;
-                        background-color: black;
+                    .bs-videos{
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         margin-right: 20px;
-                        color: white;
-        
-                        &:hover{
-                            height: 225px;
-                            width: 425px;
+
+                        .video{
+                            height: 150px;
+                            width: 250px;
+                            background-color: black;
                         }
                     }
         
@@ -179,28 +172,25 @@
             }
 
             .carousel{
-                height: 250px;
+                //height: 475px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                flex-wrap: wrap;
                 //justify-content: center;
-
-                &.active{
-                    height: 300px;
-                    width: 500px;
-                }
+                //overflow-x: auto;
 
                 .carousel-video{
-                    height: 150px;
-                    width: 250px;
-                    background-color: black;
                     margin-right: 20px;
-                    cursor: pointer;
-                    color: white;
+                    margin-top: 10px;
 
-                    &:hover{
-                        height: 225px;
-                        width: 425px;
+                    .video{
+                        height: 150px;
+                        width: 250px;
+                        background-color: black;
+                        color: white;
+                        cursor: pointer;
+                        //margin-bottom: 10px;
                     }
                 }
             }
@@ -217,26 +207,24 @@
                     margin-bottom: 20px;
                 }
         
-                .bs-videos{
-                    height: 200px;
+                .bs-catalog{
+                    //height: 200px;
                     display: flex;
                     flex-direction: row;
                     align-items: flex-start;
                     cursor: pointer;
+                    margin-bottom: 30px;
             
-                    .videos{
-                        height: 150px;
-                        width: 250px;
-                        background-color: black;
+                    .bs-videos{
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         margin-right: 20px;
-                        color: white;
-        
-                        &:hover{
-                            height: 225px;
-                            width: 425px;
+
+                        .video{
+                            height: 150px;
+                            width: 250px;
+                            background-color: black;
                         }
                     }
         
@@ -260,7 +248,7 @@
         font-size: 24px;
         font-weight: 200;
         margin-top: 30px;
-        margin-left: 140px;
+        //margin-left: 140px;
         margin-bottom: 30px;
         text-align: center;
         background-color: white;

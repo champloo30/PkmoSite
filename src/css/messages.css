@@ -55,7 +55,7 @@
   text-decoration: underline;
 }
 .messages .catalog {
-  height: 225vh;
+  height: 230vh;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -69,7 +69,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-top: 30px;
+  margin-top: 75px;
   margin-left: 30px;
 }
 .messages .catalog .current-month h2 {
@@ -82,57 +82,45 @@
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  overflow-x: auto;
-}
-.messages .catalog .current-month .carousel.active {
-  height: 300px;
-  width: 500px;
 }
 .messages .catalog .current-month .carousel .carousel-video {
+  margin-right: 20px;
+}
+.messages .catalog .current-month .carousel .carousel-video .video {
   height: 150px;
   width: 250px;
   background-color: black;
-  margin-right: 20px;
-  cursor: pointer;
   color: white;
-}
-.messages .catalog .current-month .carousel .carousel-video:hover {
-  height: 225px;
-  width: 425px;
+  cursor: pointer;
 }
 .messages .catalog .current-month .bible-study {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 30px;
 }
 .messages .catalog .current-month .bible-study h2 {
   font-size: 40px;
   font-weight: 300;
   margin-bottom: 20px;
 }
-.messages .catalog .current-month .bible-study .bs-videos {
-  height: 200px;
+.messages .catalog .current-month .bible-study .bs-catalog {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   cursor: pointer;
 }
-.messages .catalog .current-month .bible-study .bs-videos .videos {
-  height: 150px;
-  width: 250px;
-  background-color: black;
+.messages .catalog .current-month .bible-study .bs-catalog .bs-videos {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
-  color: white;
 }
-.messages .catalog .current-month .bible-study .bs-videos .videos:hover {
-  height: 225px;
-  width: 425px;
+.messages .catalog .current-month .bible-study .bs-catalog .bs-videos .video {
+  height: 150px;
+  width: 250px;
+  background-color: black;
 }
-.messages .catalog .current-month .bible-study .bs-videos h3 {
+.messages .catalog .current-month .bible-study .bs-catalog h3 {
   font-size: 20px;
   font-weight: 200;
   text-align: center;
@@ -149,26 +137,21 @@
   font-weight: 300;
 }
 .messages .catalog .previous-month .carousel {
-  height: 250px;
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.messages .catalog .previous-month .carousel.active {
-  height: 300px;
-  width: 500px;
+  flex-wrap: wrap;
 }
 .messages .catalog .previous-month .carousel .carousel-video {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.messages .catalog .previous-month .carousel .carousel-video .video {
   height: 150px;
   width: 250px;
   background-color: black;
-  margin-right: 20px;
-  cursor: pointer;
   color: white;
-}
-.messages .catalog .previous-month .carousel .carousel-video:hover {
-  height: 225px;
-  width: 425px;
+  cursor: pointer;
 }
 .messages .catalog .previous-month .bible-study {
   display: flex;
@@ -181,28 +164,25 @@
   font-weight: 300;
   margin-bottom: 20px;
 }
-.messages .catalog .previous-month .bible-study .bs-videos {
-  height: 200px;
+.messages .catalog .previous-month .bible-study .bs-catalog {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   cursor: pointer;
+  margin-bottom: 30px;
 }
-.messages .catalog .previous-month .bible-study .bs-videos .videos {
-  height: 150px;
-  width: 250px;
-  background-color: black;
+.messages .catalog .previous-month .bible-study .bs-catalog .bs-videos {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
-  color: white;
 }
-.messages .catalog .previous-month .bible-study .bs-videos .videos:hover {
-  height: 225px;
-  width: 425px;
+.messages .catalog .previous-month .bible-study .bs-catalog .bs-videos .video {
+  height: 150px;
+  width: 250px;
+  background-color: black;
 }
-.messages .catalog .previous-month .bible-study .bs-videos h3 {
+.messages .catalog .previous-month .bible-study .bs-catalog h3 {
   font-size: 20px;
   font-weight: 200;
   text-align: center;
@@ -216,7 +196,6 @@
   font-size: 24px;
   font-weight: 200;
   margin-top: 30px;
-  margin-left: 140px;
   margin-bottom: 30px;
   text-align: center;
   background-color: white;

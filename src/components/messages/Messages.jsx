@@ -19,44 +19,51 @@ export default function Messages() {
                         <h2>December</h2>
                         <div className="carousel">
                             <div className="carousel-video">
-                                <div className="title">
-                                    <h4>Title</h4>
-                                    <h4>Date</h4>
-                                </div>
-                            </div>
-                            <div className="carousel-video">
+                                <div className="video"></div>
                                 <h4>Title</h4>
                                 <h4>Date</h4>
                             </div>
                             <div className="carousel-video">
+                                <div className="video"></div>
                                 <h4>Title</h4>
                                 <h4>Date</h4>
                             </div>
                             <div className="carousel-video">
+                                <div className="video"></div>
                                 <h4>Title</h4>
                                 <h4>Date</h4>
                             </div>
                             <div className="carousel-video">
+                                <div className="video"></div>
+                                <h4>Title</h4>
+                                <h4>Date</h4>
+                            </div>
+                            <div className="carousel-video">
+                                <div className="video"></div>
                                 <h4>Title</h4>
                                 <h4>Date</h4>
                             </div>
                         </div>
                         <div className="bible-study">
                             <h2>Bible Study</h2>
-                            <div className="bs-videos">
-                                <div className="videos">
+                            <div className="bs-catalog">
+                                <div className="bs-videos">
+                                    <div className="video"></div>
                                     <h3>Title</h3>
                                     <h3>Date</h3>
                                 </div>
-                                <div className="videos">
+                                <div className="bs-videos">
+                                    <div className="video"></div>
                                     <h3>Title</h3>
                                     <h3>Date</h3>
                                 </div>
-                                <div className="videos">
+                                <div className="bs-videos">
+                                    <div className="video"></div>
                                     <h3>Title</h3>
                                     <h3>Date</h3>
                                 </div>
-                                <div className="videos">
+                                <div className="bs-videos">
+                                    <div className="video"></div>
                                     <h3>Title</h3>
                                     <h3>Date</h3>
                                 </div>
@@ -67,38 +74,46 @@ export default function Messages() {
                         <h2>November</h2>
                         <div className="carousel">
                             <div className="carousel-video">
+                                <div className="video"></div>
                                 <h4>Title</h4>
                                 <h4>Date</h4>
                             </div>
                             <div className="carousel-video">
+                                <div className="video"></div>
                                 <h4>Title</h4>
                                 <h4>Date</h4>
                             </div>
                             <div className="carousel-video">
+                                <div className="video"></div>
                                 <h4>Title</h4>
                                 <h4>Date</h4>
                             </div>
                             <div className="carousel-video">
+                                <div className="video"></div>
                                 <h4>Title</h4>
                                 <h4>Date</h4>
                             </div>
                         </div>
                         <div className="bible-study">
                             <h2>Bible Study</h2>
-                            <div className="bs-videos">
-                                <div className="videos">
+                            <div className="bs-catalog">
+                                <div className="bs-videos">
+                                    <div className="video"></div>
                                     <h3>Title</h3>
                                     <h3>Date</h3>
                                 </div>
-                                <div className="videos">
+                                <div className="bs-videos">
+                                    <div className="video"></div>
                                     <h3>Title</h3>
                                     <h3>Date</h3>
                                 </div>
-                                <div className="videos">
+                                <div className="bs-videos">
+                                    <div className="video"></div>
                                     <h3>Title</h3>
                                     <h3>Date</h3>
                                 </div>
-                                <div className="videos">
+                                <div className="bs-videos">
+                                    <div className="video"></div>
                                     <h3>Title</h3>
                                     <h3>Date</h3>
                                 </div>
