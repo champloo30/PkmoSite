@@ -32,9 +32,6 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                             <a className="link" href="/messages">Our Sunday Services</a>
                         </li>
                         <li onClick={()=>setMenuOpen(false)}>
-                            <Link className="link" to="/bibleteachings">Bible Teachings</Link>
-                        </li>
-                        <li onClick={()=>setMenuOpen(false)}>
                             <a className="link" href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer">
                                 Church Online
                             </a>
