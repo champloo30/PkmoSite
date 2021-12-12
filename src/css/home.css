@@ -16,18 +16,18 @@
   color: white;
 }
 .hero .hero-text h1 {
-  font-size: 80px;
+  font-size: 5rem;
   font-family: "Quattrocento", serif;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   font-weight: 700;
 }
 .hero .hero-text h2 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 300;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 .hero .hero-text h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 200;
 }
 
@@ -49,7 +49,7 @@
   justify-content: space-evenly;
 }
 .welcome .location-box h2 {
-  font-size: 48px;
+  font-size: 3rem;
   font-family: "Quattrocento", serif;
   font-weight: 200;
   color: #7C5296;
@@ -60,22 +60,22 @@
   justify-content: space-between;
 }
 .welcome .location-box .container .button {
-  width: 160px;
-  height: 60px;
+  width: 10rem;
+  height: 3.75rem;
   background-color: #7C5296;
-  margin: 0 100px;
+  margin: 0 6.25rem;
   color: white;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 300;
   text-align: center;
-  border: 5px solid #7C5296;
+  border: 0.25rem solid #7C5296;
   cursor: pointer;
 }
 .welcome .location-box .container .button:hover {
-  border: 5px solid #d8d8d8;
+  border: 0.25rem solid #d8d8d8;
 }
 .welcome h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 400;
   color: white;
 }
@@ -92,8 +92,8 @@
   justify-content: center;
 }
 .about .left .logo {
-  width: 500px;
-  height: 500px;
+  width: 31.25rem;
+  height: 31.25rem;
   background-color: #d8d8d8;
   border-radius: 50%;
 }
@@ -119,26 +119,26 @@
   justify-content: center;
 }
 .about .right .bottom-text h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 400;
   text-align: center;
   color: #7C5296;
-  margin-top: -10px;
+  margin-top: -0.625rem;
 }
 .about .right .button {
-  margin-top: -50px;
-  width: 160px;
-  height: 60px;
+  margin-top: -3.5rem;
+  width: 10rem;
+  height: 3.75rem;
   background-color: #7C5296;
   text-align: center;
-  border: 5px solid #7C5296;
+  border: 0.25rem solid #7C5296;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 2rem;
   color: white;
   font-weight: 300;
 }
 .about .right .button:hover {
-  border: 5px solid white;
+  border: 0.25rem solid white;
 }
 
 .peace-post {
@@ -154,41 +154,42 @@
   align-items: center;
   height: 55%;
   justify-content: space-evenly;
-  margin-right: -50px;
+  margin-right: -2rem;
 }
 .peace-post .container h1 {
-  font-size: 76px;
+  font-size: 4.75rem;
   font-family: "Quattrocento", serif;
   color: #7C5296;
   font-weight: 500;
 }
 .peace-post .container .line {
   width: 110%;
-  height: 5px;
+  height: 0.35rem;
   background-color: white;
 }
 .peace-post .container h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: 200;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 .peace-post .container .button {
-  width: 150px;
-  height: 60px;
+  width: 10rem;
+  height: 3.75rem;
   background-color: #7C5296;
-  border: 5px solid #7C5296;
+  border: 0.25rem solid #7C5296;
   color: white;
-  font-size: 30px;
+  font-size: 2rem;
+  font-weight: 300;
   cursor: pointer;
 }
 .peace-post .container .button:hover {
-  border: 5px solid #d8d8d8;
+  border: 0.25rem solid #d8d8d8;
 }
 .peace-post img {
-  height: 400px;
-  width: 400px;
-  margin-left: -50px;
+  height: 25rem;
+  width: 25rem;
+  margin-left: -3.25rem;
 }
 
 /*# sourceMappingURL=home.css.map */

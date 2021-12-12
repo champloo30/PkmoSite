@@ -11,14 +11,14 @@
     transition: all 1s ease;
 
     .wrapper{
-        padding: 0 30px;
+        padding: 0 2rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
     .left{
-        margin-top: 7.5px;
+        margin-top: .5rem;
 
         .logo-sec{
             display: flex;
@@ -28,19 +28,19 @@
             color: inherit;
     
             .logo-ph{
-                height: 55px;
-                width: 55px;
+                height: 3.5rem;
+                width: 3.5rem;
                 background-color: $silverColor;
                 border-radius: 50%;
                 display: inline-block;
             }
     
             h2{
-                font-size: 35px;
-                margin-left: 10px;
+                font-size: 2.25rem;
+                margin-left: .625rem;
                 color: inherit;
                 font-family: $qFont;
-                font-weight: 600;
+                font-weight: 500;
             }
         }
     }
@@ -54,9 +54,9 @@
             .link{
                 text-decoration: none;
                 color: inherit;
-                margin-right: 40px;
-                font-size: 24px;
-                //font-weight: 300;
+                margin-right: 2.5rem;
+                font-size: 1.75rem;
+                font-weight: 300;
             }
         }
     }
@@ -66,8 +66,8 @@
         align-items: center;
 
         .hamburger{
-            width: 32px;
-            height: 25px;
+            width: 2rem;
+            height: 1.5rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -75,7 +75,7 @@
 
             span{
                 width: 100%;
-                height: 3px;
+                height: 2px;
                 background-color: black;
                 transform-origin: left;
                 transition: all 1s ease;
