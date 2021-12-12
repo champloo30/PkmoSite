@@ -10,14 +10,14 @@
     justify-content: center;
 
     h1{
-        font-size: 80px;
+        font-size: 5rem;
         font-family: $qFont;
         color: white;
     }
 }
 
 .wwb{
-    height: 120vh;
+    height: 125vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,8 +25,10 @@
     background-color: $silverColor;
 
     h2{
-        font-size: 60px;
+        font-size: 4rem;
         font-weight: 300;
+        margin-top: 3rem;
+        //margin-bottom: -.5rem;
     }
 
     .container{
@@ -40,24 +42,24 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
-            height: 300px;
-            width: 500px;
+            height: 20rem;
+            width: 32rem;
             border-radius: 10px;
             background-color: $mainColor;
             margin: 10px 10px;
             color: white;
 
             h3{
-                font-size: 36px;
+                font-size: 2.75rem;
                 font-family: $qFont;
                 font-weight: 500;
-                margin-bottom: -25px;
+                margin-bottom: -1.5rem;
             }
 
             p{
-                font-size: 20px;
+                font-size: 1.25rem;
                 text-align: center;
-                margin: 0 15px;
+                margin: 0 1.5rem;
                 font-weight: 300;
             }
         }
@@ -70,30 +72,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 30px 100px;
+    margin: 2rem 6.25rem;
 
     h1{
-        font-size: 60px;
+        font-size: 3.75rem;
         font-family: $qFont;
         font-weight: 500;
     }
 
     span{
         color: $mainColor;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 400;
-        margin-top: -50px;
+        margin-top: -3.125rem;
         //text-decoration: underline;
     }
 
     h2{
-        font-size: 48px;
+        font-size: 3rem;
         font-weight: 300;
         color: $mainColor;
     }
 
     h3{
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 200;
         text-align: center;
     }
@@ -108,23 +110,23 @@
     justify-content: space-evenly;
 
     h2{
-        font-size: 34px;
+        font-size: 2rem;
         font-weight: 300;
     }
 
     .button{
-        height: 60px;
-        width: 160px;
+        height: 3.75rem;
+        width: 10rem;
         background-color: $mainColor;
         color: white;
-        font-size: 30px;
+        font-size: 2rem;
         font-weight: 300;
         text-align: center;
-        border: 5px solid $mainColor;
+        border: .25rem solid $mainColor;
         cursor: pointer;
 
         &:hover{
-            border: 5px solid $silverColor;
+            border: .25rem solid $silverColor;
         }
     }
 }
@@ -138,23 +140,23 @@
     justify-content: space-evenly;
 
     h2{
-        font-size: 34px;
+        font-size: 2rem;
         font-weight: 300;
     }
 
     .button{
-        height: 60px;
-        width: 160px;
+        height: 3.75rem;
+        width: 10rem;
         background-color: $mainColor;
         color: white;
-        font-size: 30px;
+        font-size: 2rem;
         font-weight: 300;
         text-align: center;
-        border: 5px solid $mainColor;
+        border: .25rem solid $mainColor;
         cursor: pointer;
 
         &:hover{
-            border: 5px solid white;
+            border: .25rem solid white;
         }
     }
 }

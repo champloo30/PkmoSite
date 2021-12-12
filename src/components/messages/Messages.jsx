@@ -12,7 +12,7 @@ export default function Messages() {
                 </div>
                 <div className="catalog-text">
                     <h2>Here's our recent Catalog</h2>
-                    <h3>For our latest service, check out our Church Online page <span>here</span>!</h3>
+                    <h3>For our latest service, check out our Church Online page <a href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer"><span>here</span></a>!</h3>
                 </div>
                 <div className="catalog">
                     <div className="current-month">
@@ -49,23 +49,23 @@ export default function Messages() {
                             <div className="bs-catalog">
                                 <div className="bs-videos">
                                     <div className="video"></div>
-                                    <h3>Title</h3>
-                                    <h3>Date</h3>
+                                    <h4>Title</h4>
+                                    <h4>Date</h4>
                                 </div>
                                 <div className="bs-videos">
                                     <div className="video"></div>
-                                    <h3>Title</h3>
-                                    <h3>Date</h3>
+                                    <h4>Title</h4>
+                                    <h4>Date</h4>
                                 </div>
                                 <div className="bs-videos">
                                     <div className="video"></div>
-                                    <h3>Title</h3>
-                                    <h3>Date</h3>
+                                    <h4>Title</h4>
+                                    <h4>Date</h4>
                                 </div>
                                 <div className="bs-videos">
                                     <div className="video"></div>
-                                    <h3>Title</h3>
-                                    <h3>Date</h3>
+                                    <h4>Title</h4>
+                                    <h4>Date</h4>
                                 </div>
                             </div>
                         </div>
@@ -99,23 +99,23 @@ export default function Messages() {
                             <div className="bs-catalog">
                                 <div className="bs-videos">
                                     <div className="video"></div>
-                                    <h3>Title</h3>
-                                    <h3>Date</h3>
+                                    <h4>Title</h4>
+                                    <h4>Date</h4>
                                 </div>
                                 <div className="bs-videos">
                                     <div className="video"></div>
-                                    <h3>Title</h3>
-                                    <h3>Date</h3>
+                                    <h4>Title</h4>
+                                    <h4>Date</h4>
                                 </div>
                                 <div className="bs-videos">
                                     <div className="video"></div>
-                                    <h3>Title</h3>
-                                    <h3>Date</h3>
+                                    <h4>Title</h4>
+                                    <h4>Date</h4>
                                 </div>
                                 <div className="bs-videos">
                                     <div className="video"></div>
-                                    <h3>Title</h3>
-                                    <h3>Date</h3>
+                                    <h4>Title</h4>
+                                    <h4>Date</h4>
                                 </div>
                             </div>
                         </div>

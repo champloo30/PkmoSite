@@ -6,9 +6,9 @@
   background-color: white;
 }
 .messages h1 {
-  margin-top: 70px;
-  margin-bottom: 50px;
-  font-size: 80px;
+  margin-top: 4.5rem;
+  margin-bottom: 3.25rem;
+  font-size: 5rem;
   font-weight: 500;
   font-family: "Quattrocento", serif;
 }
@@ -20,10 +20,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 70px;
+  margin-bottom: 4.5rem;
 }
 .messages .message-questions h3 {
-  font-size: 26px;
+  font-size: 1.75rem;
   font-weight: 300;
   color: white;
 }
@@ -39,56 +39,55 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 .messages .catalog-text h2 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 300;
 }
 .messages .catalog-text h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 200;
-  margin-top: -10px;
+  margin-top: -0.625rem;
 }
 .messages .catalog-text h3 span {
-  color: black;
+  color: #d8d8d8;
   text-decoration: underline;
 }
 .messages .catalog {
-  height: 230vh;
+  height: 210vh;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
   overflow: hidden;
-  background-color: #d8d8d8;
 }
 .messages .catalog .current-month {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-top: 75px;
-  margin-left: 30px;
+  margin-top: 4.5rem;
+  margin-left: 2rem;
 }
 .messages .catalog .current-month h2 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 300;
 }
 .messages .catalog .current-month .carousel {
-  height: 475px;
+  height: 30rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
 }
 .messages .catalog .current-month .carousel .carousel-video {
-  margin-right: 20px;
+  margin-right: 1.5rem;
 }
 .messages .catalog .current-month .carousel .carousel-video .video {
-  height: 150px;
-  width: 250px;
+  height: 10rem;
+  width: 17.5rem;
   background-color: black;
   color: white;
   cursor: pointer;
@@ -99,9 +98,9 @@
   align-items: flex-start;
 }
 .messages .catalog .current-month .bible-study h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 .messages .catalog .current-month .bible-study .bs-catalog {
   display: flex;
@@ -113,27 +112,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 1.5rem;
 }
 .messages .catalog .current-month .bible-study .bs-catalog .bs-videos .video {
-  height: 150px;
-  width: 250px;
+  height: 10rem;
+  width: 17.5rem;
   background-color: black;
-}
-.messages .catalog .current-month .bible-study .bs-catalog h3 {
-  font-size: 20px;
-  font-weight: 200;
-  text-align: center;
 }
 .messages .catalog .previous-month {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-left: 30px;
+  margin-left: 2rem;
 }
 .messages .catalog .previous-month h2 {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 300;
 }
 .messages .catalog .previous-month .carousel {
@@ -143,12 +137,12 @@
   flex-wrap: wrap;
 }
 .messages .catalog .previous-month .carousel .carousel-video {
-  margin-right: 20px;
-  margin-top: 10px;
+  margin-right: 1.5rem;
+  margin-top: 0.625rem;
 }
 .messages .catalog .previous-month .carousel .carousel-video .video {
-  height: 150px;
-  width: 250px;
+  height: 10rem;
+  width: 17.5rem;
   background-color: black;
   color: white;
   cursor: pointer;
@@ -157,46 +151,40 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 3.25rem;
 }
 .messages .catalog .previous-month .bible-study h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 .messages .catalog .previous-month .bible-study .bs-catalog {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 .messages .catalog .previous-month .bible-study .bs-catalog .bs-videos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 1.5rem;
 }
 .messages .catalog .previous-month .bible-study .bs-catalog .bs-videos .video {
-  height: 150px;
-  width: 250px;
+  height: 10rem;
+  width: 17.5rem;
   background-color: black;
 }
-.messages .catalog .previous-month .bible-study .bs-catalog h3 {
-  font-size: 20px;
-  font-weight: 200;
-  text-align: center;
-}
 .messages .catalog h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 200;
   text-align: center;
 }
 .messages h5 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 200;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 2rem 0;
   text-align: center;
   background-color: white;
 }

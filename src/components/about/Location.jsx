@@ -21,7 +21,7 @@ export default function Location() {
                     </div>
                     <div className="item">
                         <h3>For <span>Church Online</span> Click Here</h3>
-                        <button className="button">Here</button>
+                        <a href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer"><button className="button">Here</button></a>
                     </div>
                 </div>
             </div>

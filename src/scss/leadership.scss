@@ -1,15 +1,15 @@
 @import "../global.scss";
 
 .l-hero{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    background-color: $silverColor;
+    background-color: $mainColor;
     display: flex;
     align-items: center;
     justify-content: center;
 
     h1{
-        font-size: 80px;
+        font-size: 5rem;
         font-weight: 500;
         font-family: $qFont;
         color: white;
@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
 
     .bio-fp{
         flex: 1;
@@ -28,36 +29,37 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        margin-right: -100px;
+        margin-right: -6.25rem;
 
         .img{
-            height: 300px;
-            width: 300px;
+            height: 20rem;
+            width: 20rem;
+            border-radius: 50%;
             background-color: $silverColor;
-            margin-bottom: 20px;
+            margin-bottom: 1.5rem;
         }
 
         h2{
-            font-size: 36px;
+            font-size: 2.25rem;
             font-weight: 400;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: .625rem;
         }
 
         .text{
-            height: 600px;
+            height: 35rem;
             width: 50%;
             background-color: $mainColor;
             border-radius: 10px;
             display: flex;
             align-items: center;
             text-align: center;
-            margin-top: 10px;
+            margin-top: .625rem;
 
             p{
                 color: white;
-                font-size: 20px;
-                margin: 0 30px;
+                font-size: 1.25rem;
+                margin: 0 2rem;
             }
         }
     }
@@ -68,36 +70,37 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        margin-left: -100px;
+        margin-left: -6.25rem;
 
         .img{
-            height: 300px;
-            width: 300px;
+            height: 20rem;
+            width: 20rem;
+            border-radius: 50%;
             background-color: $silverColor;
-            margin-bottom: 20px;
+            margin-bottom: 1.5rem;
         }
 
         h2{
-            font-size: 36px;
+            font-size: 2.25rem;
             font-weight: 400;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: .625rem;
         }
 
         .text{
-            height: 600px;
+            height: 35rem;
             width: 50%;
             background-color: $mainColor;
             border-radius: 10px;
             display: flex;
             align-items: center;
             text-align: center;
-            margin-top: 10px;
+            margin-top: .625rem;
 
             p{
                 color: white;
-                font-size: 20px;
-                margin: 0 30px;
+                font-size: 1.25rem;
+                margin: 0 2rem;
             }
         }
     }

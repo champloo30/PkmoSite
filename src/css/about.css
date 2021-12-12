@@ -8,13 +8,13 @@
   justify-content: center;
 }
 .about-hero h1 {
-  font-size: 80px;
+  font-size: 5rem;
   font-family: "Quattrocento", serif;
   color: white;
 }
 
 .wwb {
-  height: 120vh;
+  height: 125vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,8 +22,9 @@
   background-color: #d8d8d8;
 }
 .wwb h2 {
-  font-size: 60px;
+  font-size: 4rem;
   font-weight: 300;
+  margin-top: 3rem;
 }
 .wwb .container {
   display: flex;
@@ -36,23 +37,23 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 300px;
-  width: 500px;
+  height: 20rem;
+  width: 32rem;
   border-radius: 10px;
   background-color: #7C5296;
   margin: 10px 10px;
   color: white;
 }
 .wwb .container .box h3 {
-  font-size: 36px;
+  font-size: 2.75rem;
   font-family: "Quattrocento", serif;
   font-weight: 500;
-  margin-bottom: -25px;
+  margin-bottom: -1.5rem;
 }
 .wwb .container .box p {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
-  margin: 0 15px;
+  margin: 0 1.5rem;
   font-weight: 300;
 }
 
@@ -62,26 +63,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 30px 100px;
+  margin: 2rem 6.25rem;
 }
 .statements h1 {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-family: "Quattrocento", serif;
   font-weight: 500;
 }
 .statements span {
   color: #7C5296;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
-  margin-top: -50px;
+  margin-top: -3.125rem;
 }
 .statements h2 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 300;
   color: #7C5296;
 }
 .statements h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 200;
   text-align: center;
 }
@@ -95,22 +96,22 @@
   justify-content: space-evenly;
 }
 .leadership h2 {
-  font-size: 34px;
+  font-size: 2rem;
   font-weight: 300;
 }
 .leadership .button {
-  height: 60px;
-  width: 160px;
+  height: 3.75rem;
+  width: 10rem;
   background-color: #7C5296;
   color: white;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 300;
   text-align: center;
-  border: 5px solid #7C5296;
+  border: 0.25rem solid #7C5296;
   cursor: pointer;
 }
 .leadership .button:hover {
-  border: 5px solid #d8d8d8;
+  border: 0.25rem solid #d8d8d8;
 }
 
 .about-location {
@@ -122,22 +123,22 @@
   justify-content: space-evenly;
 }
 .about-location h2 {
-  font-size: 34px;
+  font-size: 2rem;
   font-weight: 300;
 }
 .about-location .button {
-  height: 60px;
-  width: 160px;
+  height: 3.75rem;
+  width: 10rem;
   background-color: #7C5296;
   color: white;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 300;
   text-align: center;
-  border: 5px solid #7C5296;
+  border: 0.25rem solid #7C5296;
   cursor: pointer;
 }
 .about-location .button:hover {
-  border: 5px solid white;
+  border: 0.25rem solid white;
 }
 
 /*# sourceMappingURL=about.css.map */

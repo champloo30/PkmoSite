@@ -1,13 +1,13 @@
 .l-hero {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
-  background-color: #d8d8d8;
+  background-color: #7C5296;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .l-hero h1 {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 500;
   font-family: "Quattrocento", serif;
   color: white;
@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 }
 .bio .bio-fp {
   flex: 1;
@@ -25,34 +26,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-right: -100px;
+  margin-right: -6.25rem;
 }
 .bio .bio-fp .img {
-  height: 300px;
-  width: 300px;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
   background-color: #d8d8d8;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 .bio .bio-fp h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .bio .bio-fp .text {
-  height: 600px;
+  height: 35rem;
   width: 50%;
   background-color: #7C5296;
   border-radius: 10px;
   display: flex;
   align-items: center;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .bio .bio-fp .text p {
   color: white;
-  font-size: 20px;
-  margin: 0 30px;
+  font-size: 1.25rem;
+  margin: 0 2rem;
 }
 .bio .bio-cp {
   flex: 1;
@@ -60,34 +62,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-left: -100px;
+  margin-left: -6.25rem;
 }
 .bio .bio-cp .img {
-  height: 300px;
-  width: 300px;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
   background-color: #d8d8d8;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 .bio .bio-cp h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .bio .bio-cp .text {
-  height: 600px;
+  height: 35rem;
   width: 50%;
   background-color: #7C5296;
   border-radius: 10px;
   display: flex;
   align-items: center;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .bio .bio-cp .text p {
   color: white;
-  font-size: 20px;
-  margin: 0 30px;
+  font-size: 1.25rem;
+  margin: 0 2rem;
 }
 
 /*# sourceMappingURL=leadership.css.map */
