@@ -1,3 +1,53 @@
-
+.peacepost {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("../img-icon/PngItem_8169.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 16px;
+  background-position-y: 69px;
+}
+.peacepost h1 {
+  font-family: "Quattrocento", serif;
+  font-size: 5rem;
+  font-weight: 500;
+  color: white;
+  margin-top: 2rem;
+}
+.peacepost .posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.peacepost .posts .default-post {
+  height: 15rem;
+  width: 17rem;
+  background-color: #7C5296;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: not-allowed;
+  margin: 0 4.5rem;
+  box-shadow: 2px 4px 10px black;
+}
+.peacepost .posts .default-post .pin {
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 1px 3px 10px black;
+}
+.peacepost .posts .default-post h3 {
+  font-size: 1.5rem;
+}
+.peacepost .posts .default-post p {
+  text-align: center;
+  margin: 0 1.5rem;
+}
 
 /*# sourceMappingURL=peacepost.css.map */

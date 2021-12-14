@@ -1,2 +1,61 @@
 @import "../global.scss";
 
+.peacepost{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("../img-icon/PngItem_8169.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 16px;
+    background-position-y: 69px;
+
+    h1{
+        font-family: $qFont;
+        font-size: 5rem;
+        font-weight: 500;
+        //margin-top: 7rem;
+        color: white;
+        margin-top: 2rem;
+    }
+
+    .posts{
+        display: flex;
+        flex-direction: row;
+        //align-items: center;
+        justify-content: space-evenly;
+
+        .default-post{
+            height: 15rem;
+            width: 17rem;
+            background-color: $mainColor;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            cursor: not-allowed;
+            margin: 0 4.5rem;
+            box-shadow: 2px 4px 10px black;
+
+            .pin{
+                height: 2rem;
+                width: 2rem;
+                background-color: white;
+                border-radius: 50%;
+                box-shadow: 1px 3px 10px black;
+            }
+
+            h3{
+                font-size: 1.5rem;
+            }
+
+            p{
+                text-align: center;
+                margin: 0 1.5rem;
+            }
+        }
+    }
+}
