@@ -1,11 +1,12 @@
 import "../../scss/navbar.scss"
+import NavLogo from "../../img-icon/PKMO-Logo-nav.png"
 
 export default function Navbar({ menuOpen, setMenuOpen }) {
     return (
         <div className={"navbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a className="logo-sec" href="/"><span className="logo-ph"></span><h2>PKMO</h2></a>
+                    <a className="logo-sec" href="/"><img src={NavLogo} alt="Peace Kingdom Ministries of Ohio Logo" /></a>
                 </div>
                 <div className="center">
                     <div className="nav-links">

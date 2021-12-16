@@ -1,5 +1,6 @@
 import "../../scss/home.scss"
 import dove from "../../img-icon/dove-png-41736.png"
+import GlobeLogo from "../../img-icon/PKMO-Globe-Logo.png"
 import { Link } from "react-router-dom"
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
             </div>
             <div className="about" id="about">
                 <div className="left">
-                    <div className="logo"></div>
+                    <img src={GlobeLogo} alt="PKMO Globe Logo" />
                 </div>
                 <div className="right">
                     <div className="top-text">

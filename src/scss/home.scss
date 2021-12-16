@@ -100,21 +100,19 @@
     
 
     .left{
-        flex: 1;
+        flex: 5;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        .logo{
-            width: 31.25rem;
-            height: 31.25rem;
-            background-color: $silverColor;
-            border-radius: 50%;
+        img{
+            margin-top: 6rem;
+            margin-right: 5rem;
         }
     }
 
     .right{
-        flex: 1;
+        flex: 7;
         display: flex;
         flex-direction: column;
         align-items: center;

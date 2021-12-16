@@ -1,5 +1,4 @@
 import '../../scss/menu.scss'
-import { Link } from 'react-router-dom';
 
 export default function Menu({ menuOpen, setMenuOpen }) {
     return (
@@ -16,10 +15,10 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                             <a className="link" href="/about">About PKMO</a>
                         </li>
                         <li onClick={()=>setMenuOpen(false)}>
-                            <Link className="link" to="/leadership">Our Leadership</Link>
+                            <a className="link" href="/leadership">Our Leadership</a>
                         </li>
                         <li onClick={()=>setMenuOpen(false)}>
-                            <Link className="link" to="/location">Location & Directions</Link>
+                            <a className="link" href="/location">Location & Directions</a>
                         </li>
                     </li>
                     <li className="link-name">
@@ -54,8 +53,9 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                             <h1>Connect</h1>
                             <hr />
                         </div>
-                        <li className="link">Connect</li>
-                        <li className="link">Prayer</li>
+                        <li onClick={()=>setMenuOpen(false)}>
+                            <a className="link" href="/connect">Connect</a>
+                        </li>
                         <li className="link">Join The Kingdom</li>
                         <li className="link">Give</li>
                     </li>
