@@ -1,7 +1,7 @@
 @import "../global.scss";
 
 .connect{
-    height: 100vh;
+    height: 180vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -30,6 +30,277 @@
             span{
                 color: $mainColor;
                 font-size: 1.5rem;
+            }
+        }
+    }
+
+    .formbox{
+        height: 46rem;
+        width: 60%;
+        background-color: $silverColor;
+        //margin: -1rem 0;
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 1.5rem;
+
+            h3{
+                font-size: 3rem;
+                font-family: $qFont;
+                font-weight: 500;
+                margin-bottom: 1.5rem;
+                color: $mainColor;
+            }
+
+            .form-name{
+                display: flex;
+                flex-direction: row;
+
+                .fname{
+                    margin-right: 2rem;
+
+                    label{
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        font-family: $qFont;
+                        margin-bottom: 1rem;
+                    }
+
+                    input{
+                        margin-top: .5rem;
+                        width: 15rem;
+                        height: 1.75rem;
+                        font-size: 1rem;
+                        font-family: $nsdFont;
+                        font-weight: 300;
+
+                        ::placeholder{
+                            color: $silverColor;
+                        }
+                    }
+                }
+
+                .lname{
+                    margin-left: 2rem;
+
+                    label{
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        font-family: $qFont;
+                        //margin-bottom: 1rem;
+                    }
+
+                    input{
+                        margin-top: .5rem;
+                        width: 15rem;
+                        height: 1.75rem;
+                        font-size: 1rem;
+                        font-family: $nsdFont;
+                        font-weight: 300;
+
+                        ::placeholder{
+                            color: $silverColor;
+                        }
+                    }
+                }
+            }
+
+            .phone-email{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                margin: 1.5rem 0;
+
+                label{
+                    font-size: 1.5rem;
+                    font-family: $qFont;
+                    font-weight: 500;
+                }
+
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    .phone{
+                        margin-right: 2rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+    
+                        .label{
+                            display: flex;
+                            flex-direction: row;
+                            
+                            .checkbox{
+                                height: 1rem;
+                                width: 1rem;
+                                background-color: $mainColor;
+                            }
+        
+                            label{
+                                font-size: 1.25rem;
+                                font-family: $nsdFont;
+                                font-weight: 300;
+                            }
+                        }
+    
+                        .text{
+                            margin-top: .5rem;
+                            width: 15rem;
+                            height: 1.75rem;
+                            font-size: 1rem;
+                            font-family: $nsdFont;
+                            font-weight: 300;
+    
+                            ::placeholder{
+                                color: $silverColor;
+                            }
+                        }
+                    }
+    
+                    .email{
+                        margin-left: 2rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+    
+                        .label{
+                            display: flex;
+                            flex-direction: row;
+                            
+                            .checkbox{
+                                height: 1rem;
+                                width: 1rem;
+                                background-color: $mainColor;
+                            }
+        
+                            label{
+                                font-size: 1.25rem;
+                                font-family: $nsdFont;
+                                font-weight: 300;
+                            }
+                        }
+    
+                        .text{
+                            margin-top: .5rem;
+                            width: 15rem;
+                            height: 1.75rem;
+                            font-size: 1rem;
+                            font-family: $nsdFont;
+                            font-weight: 300;
+    
+                            ::placeholder{
+                                color: $silverColor;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .request-options{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 1.25rem;
+
+                label{
+                    font-size: 1.5rem;
+                    font-family: $qFont;
+                    font-weight: 500;
+                    margin-bottom: -1rem;
+                }
+
+                .top{
+                    display: flex;
+                    flex-direction: row;
+
+                    div{
+                        width: 8rem;
+                        margin-bottom: .25rem;
+    
+                        .radio{
+                            height: 1rem;
+                            width: 1rem;
+                            margin-right: .25rem;
+                        }
+    
+                        label{
+                            font-size: 1.25rem;
+                            font-family: $nsdFont;
+                            font-weight: 300;
+                        }
+                    }
+                }
+
+                .bottom{
+                    display: flex;
+                    flex-direction: row;
+
+                    div{
+                        width: 8rem;
+                        margin-bottom: .25rem;
+    
+                        .radio{
+                            height: 1rem;
+                            width: 1rem;
+                            margin-right: .25rem;
+                        }
+    
+                        label{
+                            font-size: 1.25rem;
+                            font-family: $nsdFont;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+
+            .textarea{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                label{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    font-family: $qFont;
+                }
+
+                #text{
+                    height: 6rem;
+                    width: 30rem;
+                    font-size: 1rem;
+                    font-family: $nsdFont;
+                    font-weight: 300;
+
+                    ::placeholder{
+                        color: $silverColor;
+                    }
+                }
+            }
+
+            .button{
+                margin-top: 1.75rem;
+                height: 3.75rem;
+                width: 10rem;
+                background-color: $mainColor;
+                color: white;
+                font-size: 2rem;
+                font-weight: 300;
+                text-align: center;
+                border: .25rem solid $mainColor;
+                cursor: pointer;
+
+                &:hover{
+                    border: .25rem solid $silverColor;
+                }
             }
         }
     }
