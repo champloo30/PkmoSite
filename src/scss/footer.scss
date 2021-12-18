@@ -1,17 +1,14 @@
 @import "../global.scss";
 
 .footer{
-    height: 10vh;
+    height: 85px;
     background-color: $mainColor;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .logo{
-        width: 3.5rem;
-        height: 3.5rem;
-        background-color: $silverColor;
-        border-radius: 50%;
+        margin-top: .6rem;
         margin-right: .625rem;
     }
 

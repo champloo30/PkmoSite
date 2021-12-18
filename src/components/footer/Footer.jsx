@@ -1,11 +1,12 @@
 import "../../scss/footer.scss"
+import GlobeLogo from "../../img-icon/PKMO-Globe-Logo-Footer.png"
 import facebook from "../../img-icon/icons8-facebook.svg"
 import youtube from "../../img-icon/icons8-youtube.svg"
 
 export default function Footer() {
     return (
         <div className="footer" id="footer">
-            <div className="logo"></div>
+            <img className="logo" src={GlobeLogo} alt="Peace Kingdom Ministries of Ohio Globe Logo" />
             <a href="/">
                 <h2>Peace Kingdom Ministries of Ohio</h2>
             </a>

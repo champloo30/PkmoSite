@@ -1,5 +1,5 @@
 import "../../scss/navbar.scss"
-import NavLogo from "../../img-icon/PKMO-Logo-nav.png"
+import NavLogo from "../../img-icon/PKMO-Logo-Nav.png"
 
 export default function Navbar({ menuOpen, setMenuOpen }) {
     return (

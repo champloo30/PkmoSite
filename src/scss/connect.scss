@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 1rem;
 
     h1{
         font-size: 5rem;
@@ -18,7 +19,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        width: 60%;
         margin-top: -1rem;
 
         p{
@@ -29,7 +30,7 @@
             
             span{
                 color: $mainColor;
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
         }
     }
@@ -45,7 +46,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
-            margin-top: 1.5rem;
+            margin-top: 2rem;
 
             h3{
                 font-size: 3rem;
@@ -151,7 +152,7 @@
                         }
     
                         .text{
-                            margin-top: .5rem;
+                            margin-top: .25rem;
                             width: 15rem;
                             height: 1.75rem;
                             font-size: 1rem;
@@ -188,7 +189,7 @@
                         }
     
                         .text{
-                            margin-top: .5rem;
+                            margin-top: .25rem;
                             width: 15rem;
                             height: 1.75rem;
                             font-size: 1rem;
@@ -213,38 +214,18 @@
                     font-size: 1.5rem;
                     font-family: $qFont;
                     font-weight: 500;
-                    margin-bottom: -1rem;
+                    //margin-bottom: -1rem;
                 }
 
-                .top{
+                .request-row{
                     display: flex;
                     flex-direction: row;
+                    align-items: center;
 
                     div{
-                        width: 8rem;
+                        //width: 8rem;
                         margin-bottom: .25rem;
-    
-                        .radio{
-                            height: 1rem;
-                            width: 1rem;
-                            margin-right: .25rem;
-                        }
-    
-                        label{
-                            font-size: 1.25rem;
-                            font-family: $nsdFont;
-                            font-weight: 300;
-                        }
-                    }
-                }
-
-                .bottom{
-                    display: flex;
-                    flex-direction: row;
-
-                    div{
-                        width: 8rem;
-                        margin-bottom: .25rem;
+                        margin-right: 1rem;
     
                         .radio{
                             height: 1rem;
