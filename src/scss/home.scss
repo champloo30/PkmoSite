@@ -1,220 +1,223 @@
 @import "../global.scss";
 
-.hero{
-    height: 100vh;
-    background-image: url("../img-icon/columbus_skyline.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 -125px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.home{
 
-    .hero-text{
+    .hero{
+        height: 100vh;
+        background-image: url("../img-icon/columbus_skyline.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -125px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        color: white;
-
-        h1{
-            font-size: 5rem;
-            font-family: $qFont;
-            margin-bottom: 3.125rem;
-            font-weight: 700;
-        }
-
-        h2{
-            font-size: 4rem;
-            font-weight: 300;
-            margin-bottom: 3.125rem;
-        }
-
-        h3{
-            font-size: 1.5rem;
-            font-weight: 200;
+    
+        .hero-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+    
+            h1{
+                font-size: 5rem;
+                font-family: $qFont;
+                margin-bottom: 3.125rem;
+                font-weight: 700;
+            }
+    
+            h2{
+                font-size: 4rem;
+                font-weight: 300;
+                margin-bottom: 3.125rem;
+            }
+    
+            h3{
+                font-size: 1.5rem;
+                font-weight: 200;
+            }
         }
     }
-}
-
-.welcome{
-    height: 100vh;
-    background-color: $mainColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-
-    .location-box{
-        width: 55%;
-        height: 35%;
-        background-color: $silverColor;
+    
+    .welcome{
+        height: 100vh;
+        background-color: $mainColor;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-
-        h2{
-            font-size: 3rem;
-            font-family: $qFont;
-            font-weight: 200;
-            color: $mainColor;
+    
+    
+        .location-box{
+            width: 55%;
+            height: 35%;
+            background-color: $silverColor;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+    
+            h2{
+                font-size: 3rem;
+                font-family: $qFont;
+                font-weight: 200;
+                color: $mainColor;
+            }
+    
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                .button{
+                    width: 10rem;
+                    height: 3.75rem;
+                    background-color: $mainColor;
+                    margin: 0 6.25rem;
+                    color: white;
+                    font-size: 2rem;
+                    font-weight: 300;
+                    text-align: center;
+                    border: 0.25rem solid $mainColor;
+                    cursor: pointer;
+    
+                    &:hover{
+                        border: 0.25rem solid $silverColor;
+                    }
+                }
+            }
         }
-
-        .container{
+    
+        h1{
+            font-size: 3.75rem;
+            font-weight: 400;
+            color: white;
+        }
+    }
+    
+    .about{
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        
+    
+        .left{
+            flex: 5;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-
+            justify-content: center;
+    
+            img{
+                margin-top: 6rem;
+                margin-right: 5rem;
+            }
+        }
+    
+        .right{
+            flex: 7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+    
+            .top-text{
+                text-align: center;
+                
+                h2{
+                    font-weight: 200;
+                    font-size: 28px;
+                    margin-bottom: 10px;
+                }
+            }
+            .bottom-text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+    
+                h1{
+                    font-size: 3rem;
+                    font-weight: 400;
+                    text-align: center;
+                    color: $mainColor;
+                    margin-top: -0.625rem;
+                }
+            }
+    
+            .button{
+                margin-top: -3.5rem;
+                width: 10rem;
+                height: 3.75rem;
+                background-color: $mainColor;
+                text-align: center;
+                border: 0.25rem solid $mainColor;
+                cursor: pointer;
+                font-size: 2rem;
+                color: white;
+                font-weight: 300;
+    
+                &:hover{
+                    border: 0.25rem solid white;
+                }
+            }
+        }
+    }
+    
+    .peace-post{
+        height: 70vh;
+        background-color: $silverColor;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 55%;
+            justify-content: space-evenly;
+            margin-right: -2rem;
+    
+            h1{
+                font-size: 4.75rem;
+                font-family: $qFont;
+                color: $mainColor;
+                font-weight: 500;
+            }
+    
+            .line{
+                width: 110%;
+                height: 0.35rem;
+                background-color: white;
+            }
+    
+            h3{
+                font-size: 1.5rem;
+                text-align: center;
+                font-weight: 200;
+                margin-bottom: 1.5rem;
+            }
+    
             .button{
                 width: 10rem;
                 height: 3.75rem;
                 background-color: $mainColor;
-                margin: 0 6.25rem;
+                border: 0.25rem solid $mainColor;
                 color: white;
                 font-size: 2rem;
                 font-weight: 300;
-                text-align: center;
-                border: 0.25rem solid $mainColor;
                 cursor: pointer;
-
+    
                 &:hover{
                     border: 0.25rem solid $silverColor;
                 }
             }
         }
-    }
-
-    h1{
-        font-size: 3.75rem;
-        font-weight: 400;
-        color: white;
-    }
-}
-
-.about{
-    height: 100vh;
-    background-color: white;
-    display: flex;
     
-
-    .left{
-        flex: 5;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
         img{
-            margin-top: 6rem;
-            margin-right: 5rem;
+            height: 25rem;
+            width: 25rem;
+            margin-left: -3.25rem;
         }
-    }
-
-    .right{
-        flex: 7;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-
-        .top-text{
-            text-align: center;
-            
-            h2{
-                font-weight: 200;
-                font-size: 28px;
-                margin-bottom: 10px;
-            }
-        }
-        .bottom-text{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            h1{
-                font-size: 3rem;
-                font-weight: 400;
-                text-align: center;
-                color: $mainColor;
-                margin-top: -0.625rem;
-            }
-        }
-
-        .button{
-            margin-top: -3.5rem;
-            width: 10rem;
-            height: 3.75rem;
-            background-color: $mainColor;
-            text-align: center;
-            border: 0.25rem solid $mainColor;
-            cursor: pointer;
-            font-size: 2rem;
-            color: white;
-            font-weight: 300;
-
-            &:hover{
-                border: 0.25rem solid white;
-            }
-        }
-    }
-}
-
-.peace-post{
-    height: 70vh;
-    background-color: $silverColor;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 55%;
-        justify-content: space-evenly;
-        margin-right: -2rem;
-
-        h1{
-            font-size: 4.75rem;
-            font-family: $qFont;
-            color: $mainColor;
-            font-weight: 500;
-        }
-
-        .line{
-            width: 110%;
-            height: 0.35rem;
-            background-color: white;
-        }
-
-        h3{
-            font-size: 1.5rem;
-            text-align: center;
-            font-weight: 200;
-            margin-bottom: 1.5rem;
-        }
-
-        .button{
-            width: 10rem;
-            height: 3.75rem;
-            background-color: $mainColor;
-            border: 0.25rem solid $mainColor;
-            color: white;
-            font-size: 2rem;
-            font-weight: 300;
-            cursor: pointer;
-
-            &:hover{
-                border: 0.25rem solid $silverColor;
-            }
-        }
-    }
-
-    img{
-        height: 25rem;
-        width: 25rem;
-        margin-left: -3.25rem;
     }
 }

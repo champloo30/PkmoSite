@@ -15,28 +15,15 @@
   justify-content: space-between;
 }
 .navbar .left {
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 }
 .navbar .left .logo-sec {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  align-items: center;
-  color: inherit;
-}
-.navbar .left .logo-sec .logo-ph {
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #d8d8d8;
-  border-radius: 50%;
-  display: inline-block;
 }
-.navbar .left .logo-sec h2 {
-  font-size: 2.25rem;
-  margin-left: 0.625rem;
-  color: inherit;
-  font-family: "Quattrocento", serif;
-  font-weight: 500;
+.navbar .center {
+  margin-bottom: 1rem;
+  margin-left: -8.25rem;
 }
 .navbar .center .nav-links {
   display: flex;
@@ -53,6 +40,7 @@
 .navbar .right {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 .navbar .right .hamburger {
   width: 2rem;

@@ -1,4 +1,4 @@
-.hero {
+.home .hero {
   height: 100vh;
   background-image: url("../img-icon/columbus_skyline.jpg");
   background-repeat: no-repeat;
@@ -8,30 +8,29 @@
   flex-direction: column;
   justify-content: center;
 }
-.hero .hero-text {
+.home .hero .hero-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
 }
-.hero .hero-text h1 {
+.home .hero .hero-text h1 {
   font-size: 5rem;
   font-family: "Quattrocento", serif;
   margin-bottom: 3.125rem;
   font-weight: 700;
 }
-.hero .hero-text h2 {
+.home .hero .hero-text h2 {
   font-size: 4rem;
   font-weight: 300;
   margin-bottom: 3.125rem;
 }
-.hero .hero-text h3 {
+.home .hero .hero-text h3 {
   font-size: 1.5rem;
   font-weight: 200;
 }
-
-.welcome {
+.home .welcome {
   height: 100vh;
   background-color: #7C5296;
   display: flex;
@@ -39,7 +38,7 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.welcome .location-box {
+.home .welcome .location-box {
   width: 55%;
   height: 35%;
   background-color: #d8d8d8;
@@ -48,18 +47,18 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.welcome .location-box h2 {
+.home .welcome .location-box h2 {
   font-size: 3rem;
   font-family: "Quattrocento", serif;
   font-weight: 200;
   color: #7C5296;
 }
-.welcome .location-box .container {
+.home .welcome .location-box .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.welcome .location-box .container .button {
+.home .welcome .location-box .container .button {
   width: 10rem;
   height: 3.75rem;
   background-color: #7C5296;
@@ -71,61 +70,58 @@
   border: 0.25rem solid #7C5296;
   cursor: pointer;
 }
-.welcome .location-box .container .button:hover {
+.home .welcome .location-box .container .button:hover {
   border: 0.25rem solid #d8d8d8;
 }
-.welcome h1 {
+.home .welcome h1 {
   font-size: 3.75rem;
   font-weight: 400;
   color: white;
 }
-
-.about {
+.home .about {
   height: 100vh;
   background-color: white;
   display: flex;
 }
-.about .left {
-  flex: 1;
+.home .about .left {
+  flex: 5;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.about .left .logo {
-  width: 31.25rem;
-  height: 31.25rem;
-  background-color: #d8d8d8;
-  border-radius: 50%;
+.home .about .left img {
+  margin-top: 6rem;
+  margin-right: 5rem;
 }
-.about .right {
-  flex: 1;
+.home .about .right {
+  flex: 7;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
-.about .right .top-text {
+.home .about .right .top-text {
   text-align: center;
 }
-.about .right .top-text h2 {
+.home .about .right .top-text h2 {
   font-weight: 200;
   font-size: 28px;
   margin-bottom: 10px;
 }
-.about .right .bottom-text {
+.home .about .right .bottom-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.about .right .bottom-text h1 {
+.home .about .right .bottom-text h1 {
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
   color: #7C5296;
   margin-top: -0.625rem;
 }
-.about .right .button {
+.home .about .right .button {
   margin-top: -3.5rem;
   width: 10rem;
   height: 3.75rem;
@@ -137,18 +133,17 @@
   color: white;
   font-weight: 300;
 }
-.about .right .button:hover {
+.home .about .right .button:hover {
   border: 0.25rem solid white;
 }
-
-.peace-post {
+.home .peace-post {
   height: 70vh;
   background-color: #d8d8d8;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.peace-post .container {
+.home .peace-post .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,24 +151,24 @@
   justify-content: space-evenly;
   margin-right: -2rem;
 }
-.peace-post .container h1 {
+.home .peace-post .container h1 {
   font-size: 4.75rem;
   font-family: "Quattrocento", serif;
   color: #7C5296;
   font-weight: 500;
 }
-.peace-post .container .line {
+.home .peace-post .container .line {
   width: 110%;
   height: 0.35rem;
   background-color: white;
 }
-.peace-post .container h3 {
+.home .peace-post .container h3 {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 200;
   margin-bottom: 1.5rem;
 }
-.peace-post .container .button {
+.home .peace-post .container .button {
   width: 10rem;
   height: 3.75rem;
   background-color: #7C5296;
@@ -183,10 +178,10 @@
   font-weight: 300;
   cursor: pointer;
 }
-.peace-post .container .button:hover {
+.home .peace-post .container .button:hover {
   border: 0.25rem solid #d8d8d8;
 }
-.peace-post img {
+.home .peace-post img {
   height: 25rem;
   width: 25rem;
   margin-left: -3.25rem;
