@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: #fff;
-  background-image: url("../img-icon/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 70px;
@@ -14,7 +13,7 @@
   font-family: "Quattrocento", serif;
   font-size: 5rem;
   font-weight: 500;
-  color: white;
+  color: black;
   margin-top: 2rem;
 }
 .peacepost .posts {
