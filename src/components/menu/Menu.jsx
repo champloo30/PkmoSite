@@ -45,7 +45,6 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                         <li onClick={()=>setMenuOpen(false)}>
                             <a className="link" href="/peacepost">Church Announcements</a>
                         </li>
-                        <li className="link">COVID-19 Updates</li>
                     </li>
                     <li className="link-name">
                         <div className="title">

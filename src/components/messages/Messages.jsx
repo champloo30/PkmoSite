@@ -16,107 +16,28 @@ export default function Messages() {
                 </div>
                 <div className="catalog">
                     <div className="current-month">
-                        <h2>December</h2>
+                        <h2>January 2022</h2>
                         <div className="carousel">
                             <div className="carousel-video">
                                 <div className="video"></div>
-                                <h4>Title</h4>
                                 <h4>Date</h4>
-                            </div>
-                            <div className="carousel-video">
-                                <div className="video"></div>
-                                <h4>Title</h4>
-                                <h4>Date</h4>
-                            </div>
-                            <div className="carousel-video">
-                                <div className="video"></div>
-                                <h4>Title</h4>
-                                <h4>Date</h4>
-                            </div>
-                            <div className="carousel-video">
-                                <div className="video"></div>
-                                <h4>Title</h4>
-                                <h4>Date</h4>
-                            </div>
-                            <div className="carousel-video">
-                                <div className="video"></div>
-                                <h4>Title</h4>
-                                <h4>Date</h4>
-                            </div>
-                        </div>
-                        <div className="bible-study">
-                            <h2>Bible Study</h2>
-                            <div className="bs-catalog">
-                                <div className="bs-videos">
-                                    <div className="video"></div>
-                                    <h4>Title</h4>
-                                    <h4>Date</h4>
-                                </div>
-                                <div className="bs-videos">
-                                    <div className="video"></div>
-                                    <h4>Title</h4>
-                                    <h4>Date</h4>
-                                </div>
-                                <div className="bs-videos">
-                                    <div className="video"></div>
-                                    <h4>Title</h4>
-                                    <h4>Date</h4>
-                                </div>
-                                <div className="bs-videos">
-                                    <div className="video"></div>
-                                    <h4>Title</h4>
-                                    <h4>Date</h4>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div className="previous-month">
-                        <h2>November</h2>
+                        <h2>Decmeber 2021</h2>
                         <div className="carousel">
-                            <div className="carousel-video">
-                                <div className="video"></div>
-                                <h4>Title</h4>
-                                <h4>Date</h4>
+                        <div className="carousel-video">
+                                <iframe title="12/5/21" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPeaceMissionaryBaptistChurch%2Fvideos%2F1289352224871801%2F&show_text=false&width=267&t=0" width="304" height="440" className="video" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                                <h4>December 5, 2021</h4>
                             </div>
                             <div className="carousel-video">
-                                <div className="video"></div>
-                                <h4>Title</h4>
-                                <h4>Date</h4>
+                                <iframe title="12/12/21" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPeaceMissionaryBaptistChurch%2Fvideos%2F4186449218126185%2F&show_text=false&width=267&t=0" width="304" height="440" className="video" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                                <h4>December 12, 2021</h4>
                             </div>
                             <div className="carousel-video">
-                                <div className="video"></div>
-                                <h4>Title</h4>
-                                <h4>Date</h4>
-                            </div>
-                            <div className="carousel-video">
-                                <div className="video"></div>
-                                <h4>Title</h4>
-                                <h4>Date</h4>
-                            </div>
-                        </div>
-                        <div className="bible-study">
-                            <h2>Bible Study</h2>
-                            <div className="bs-catalog">
-                                <div className="bs-videos">
-                                    <div className="video"></div>
-                                    <h4>Title</h4>
-                                    <h4>Date</h4>
-                                </div>
-                                <div className="bs-videos">
-                                    <div className="video"></div>
-                                    <h4>Title</h4>
-                                    <h4>Date</h4>
-                                </div>
-                                <div className="bs-videos">
-                                    <div className="video"></div>
-                                    <h4>Title</h4>
-                                    <h4>Date</h4>
-                                </div>
-                                <div className="bs-videos">
-                                    <div className="video"></div>
-                                    <h4>Title</h4>
-                                    <h4>Date</h4>
-                                </div>
+                                <iframe title="12/19/21" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPeaceMissionaryBaptistChurch%2Fvideos%2F1139558456848214%2F&show_text=false&width=267&t=0" width="304" height="440" className="video" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                                <h4>December 19, 2021</h4>
                             </div>
                         </div>
                     </div>

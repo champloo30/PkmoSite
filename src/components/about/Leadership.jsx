@@ -8,24 +8,52 @@ export default function Leadership() {
             </div>
             <div className="bio">
                 <div className="bio-fp">
-                    <div className="img"></div>
+                    <div className="img">
+                        <img src="https://scontent-iad3-2.xx.fbcdn.net/v/t31.18172-8/23117098_1658539967518045_7273596387559886878_o.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=oF9YZ0F-qBkAX9VD7cS&_nc_ht=scontent-iad3-2.xx&oh=00_AT-bqCSjDQFAtlRlpMLWBFeE_lnK1A3kbayz1joeeWefJg&oe=61F2DB07" alt="Pastor Dalyn Dunn" />
+                    </div>
                     <div className="title">
                         <h2>Founding Pastor,</h2>
                         <h2>Dalyn L. Dunn</h2>
                     </div>
                     <div className="text">
-                        <p>Pastor Dalyn L Dunn, is a native of Columbus, Ohio until his recent relocating to southern Georgia November 2021. He is the eldest of 6 boys and embraces the healthy family values of a blended family dynamic.</p>
-                        
+                        <p>
+                            Pastor Dalyn L. Dunn, is a native of Columbus, Ohio until his recent relocating to southern Georgia November 2021. He is the eldest  of 6 boys and embraces the healthy family values of a blended family dynamic.
+                        </p>
+                        <p>
+                            Since accepting his call to ministry in 1991, he has served in a multiplicity of ways, both in the sacred and secular arenas. In almost 30 years of ministry, Pastor Dunn is nationally known as a Kingdom leader. He teaches and preaches Kingdom concepts that has challenged and changed many lives. His purpose is to empower people to discover, develop, and demonstrate their Kingdom identities in every aspect of life.
+                        </p>
+                        <p>
+                            Since 2004, he has been blessed to serve as the Senior Pastor of Peace Missionary Baptist Church (soon to be Peace Kingdom Ministries of Ohio). Now, as of October 2021, he leads a 2-point charge. The new Senior Pastor of Kingdom Builders Ministries in Jesup, Georgia and overseer of Peace Kingdom Ministries of Ohio.
+                        </p>
+                        <p>
+                            He is married to the beautiful Lady Dawn A. Dunn and has two incredible adult children Sarah Kae Evonne and Dalyn Joshua Lewis. He is also surrounded by three gregarious grandchildren Justen Rashaad Lewis, Jordyn Alise, and Parker Alexandria, with another grandson, Dalyn Kaleb Lewis, on the way.
+                        </p>
+                        <p>
+                            They are truly excited at this new season. To God be the glory!
+                        </p>
                     </div>
                 </div>
                 <div className="bio-cp">
-                    <div className="img"></div>
+                    <div className="img">
+                        <img src="https://scontent-iad3-2.xx.fbcdn.net/v/t1.6435-9/72084650_2714971375208227_4299750613962457088_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=vQ-AL3HLaoYAX8xuIZ6&_nc_ht=scontent-iad3-2.xx&oh=00_AT8adR2g3nChovfGIOe_k6bbSrUBLxS9-Pnc6Dfd30HsSA&oe=61F177A5" alt="Pastor David Dunn" />
+                    </div>
                     <div className="title">
                         <h2>Campus Pastor,</h2>
                         <h2>David L. Dunn</h2>
                     </div>
                     <div className="text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus ut faucibus pulvinar elementum integer enim neque. Elementum integer enim neque volutpat ac tincidunt. Duis convallis convallis tellus id interdum velit. Suscipit tellus mauris a diam maecenas sed enim ut. Etiam sit amet nisl purus in mollis nunc. Sapien et ligula ullamcorper malesuada proin. Tempor nec feugiat nisl pretium fusce. Interdum velit euismod in pellentesque. Accumsan sit amet nulla facilisi morbi tempus iaculis urna. Sed odio morbi quis commodo odio aenean sed adipiscing diam. Ullamcorper malesuada proin libero nunc.</p>
+                        <p>
+                            Pastor David L. Dunn was born October 14, 1976 in Columbus, Ohio to Vietnam veteran Harold (Skip) Lewis Dunn and Diana Dunn as the second oldest of six children. After serving in the United States Army, he preached his initial sermon in 2005 at Peace Missionary Baptist Church under the tutelage of Senior Pastor and eldest brother Dalyn L. Dunn.
+                        </p>
+                        <p>
+                            Pastor David served as the media director since joining the ministry. In his tenure he has served as a worship leader, Men's Ministry director, Christian Formation instructor, and Youth Ministry director. In addition, Pastor David is a member of the Phi Beta Sigma Fraternity Inc., has worked as the host of the show "Saturday Morning Favor”, and was the board operator of the nationally syndicated "James Fortune Show" at 1580 WVKO The Praise.
+                        </p>
+                        <p>
+                            Pastor David was ordained in 2015 and pastored for a short period of time before being called back to his home church to continue serving in ministry. As the ministry expanded, opportunity arose and Pastor David has been recently installed as the first Campus Pastor of the newly formed Peace Kingdom Ministries of Ohio.
+                        </p>
+                        <p>
+                            Pastor David is committed to the advancement of the kingdom, through passionate preaching, and personable leadership to the glory of Jesus Christ.
+                        </p>
                     </div>
                 </div>
             </div>

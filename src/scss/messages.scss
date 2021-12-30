@@ -67,7 +67,7 @@
     }
 
     .catalog{
-        height: 210vh;
+        height: 160vh;
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -98,55 +98,25 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                //justify-content: space-evenly;
                 flex-wrap: wrap;
-                //justify-content: center;
-                //overflow-x: auto;
+                //overflow: hidden;
 
                 .carousel-video{
                     margin-right: 1.5rem;
                     //margin-top: 10px;
+                    cursor: pointer;
+                    overflow-x: auto;
 
                     .video{
-                        height: 10rem;
+                        height: 27.5rem;
                         width: 17.5rem;
                         background-color: black;
                         color: white;
                         cursor: pointer;
+                        overflow: hidden;
+                        border: none;
                         //margin-bottom: 10px;
-                    }
-                }
-            }
-
-            .bible-study{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                //margin-top: 30px;
-        
-                h2{
-                    font-size: 2.5rem;
-                    font-weight: 300;
-                    margin-bottom: 1rem;
-                }
-        
-                .bs-catalog{
-                    //height: 200px;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: flex-start;
-                    cursor: pointer;
-            
-                    .bs-videos{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        margin-right: 1.5rem;
-
-                        .video{
-                            height: 10rem;
-                            width: 17.5rem;
-                            background-color: black;
-                        }
                     }
                 }
             }
@@ -179,47 +149,14 @@
                     margin-top: .625rem;
 
                     .video{
-                        height: 10rem;
+                        height: 27.5rem;
                         width: 17.5rem;
                         background-color: black;
                         color: white;
                         cursor: pointer;
+                        overflow: hidden;
+                        border: none;
                         //margin-bottom: 10px;
-                    }
-                }
-            }
-
-            .bible-study{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                margin-bottom: 3.25rem;
-        
-                h2{
-                    font-size: 2.5rem;
-                    font-weight: 300;
-                    margin-bottom: 1rem;
-                }
-        
-                .bs-catalog{
-                    //height: 200px;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: flex-start;
-                    cursor: pointer;
-                    margin-bottom: 2rem;
-            
-                    .bs-videos{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        margin-right: 1.5rem;
-
-                        .video{
-                            height: 10rem;
-                            width: 17.5rem;
-                            background-color: black;
-                        }
                     }
                 }
             }

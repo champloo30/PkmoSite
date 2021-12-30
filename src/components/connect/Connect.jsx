@@ -48,6 +48,10 @@ export default function Connect() {
         }
     }
 
+    function thankYou() {
+        alert('Thank you for your submission! We will reach out as soon as possible.')
+    }
+
     return (
         <>
             <div className="connect">
@@ -203,7 +207,7 @@ export default function Connect() {
                                 required
                             />
                         </div>
-                        <input className="button" type="submit" value="Submit" />
+                        <input onClick={thankYou} className="button" type="submit" value="Submit" />
                     </form>
                 </div>
             </div>
