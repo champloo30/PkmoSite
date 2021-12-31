@@ -1,7 +1,6 @@
 import "../../scss/home.scss"
 import dove from "../../img-icon/dove-png-41736.png"
 import GlobeLogo from "../../img-icon/PKMO-Globe-Logo.png"
-import { Link } from "react-router-dom"
 
 export default function Home() {
     return (
@@ -18,11 +17,12 @@ export default function Home() {
                 <div className="location-box">
                     <h2>Join us how ever you can!</h2>
                     <div className="container">
-                        <Link to="/location"><button className="button">In Person</button></Link>
-                        <button className="button">Online</button>
+                        <a href="/location"><button className="button">In Person</button></a>
+                        <a href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer"><button className="button">Online</button></a>
                     </div>
                 </div>
                 <h1>Welcome to the Kingdom</h1>
+                <div className="welcome-video"></div>
             </div>
             <div className="about" id="about">
                 <div className="left">

@@ -8,41 +8,51 @@
   z-index: 3;
   transition: all 1s ease;
 }
-.navbar .wrapper {
+.navbar .container {
   padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.navbar .left {
+@media (max-width: 480px) {
+  .navbar .container {
+    padding: 0 0.5rem;
+  }
+}
+.navbar .container .left {
   margin-top: 0.2rem;
 }
-.navbar .left .logo-sec {
+.navbar .container .left .logo-sec {
   height: 3.5rem;
   width: 3.5rem;
 }
-.navbar .center {
+.navbar .container .center {
   margin-bottom: 1rem;
   margin-left: -8.25rem;
 }
-.navbar .center .nav-links {
+@media (max-width: 480px) {
+  .navbar .container .center {
+    display: none;
+  }
+}
+.navbar .container .center .nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.navbar .center .nav-links .link {
+.navbar .container .center .nav-links .link {
   text-decoration: none;
   color: inherit;
   margin-right: 2.5rem;
   font-size: 1.75rem;
   font-weight: 300;
 }
-.navbar .right {
+.navbar .container .right {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
-.navbar .right .hamburger {
+.navbar .container .right .hamburger {
   width: 2rem;
   height: 1.5rem;
   display: flex;
@@ -50,26 +60,26 @@
   justify-content: space-between;
   cursor: pointer;
 }
-.navbar .right .hamburger span {
+.navbar .container .right .hamburger span {
   width: 100%;
   height: 2px;
   background-color: black;
   transform-origin: left;
   transition: all 1s ease;
 }
-.navbar.active {
+.navbar .container.active {
   background-color: #7C5296;
   color: white;
 }
-.navbar.active .hamburger span:first-child {
+.navbar .container.active .hamburger span:first-child {
   background-color: white;
   transform: rotate(45deg);
 }
-.navbar.active .hamburger span:nth-child(2) {
+.navbar .container.active .hamburger span:nth-child(2) {
   background-color: white;
   opacity: 0;
 }
-.navbar.active .hamburger span:last-child {
+.navbar .container.active .hamburger span:last-child {
   background-color: white;
   transform: rotate(-45deg);
 }

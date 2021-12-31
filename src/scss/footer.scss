@@ -22,6 +22,11 @@
             color: white;
             margin-right: .625rem;
             //text-decoration: none;
+
+            @include mobile {
+                font-size: 1.25rem;
+                text-align: center;
+            }
         }
     }
 

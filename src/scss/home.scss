@@ -11,6 +11,18 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @include mobile {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url("../img-icon/columbus_skyline.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -415px 0;
+        }
     
         .hero-text{
             display: flex;
@@ -18,35 +30,58 @@
             align-items: center;
             justify-content: center;
             color: white;
+
+            @include mobile {
+                width: 90%;
+            }
     
             h1{
                 font-size: 5rem;
                 font-family: $qFont;
                 margin-bottom: 3.125rem;
                 font-weight: 700;
+
+                @include mobile {
+                    font-size: 3.5rem;
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
             }
     
             h2{
                 font-size: 4rem;
                 font-weight: 300;
                 margin-bottom: 3.125rem;
+
+                @include mobile {
+                    font-size: 2.75rem;
+                    margin-bottom: 2rem;
+                    margin-top: 2rem;
+                }
             }
     
             h3{
                 font-size: 1.5rem;
                 font-weight: 200;
+
+                @include mobile {
+                    text-align: center;
+                }
             }
         }
     }
     
     .welcome{
-        height: 100vh;
+        height: 150vh;
         background-color: $mainColor;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
     
+        @include mobile {
+            height: 90vh;
+        }
     
         .location-box{
             width: 55%;
@@ -56,18 +91,34 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
+
+            @include mobile {
+                width: 90%;
+                height: 20rem;
+            }
     
             h2{
                 font-size: 3rem;
                 font-family: $qFont;
                 font-weight: 200;
                 color: $mainColor;
+
+                @include mobile {
+                    text-align: center;
+                }
             }
     
             .container{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    //justify-content: space-evenly;
+                }
     
                 .button{
                     width: 10rem;
@@ -84,6 +135,14 @@
                     &:hover{
                         border: 0.25rem solid $silverColor;
                     }
+
+                    @include mobile {
+                        margin: 1rem 0;
+
+                        &:hover{
+                            border: none;
+                        }
+                    }
                 }
             }
         }
@@ -92,6 +151,22 @@
             font-size: 3.75rem;
             font-weight: 400;
             color: white;
+
+            @include mobile {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+        }
+
+        .welcome-video{
+            width: 55rem;
+            height: 27.5rem;
+            background-color: black;
+
+            @include mobile {
+                width: 90%;
+                height: 15rem;
+            }
         }
     }
     
@@ -100,6 +175,13 @@
         background-color: white;
         display: flex;
         
+        @include mobile {
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
     
         .left{
             flex: 5;
@@ -110,6 +192,12 @@
             img{
                 margin-top: 6rem;
                 margin-right: 5rem;
+
+                @include mobile {
+                    height: 20rem;
+                    width: 18rem;
+                    margin: 1rem 1.5rem 0 0;
+                }
             }
         }
     
@@ -119,6 +207,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
+
+            @include mobile {
+                width: 90%;
+            }
     
             .top-text{
                 text-align: center;
@@ -127,6 +219,14 @@
                     font-weight: 200;
                     font-size: 28px;
                     margin-bottom: 10px;
+
+                    @include mobile {
+                        font-size: 1.5rem;
+                        
+                        &:first-child{
+                            margin-top: -5rem;
+                        }
+                    }
                 }
             }
             .bottom-text{
@@ -141,6 +241,11 @@
                     text-align: center;
                     color: $mainColor;
                     margin-top: -0.625rem;
+
+                    @include mobile {
+                        font-size: 2.25rem;
+                        margin-top: -2.5rem;
+                    }
                 }
             }
     
@@ -169,6 +274,13 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+
+        @include mobile {
+            height: 35vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     
         .container{
             display: flex;
@@ -177,18 +289,36 @@
             height: 55%;
             justify-content: space-evenly;
             margin-right: -2rem;
+
+            @include mobile {
+                width: 90%;
+                height: 70%;
+                margin-right: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
     
             h1{
                 font-size: 4.75rem;
                 font-family: $qFont;
                 color: $mainColor;
                 font-weight: 500;
+
+                @include mobile {
+                    font-size: 3.5rem;
+                }
             }
     
             .line{
                 width: 110%;
                 height: 0.35rem;
                 background-color: white;
+
+                @include mobile {
+                    width: 80%;
+                }
             }
     
             h3{
@@ -196,6 +326,10 @@
                 text-align: center;
                 font-weight: 200;
                 margin-bottom: 1.5rem;
+
+                @include mobile {
+                    width: 80%;
+                }
             }
     
             .button{
@@ -210,6 +344,10 @@
     
                 &:hover{
                     border: 0.25rem solid $silverColor;
+
+                    @include mobile {
+                        border: none;
+                    }
                 }
             }
         }
@@ -218,6 +356,10 @@
             height: 25rem;
             width: 25rem;
             margin-left: -3.25rem;
+
+            @include mobile {
+                display: none;
+            }
         }
     }
 }

@@ -10,81 +10,93 @@
     z-index: 3;
     transition: all 1s ease;
 
-    .wrapper{
+    .container{
         padding: 0 2rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
 
-    .left{
-        margin-top: .2rem;
-
-        .logo-sec{
-            height: 3.5rem;
-            width: 3.5rem;
+        @include mobile {
+            padding: 0 .5rem;
         }
-    }
 
-    .center{
-        margin-bottom: 1rem;
-        margin-left: -8.25rem;
+        .left{
+            margin-top: .2rem;
+    
+            .logo-sec{
+                height: 3.5rem;
+                width: 3.5rem;
+            }
+        }
+    
+        .center{
+            margin-bottom: 1rem;
+            margin-left: -8.25rem;
 
-        .nav-links{
+            @include mobile {
+                display: none;
+            }
+    
+            .nav-links{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                .link{
+                    text-decoration: none;
+                    color: inherit;
+                    margin-right: 2.5rem;
+                    font-size: 1.75rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    
+        .right{
             display: flex;
             align-items: center;
-            justify-content: center;
-
-            .link{
-                text-decoration: none;
-                color: inherit;
-                margin-right: 2.5rem;
-                font-size: 1.75rem;
-                font-weight: 300;
+            margin-bottom: 1rem;
+    
+            .hamburger{
+                width: 2rem;
+                height: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+    
+                span{
+                    width: 100%;
+                    height: 2px;
+                    background-color: black;
+                    transform-origin: left;
+                    transition: all 1s ease;
+                }
             }
         }
-    }
+    
+        &.active{
+            background-color: $mainColor;
+            color: white;
+    
+            .hamburger{
 
-    .right{
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
+                span{
 
-        .hamburger{
-            width: 2rem;
-            height: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            cursor: pointer;
+                    &:first-child{
+                        background-color: white;
+                        transform: rotate(45deg);
+                    }
 
-            span{
-                width: 100%;
-                height: 2px;
-                background-color: black;
-                transform-origin: left;
-                transition: all 1s ease;
-            }
-        }
-    }
+                    &:nth-child(2){
+                        background-color: white;
+                        opacity: 0;
+                    }
 
-    &.active{
-        background-color: $mainColor;
-        color: white;
-
-        .hamburger{
-            span{
-                &:first-child{
-                    background-color: white;
-                    transform: rotate(45deg);
-                }
-                &:nth-child(2){
-                    background-color: white;
-                    opacity: 0;
-                }
-                &:last-child{
-                    background-color: white;
-                    transform: rotate(-45deg);
+                    &:last-child{
+                        background-color: white;
+                        transform: rotate(-45deg);
+                    }
                 }
             }
         }

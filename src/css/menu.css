@@ -22,7 +22,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  list-style-type: none;
 }
 .menu .menu-items .menu-links .link-name {
   display: flex;
@@ -32,7 +31,7 @@
   color: white;
 }
 .menu .menu-items .menu-links .link-name .title {
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 .menu .menu-items .menu-links .link-name .title hr {
   border: 1px solid #d8d8d8;
@@ -40,18 +39,21 @@
   margin: 5px 0;
 }
 .menu .menu-items .menu-links .link-name .title h1 {
-  font-size: 30px;
+  font-size: 2rem;
   font-family: "Quattrocento", serif;
   font-weight: 500;
 }
-.menu .menu-items .menu-links .link-name .link {
+.menu .menu-items .menu-links .link-name .list2 {
+  list-style-type: none;
+}
+.menu .menu-items .menu-links .link-name .list2 .link {
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 5px;
   text-decoration: none;
   color: inherit;
 }
-.menu .menu-items .menu-links .link-name .link:hover {
+.menu .menu-items .menu-links .link-name .list2 .link:hover {
   text-decoration: underline;
 }
 .menu.active {

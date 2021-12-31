@@ -25,7 +25,6 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            list-style-type: none;
 
             .link-name{
                 display: flex;
@@ -35,7 +34,7 @@
                 color: white;
 
                 .title{
-                    margin: 20px 0;
+                    margin: 1.25rem 0;
                     hr{
                         border: 1px solid $silverColor;
                         width: 220px;
@@ -43,21 +42,25 @@
                     }
 
                     h1{
-                        font-size: 30px; 
+                        font-size: 2rem; 
                         font-family: $qFont;
                         font-weight: 500;
                     }
                 }
 
-                .link{
-                    font-size: 14px;
-                    font-weight: 300;
-                    margin-bottom: 5px;
-                    text-decoration: none;
-                    color: inherit;
+                .list2{
+                    list-style-type: none;
 
-                    &:hover{
-                        text-decoration: underline;
+                    .link{
+                        font-size: 14px;
+                        font-weight: 300;
+                        margin-bottom: 5px;
+                        text-decoration: none;
+                        color: inherit;
+    
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
