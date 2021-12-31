@@ -55,7 +55,7 @@
   text-decoration: underline;
 }
 .messages .catalog {
-  height: 160vh;
+  height: 180vh;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -68,7 +68,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-top: 4.5rem;
+  margin-top: -1.5rem;
   margin-left: 2rem;
 }
 .messages .catalog .current-month h2 {
@@ -95,6 +95,13 @@
   cursor: pointer;
   overflow: hidden;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.messages .catalog .current-month .carousel .carousel-video .video h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 .messages .catalog .previous-month {
   display: flex;

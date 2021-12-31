@@ -1,5 +1,5 @@
 .connect {
-  height: 180vh;
+  height: 185vh;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 80%;
   margin-top: -1rem;
 }
 .connect .p-text p {
@@ -33,6 +33,7 @@
   height: 46rem;
   width: 60%;
   background-color: #d8d8d8;
+  box-shadow: 0 5px 8px black;
 }
 .connect .formbox .form {
   display: flex;
