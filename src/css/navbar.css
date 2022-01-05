@@ -67,19 +67,19 @@
   transform-origin: left;
   transition: all 1s ease;
 }
-.navbar .container.active {
+.navbar.on {
   background-color: #7C5296;
   color: white;
 }
-.navbar .container.active .hamburger span:first-child {
+.navbar.on .hamburger span:first-child {
   background-color: white;
   transform: rotate(45deg);
 }
-.navbar .container.active .hamburger span:nth-child(2) {
+.navbar.on .hamburger span:nth-child(2) {
   background-color: white;
   opacity: 0;
 }
-.navbar .container.active .hamburger span:last-child {
+.navbar.on .hamburger span:last-child {
   background-color: white;
   transform: rotate(-45deg);
 }

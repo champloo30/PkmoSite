@@ -20,6 +20,10 @@
         //margin-top: 100px;
         margin-bottom: 20px;
 
+        @include mobile {
+            margin-top: -210px;
+        }
+
         .menu-links{
             display: flex;
             flex-direction: column;

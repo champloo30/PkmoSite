@@ -85,7 +85,7 @@
     
         .location-box{
             width: 55%;
-            height: 35%;
+            height: 25%;
             background-color: $silverColor;
             display: flex;
             flex-direction: column;
@@ -172,8 +172,10 @@
     
     .about{
         height: 100vh;
+        width: 90%;
         background-color: white;
         display: flex;
+        margin: auto;
         
         @include mobile {
             height: 95vh;

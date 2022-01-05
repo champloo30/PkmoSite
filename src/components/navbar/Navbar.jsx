@@ -4,7 +4,7 @@ import NavLogo from "../../img-icon/PKMO-Logo-Nav.png"
 export default function Navbar({ menuOpen, setMenuOpen }) {
 
     return (
-        <div className={"navbar " + (menuOpen && "active")}>
+        <div className={"navbar " + (menuOpen && "on")}>
             <div className="container">
                 <div className="left">
                     <a className="logo-sec" href="/"><img src={NavLogo} alt="Peace Kingdom Ministries of Ohio Logo" /></a>

@@ -75,28 +75,30 @@
             }
         }
     
-        &.active{
-            background-color: $mainColor;
-            color: white;
-    
-            .hamburger{
 
-                span{
+    }
 
-                    &:first-child{
-                        background-color: white;
-                        transform: rotate(45deg);
-                    }
+    &.on{
+        background-color: $mainColor;
+        color: white;
 
-                    &:nth-child(2){
-                        background-color: white;
-                        opacity: 0;
-                    }
+        .hamburger{
 
-                    &:last-child{
-                        background-color: white;
-                        transform: rotate(-45deg);
-                    }
+            span{
+
+                &:first-child{
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2){
+                    background-color: white;
+                    opacity: 0;
+                }
+
+                &:last-child{
+                    background-color: white;
+                    transform: rotate(-45deg);
                 }
             }
         }

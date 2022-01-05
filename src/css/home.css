@@ -82,7 +82,7 @@
 }
 .home .welcome .location-box {
   width: 55%;
-  height: 35%;
+  height: 25%;
   background-color: #d8d8d8;
   display: flex;
   flex-direction: column;
@@ -165,8 +165,10 @@
 }
 .home .about {
   height: 100vh;
+  width: 90%;
   background-color: white;
   display: flex;
+  margin: auto;
 }
 @media (max-width: 480px) {
   .home .about {
