@@ -7,10 +7,29 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 480px) {
+  .about-hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img-icon/james-coleman-cevIeBV1A3I-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -175px 0;
+  }
+}
 .about-hero h1 {
   font-size: 5rem;
   font-family: "Quattrocento", serif;
   color: white;
+}
+@media (max-width: 480px) {
+  .about-hero h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
 }
 
 .wwb {
@@ -20,6 +39,11 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: #d8d8d8;
+}
+@media (max-width: 480px) {
+  .wwb {
+    height: 115vh;
+  }
 }
 .wwb h2 {
   font-size: 3.5rem;
@@ -40,6 +64,13 @@
   width: 80%;
   margin: 1rem 0;
 }
+@media (max-width: 480px) {
+  .wwb .container p {
+    width: 90%;
+    font-size: 1.25rem;
+    margin-top: -0.5rem;
+  }
+}
 
 .statements {
   height: 110vh;
@@ -49,10 +80,27 @@
   justify-content: space-evenly;
   margin: 2rem 6.25rem;
 }
+@media (max-width: 480px) {
+  .statements {
+    height: 125vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
 .statements h1 {
   font-size: 3.75rem;
   font-family: "Quattrocento", serif;
   font-weight: 500;
+}
+@media (max-width: 480px) {
+  .statements h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 .statements span {
   color: #7C5296;
@@ -64,6 +112,11 @@
   font-size: 3rem;
   font-weight: 300;
   color: #7C5296;
+}
+@media (max-width: 480px) {
+  .statements h2 {
+    font-size: 2.5rem;
+  }
 }
 .statements h3 {
   font-size: 1.25rem;
@@ -82,6 +135,11 @@
 .leadership h2 {
   font-size: 2rem;
   font-weight: 300;
+}
+@media (max-width: 480px) {
+  .leadership h2 {
+    text-align: center;
+  }
 }
 .leadership .button {
   height: 3.75rem;
@@ -109,6 +167,11 @@
 .about-location h2 {
   font-size: 2rem;
   font-weight: 300;
+}
+@media (max-width: 480px) {
+  .about-location h2 {
+    text-align: center;
+  }
 }
 .about-location .button {
   height: 3.75rem;
