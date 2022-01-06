@@ -1,5 +1,4 @@
 import '../../scss/about.scss'
-import { Link } from 'react-router-dom'
 
 export default function About() {
     return (
@@ -8,20 +7,40 @@ export default function About() {
                 <h1>About PKMO</h1>
             </div>
             <div className="wwb" id="wwb">
-                <h2>What We Believe</h2>
+                <h2>Who We Are</h2>
                 <div className="container">
-                    <div className="box">
-                        <h3>The Father</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta. Elit duis tristique sollicitudin nibh sit amet commodo nulla.</p>
-                    </div>
-                    <div className="box">
-                        <h3>The Son</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta. Elit duis tristique sollicitudin nibh sit amet commodo nulla.</p>
-                    </div>
-                    <div className="box">
-                        <h3>The Holy Spirit</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta. Elit duis tristique sollicitudin nibh sit amet commodo nulla.</p>
-                    </div>
+                    <p>
+                        Although you may see Baptist in our name we
+                        are not a usual Baptist church. We have an
+                        eclectic style of worship incorporating the rich
+                        aspects of traditional, contemporary, and
+                        charismatic experiences.
+                    </p>
+                    <p>
+                        Our ministry has a holistic approach to the
+                        flow of the Holy Spirit. We are open to the
+                        totality of the Trinity and believe in the
+                        supreme sufficiency of the Word of God. We
+                        embrace the foundational yet revolutionary
+                        tenets of our faith looking unto Jesus Christ
+                        our Lord as the architect, fulfillment, and
+                        prefect of the same.
+                    </p>
+                    <p>
+                        We are far from perfect but seek to progress
+                        in Kingdom dynamics through our worship,
+                        work, and witness. We openly confess we are
+                        real people, with real issues, that seek a real
+                        God who is able to supply real life solutions!
+                        With this in mind we promote an atmosphere
+                        of expectation and anticipation of blessings,
+                        empowerment and encouragement!
+                    </p>
+                    <p>
+                        If you are looking for a place to connect, grow,
+                        and become, your search is over. Come and
+                        join us as we bask in the glory our King!
+                    </p>
                 </div>
             </div>
             <div className="statements">
@@ -34,11 +53,11 @@ export default function About() {
             </div>
             <div className="leadership">
                 <h2>Get to know our Kingdom Leaders</h2>
-                <Link to="/leadership"><button className="button">Here</button></Link>
+                <a href="/leadership"><button className="button">Here</button></a>
             </div>
             <div className="about-location">
                 <h2>Our Location & Directions</h2>
-                <Link to="/location"><button className="button">Here</button></Link>
+                <a href="/location"><button className="button">Here</button></a>
             </div>
         </>
     )

@@ -84,8 +84,8 @@
 }
 .messages .catalog .current-month .carousel .carousel-video {
   margin-right: 1.5rem;
+  margin-top: 0.625rem;
   cursor: pointer;
-  overflow-x: auto;
 }
 .messages .catalog .current-month .carousel .carousel-video .video {
   height: 27.5rem;

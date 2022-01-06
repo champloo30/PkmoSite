@@ -19,6 +19,10 @@ export default function Messages() {
                         <h2>January 2022</h2>
                         <div className="carousel">
                             <div className="carousel-video">
+                                <iframe title="1/2/22" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPeaceMissionaryBaptistChurch%2Fvideos%2F4682791145149503%2F&show_text=false&width=267&t=0" width="304" height="440" className="video" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                                <h4>January 2, 2022</h4>
+                            </div>
+                            <div className="carousel-video">
                                 <div className="video">
                                     <h3>No Content Available</h3>
                                 </div>

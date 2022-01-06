@@ -14,7 +14,7 @@
 }
 
 .wwb {
-  height: 125vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,9 +22,10 @@
   background-color: #d8d8d8;
 }
 .wwb h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 300;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
+  color: #7C5296;
 }
 .wwb .container {
   display: flex;
@@ -32,29 +33,12 @@
   align-items: center;
   justify-content: center;
 }
-.wwb .container .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 20rem;
-  width: 32rem;
-  border-radius: 10px;
-  background-color: #7C5296;
-  margin: 10px 10px;
-  color: white;
-}
-.wwb .container .box h3 {
-  font-size: 2.75rem;
-  font-family: "Quattrocento", serif;
-  font-weight: 500;
-  margin-bottom: -1.5rem;
-}
-.wwb .container .box p {
-  font-size: 1.25rem;
-  text-align: center;
-  margin: 0 1.5rem;
+.wwb .container p {
+  color: black;
+  font-size: 1.5rem;
   font-weight: 300;
+  width: 80%;
+  margin: 1rem 0;
 }
 
 .statements {

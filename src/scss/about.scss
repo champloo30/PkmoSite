@@ -17,7 +17,7 @@
 }
 
 .wwb{
-    height: 125vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,10 +25,11 @@
     background-color: $silverColor;
 
     h2{
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 300;
-        margin-top: 3rem;
+        margin-top: .5rem;
         //margin-bottom: -.5rem;
+        color: $mainColor;
     }
 
     .container{
@@ -37,31 +38,12 @@
         align-items: center;
         justify-content: center;
 
-        .box{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            height: 20rem;
-            width: 32rem;
-            border-radius: 10px;
-            background-color: $mainColor;
-            margin: 10px 10px;
-            color: white;
-
-            h3{
-                font-size: 2.75rem;
-                font-family: $qFont;
-                font-weight: 500;
-                margin-bottom: -1.5rem;
-            }
-
-            p{
-                font-size: 1.25rem;
-                text-align: center;
-                margin: 0 1.5rem;
-                font-weight: 300;
-            }
+        p{
+            color: black;
+            font-size: 1.5rem;
+            font-weight: 300;
+            width: 80%;
+            margin: 1rem 0;
         }
     }
 }
