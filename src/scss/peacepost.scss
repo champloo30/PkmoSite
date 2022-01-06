@@ -17,9 +17,9 @@
         font-family: $qFont;
         font-size: 5rem;
         font-weight: 500;
-        //margin-top: 7rem;
+        //margin-top: -3rem;
         color: black;
-        margin-top: 2rem;
+        margin-top: -1rem;
     }
 
     .posts{
@@ -27,6 +27,7 @@
         flex-direction: row;
         //align-items: center;
         justify-content: space-evenly;
+        margin-top: 2rem;
 
         .default-post{
             height: 15rem;

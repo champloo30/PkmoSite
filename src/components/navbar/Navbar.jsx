@@ -9,14 +9,6 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
                 <div className="left">
                     <a className="logo-sec" href="/"><img src={NavLogo} alt="Peace Kingdom Ministries of Ohio Logo" /></a>
                 </div>
-                <div className="center">
-                    <div className="nav-links">
-                        <a className="link" href="/about">About</a>
-                        <a className="link" href="/messages">Messages</a>
-                        <a className="link" href="/peacepost">Peace Post</a>
-                        <a className="link" href="/connect">Connect</a>
-                    </div>
-                </div>
                 <div className="right">
                     <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                         <span className="line1"></span>
