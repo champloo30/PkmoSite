@@ -10,7 +10,7 @@
     justify-content: center;
 
     @include mobile {
-        height: 80vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -42,7 +42,15 @@
     background-color: $silverColor;
 
     @include mobile {
-        height: 115vh;
+        height: 97.5vh;
+    }
+
+    @include md-mobile {
+        height: 105vh;
+    }
+
+    @include sm-mobile {
+        height: 120vh;
     }
 
     h2{
@@ -51,6 +59,10 @@
         margin-top: .5rem;
         //margin-bottom: -.5rem;
         color: $mainColor;
+
+        @include sm-mobile {
+            font-size: 3rem;
+        }
     }
 
     .container{
@@ -69,7 +81,15 @@
             @include mobile {
                 width: 90%;
                 font-size: 1.25rem;
-                margin-top: -.5rem;
+                margin: auto;
+            }
+
+            @include md-mobile {
+                margin: auto;
+            }
+
+            @include sm-mobile {
+                margin: auto;
             }
         }
     }
@@ -84,13 +104,21 @@
     margin: 2rem 6.25rem;
 
     @include mobile {
-        height: 125vh;
+        height: 115vh;
         margin: auto;
         width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+    }
+
+    @include md-mobile {
+        height: 125vh;
+    }
+
+    @include sm-mobile {
+        height: 135vh;
     }
 
     h1{
