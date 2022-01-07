@@ -1,92 +1,150 @@
 @import "../global.scss";
 
-.loc-head{
-    height: 130vh;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+.location {
 
-    h1{
-        font-size: 5rem;
-        font-weight: 500;
-        font-family: $qFont;
-        color: $mainColor;
-        //margin-top: 20px;
-    }
-
-    .googlemaps{
-        border: 0;
-    }
-}
-
-.direction{
-    height: 60vh;
-    background-color: $silverColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    .loc-text{
+    .loc-head{
+        height: 130vh;
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
-        //justify-content: center;
-
-        h2{
-            font-size: 3rem;
-            font-weight: 400;
-            color: $mainColor;
+        justify-content: space-evenly;
+    
+        @include mobile {
+            height: 80vh;
+            margin-top: 3rem;
         }
-
-        h3{
-            font-size: 1.5rem;
-            font-weight: 300;
-
-            span{
-                color: $mainColor;
+    
+        h1{
+            font-size: 5rem;
+            font-weight: 500;
+            font-family: $qFont;
+            color: $mainColor;
+            //margin-top: 20px;
+    
+            @include mobile {
+                font-size: 3.5rem;
+                text-align: center;
+            }
+        }
+    
+        .googlemaps{
+            border: 0;
+            height: 600px;
+            width: 800px;
+    
+            @include mobile {
+                height: 400px;
+                width: 90%;
             }
         }
     }
-
-    .container{
+    
+    .direction{
+        height: 60vh;
+        background-color: $silverColor;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        //justify-content: space-evenly;
-
-        .item{
-            height: 10rem;
-            width: 25rem;
-            background-color: white;
-            margin: 0 3.25rem;
+        justify-content: space-evenly;
+    
+        @include mobile {
+            height: 80vh;
+        }
+    
+        .loc-text{
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-evenly;
-
-            h3{
-                font-size: 1.75rem;
+            //justify-content: center;
+    
+            h2{
+                font-size: 3rem;
                 font-weight: 400;
+                color: $mainColor;
 
+                @include sm-mobile {
+                    margin-bottom: 1rem;
+                }
+            }
+    
+            h3{
+                font-size: 1.5rem;
+                font-weight: 300;
+    
+                @include mobile {
+                    text-align: center;
+                }
+    
+                @include sm-mobile {
+                    width: 90%;
+                }
+    
                 span{
                     color: $mainColor;
                 }
             }
-
-            .button{
-                height: 3.75rem;
-                width: 10rem;
-                background-color: $mainColor;
-                color: white;
-                font-size: 2rem;
-                font-weight: 300;
-                border: .25rem solid $mainColor;
-                cursor: pointer;
-
-                &:hover{
-                    border: .25rem solid white;
+        }
+    
+        .container{
+            display: flex;
+            align-items: center;
+            //justify-content: space-evenly;
+    
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+    
+            .item{
+                height: 10rem;
+                width: 25rem;
+                background-color: white;
+                margin: 0 3.25rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+    
+                @include mobile {
+                    height: 12rem;
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin: 1rem 0;
+                }
+    
+                h3{
+                    font-size: 1.75rem;
+                    font-weight: 400;
+    
+                    @include mobile {
+                        text-align: center;
+                        width: 90%;
+                    }
+    
+                    span{
+                        color: $mainColor;
+                    }
+                }
+    
+                .button{
+                    height: 3.75rem;
+                    width: 10rem;
+                    background-color: $mainColor;
+                    color: white;
+                    font-size: 2rem;
+                    font-weight: 300;
+                    border: .25rem solid $mainColor;
+                    cursor: pointer;
+    
+                    &:hover{
+                        border: .25rem solid white;
+                    }
                 }
             }
         }

@@ -15,6 +15,10 @@
         font-size: 5rem;
         font-weight: 500;
         font-family: $qFont;
+
+        @include mobile {
+            margin-bottom: 1.5rem;
+        }
     }
 
     .message-questions{
@@ -27,10 +31,20 @@
         justify-content: space-evenly;
         margin-bottom: 4.5rem;
 
+        @include mobile {
+            height: 30vh;
+            margin-bottom: 2rem;
+        }
+
         h3{
             font-size: 1.75rem;
             font-weight: 300;
             color: white;
+
+            @include mobile {
+                text-align: center;
+                width: 90%;
+            }
 
             span{
                 color: $mainColor;
@@ -49,15 +63,32 @@
         justify-content: space-evenly;
         margin-bottom: 2rem;
 
+        @include mobile {
+            height: 30vh;
+            width: 100%;
+        }
+
         h2{
             font-size: 4rem;
             font-weight: 300;
+
+            @include mobile {
+                text-align: center;
+                font-size: 3.5rem;
+                width: 90%;
+            }
         }
 
         h3{
             font-size: 2rem;
             font-weight: 200;
             margin-top: -.625rem;
+
+            @include mobile {
+                text-align: center;
+                font-size: 1.5rem;
+                width: 90%;
+            }
 
             span{
                 color: $silverColor;
@@ -77,6 +108,9 @@
         overflow: hidden;
         //background-color: $silverColor;
 
+        @include mobile {
+            height: 150vh;
+        }
 
         .current-month{
             //height: 160vh;
@@ -84,29 +118,47 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-evenly;
-            margin-top: -1.5rem;
+            //margin-top: -1.5rem;
             margin-left: 2rem;
             //margin-bottom: 3rem;
+
+            @include mobile {
+                margin-bottom: 1rem;
+                margin-left: 0;
+                overflow-x: scroll;
+            }
 
             h2{
                 font-size: 4rem;
                 font-weight: 300;
+
+                @include mobile {
+                    font-size: 3rem;
+                    //margin-bottom: 3rem;
+                    //margin-top: -3rem;
+                }
             }
 
             .carousel{
-                height: 30rem;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                //justify-content: space-evenly;
-                flex-wrap: wrap;
-                //overflow: hidden;
+                //height: 30rem;
+                display: grid;
+                grid-template-columns: repeat(2, max-content);
 
-                .carousel-video{
+                @include mobile {
+                    margin-bottom: 1rem;
+                }
+
+                .video-container{
                     margin-right: 1.5rem;
                     margin-top: .625rem;
                     cursor: pointer;
                     //overflow-x: auto;
+
+                    @include mobile {
+                        overflow-y: hidden;
+                        white-space: nowrap;
+                        -webkit-overflow-scrolling: touch;
+                    }
 
                     .video{
                         height: 27.5rem;
@@ -114,17 +166,39 @@
                         background-color: black;
                         color: white;
                         cursor: pointer;
-                        overflow: hidden;
+                        //overflow: hidden;
                         border: none;
                         //margin-bottom: 10px;
+
+                        @include mobile {
+                            height: 32rem;
+                        }
+                    }
+
+                    .nca{
+                        height: 27.5rem;
+                        width: 17.5rem;
+                        background-color: black;
                         display: flex;
+                        flex-direction: column;
                         align-items: center;
                         justify-content: center;
+
+                        @include mobile {
+                            height: 32rem;
+                        }
 
                         h3{
                             font-size: 1.5rem;
                             font-weight: 300;
+                            color: white;
                         }
+                    }
+
+                    h4{
+                        font-size: 1.25rem;
+                        font-weight: 200;
+                        text-align: center;
                     }
                 }
             }
@@ -138,23 +212,32 @@
             justify-content: space-evenly;
             margin-left: 2rem;
 
+            @include mobile {
+                margin-left: 0;
+                overflow-x: scroll;
+            }
+
             h2{
                 font-size: 4rem;
                 font-weight: 300;
+
+                @include mobile {
+                    font-size: 3rem;
+                }
             }
 
             .carousel{
                 //height: 475px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                flex-wrap: wrap;
-                //justify-content: center;
-                //overflow-x: auto;
+                display: grid;
+                grid-template-columns: repeat(3, max-content);
 
-                .carousel-video{
+                .video-container{
                     margin-right: 1.5rem;
                     margin-top: .625rem;
+
+                    @include mobile {
+                        overflow-y: hidden;
+                    }
 
                     .video{
                         height: 27.5rem;
@@ -165,15 +248,19 @@
                         overflow: hidden;
                         border: none;
                         //margin-bottom: 10px;
+
+                        @include mobile {
+                            height: 32rem;
+                        }
+                    }
+
+                    h4{
+                        font-size: 1.25rem;
+                        font-weight: 200;
+                        text-align: center;
                     }
                 }
             }
-        }
-
-        h4{
-            font-size: 1.25rem;
-            font-weight: 200;
-            text-align: center;
         }
     }
 
@@ -185,6 +272,11 @@
         //margin-bottom: 2rem;
         text-align: center;
         background-color: white;
+
+        @include mobile {
+            margin-top: 0;
+            width: 90%;
+        }
 
         span{
             color: $mainColor;
