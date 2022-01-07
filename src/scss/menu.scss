@@ -15,6 +15,11 @@
     justify-content: center;
     transition: all 1s ease;
 
+    @include sm-mobile {
+        width: 250px;
+        right: -250px;
+    }
+
     .menu-items{
         width: 100%;
         //margin-top: 100px;
@@ -43,6 +48,10 @@
                         border: 1px solid $silverColor;
                         width: 220px;
                         margin: 5px 0;
+
+                        @include sm-mobile {
+                            width: 170px;
+                        }
                     }
 
                     h1{
@@ -61,6 +70,10 @@
                         margin-bottom: 5px;
                         text-decoration: none;
                         color: inherit;
+
+                        @include sm-mobile {
+                            margin-left: -1rem;
+                        }
     
                         &:hover{
                             text-decoration: underline;

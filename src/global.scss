@@ -3,9 +3,22 @@ $silverColor: #d8d8d8;
 $qFont: 'Quattrocento', serif;
 $nsdFont: 'Noto Sans Display', sans-serif;
 
+$sm-mobile-width: 320px;
+$md-mobile-width: 375px;
 $mobile-width: 425px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
+$laptop-width: 1024px;
+
+@mixin sm-mobile {
+    @media (max-width: #{$sm-mobile-width}) {
+        @content;
+    }
+}
+
+@mixin md-mobile {
+    @media (min-width: #{$sm-mobile-width + 1}) and (max-width: #{$md-mobile-width}) {
+        @content;
+    }
+}
 
 @mixin mobile {
     @media (max-width: #{$mobile-width}) {
@@ -13,8 +26,8 @@ $desktop-width: 1024px;
     }
 }
 
-@mixin tablet {
-    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+@mixin desktop {
+    @media (min-width: #{$laptop-width + 1}) {
         @content;
     }
 }

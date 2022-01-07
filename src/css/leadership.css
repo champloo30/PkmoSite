@@ -1,110 +1,18 @@
-.l-hero {
-  height: 40vh;
-  width: 100%;
-  background-color: #7C5296;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.l-hero h1 {
-  font-size: 5rem;
-  font-weight: 500;
-  font-family: "Quattrocento", serif;
-  color: white;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 39 | /     @include md-mobile {
+ * 40 | |         height: 420vh;
+ * 41 | \     }
+ *    '
+ *   src/scss/leadership.scss 39:5  root stylesheet */
 
-.bio {
-  height: 250vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 39 \2502  \250c      @include md-mobile {\a 40 \2502  \2502          height: 420vh;\a 41 \2502  \2514      }\a    \2575 \a   src/scss/leadership.scss 39:5  root stylesheet";
 }
-.bio .bio-fp {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-right: -6.25rem;
-}
-.bio .bio-fp img {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 50%;
-  margin-bottom: 1.5rem;
-  box-shadow: 2px 4px 10px black;
-}
-.bio .bio-fp h2 {
-  font-size: 2.25rem;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 0.625rem;
-}
-.bio .bio-fp .text {
-  height: 70rem;
-  width: 50%;
-  background-color: #7C5296;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-  margin-top: 0.625rem;
-}
-.bio .bio-fp .text :first-child {
-  text-indent: 10%;
-}
-.bio .bio-fp .text p {
-  color: white;
-  font-size: 1.25rem;
-  margin: 0.5rem 2rem;
-  font-weight: 300;
-}
-.bio .bio-cp {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-left: -6.25rem;
-}
-.bio .bio-cp img {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 50%;
-  background-color: #d8d8d8;
-  margin-bottom: 1.5rem;
-  box-shadow: 2px 4px 10px black;
-}
-.bio .bio-cp h2 {
-  font-size: 2.25rem;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 0.625rem;
-}
-.bio .bio-cp .text {
-  height: 70rem;
-  width: 50%;
-  background-color: #7C5296;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: justify;
-  margin-top: 0.625rem;
-}
-.bio .bio-cp .text :first-child {
-  text-indent: 10%;
-  margin-top: 1rem;
-}
-.bio .bio-cp .text p {
-  color: white;
-  font-size: 1.25rem;
-  margin: 0.5rem 2rem;
-  font-weight: 300;
-}
-
-/*# sourceMappingURL=leadership.css.map */
