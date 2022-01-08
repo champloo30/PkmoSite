@@ -9,10 +9,36 @@
     justify-content: space-evenly;
     margin-top: 1rem;
 
+    @include mobile {
+        height: 190vh;
+        margin-top: 4rem;
+    }
+
+    @include md-mobile {
+        height: 192.5vh;
+    }
+
+    @include sm-mobile {
+        height: 195vh;
+    }
+
     h1{
         font-size: 5rem;
         font-weight: 500;
         font-family: $qFont;
+
+        @include mobile {
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        @include md-mobile {
+            font-size: 3.5rem;
+        }
+
+        @include sm-mobile {
+            font-size: 3rem;
+        }
     }
 
     .p-text{
@@ -22,15 +48,27 @@
         width: 80%;
         margin-top: -1rem;
 
+        @include mobile {
+            width: 90%;
+        }
+
         p{
             font-size: 1.5rem;
             font-weight: 300;
             text-align: center;
             margin: .25rem 0;
+
+            @include sm-mobile {
+                font-size: 1.3rem;
+            }
             
             span{
                 color: $mainColor;
                 font-size: 2rem;
+
+                @include sm-mobile {
+                    font-size: 1.7rem;
+                }
             }
         }
     }
@@ -41,6 +79,19 @@
         background-color: $silverColor;
         //margin: -1rem 0;
         box-shadow: 0 5px 8px black;
+
+        @include mobile {
+            height: 72.5rem;
+            width: 90%;
+        }
+
+        @include md-mobile {
+            height: 74rem;
+        }
+
+        @include sm-mobile {
+            height: 76rem;
+        }
 
         .form{
             display: flex;
@@ -55,14 +106,38 @@
                 font-weight: 500;
                 margin-bottom: 1.5rem;
                 color: $mainColor;
+
+                @include mobile {
+                    font-size: 2.5rem;
+                    width: 90%;
+                    text-align: center;
+                }
+
+                @include md-mobile {
+                    font-size: 2.25rem;
+                }
+
+                @include sm-mobile {
+                    font-size: 2rem;
+                }
             }
 
             .form-name{
                 display: flex;
                 flex-direction: row;
 
+                @include mobile {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
                 .fname{
                     margin-right: 2rem;
+
+                    @include mobile {
+                        margin-right: 0;
+                        margin-bottom: 1rem;
+                    }
 
                     label{
                         font-size: 1.5rem;
@@ -79,6 +154,18 @@
                         font-family: $nsdFont;
                         font-weight: 300;
 
+                        @include mobile {
+                            width: 20rem;
+                        }
+
+                        @include md-mobile {
+                            width: 18rem;
+                        }
+
+                        @include sm-mobile {
+                            width: 16rem;
+                        }
+
                         ::placeholder{
                             color: $silverColor;
                         }
@@ -87,6 +174,10 @@
 
                 .lname{
                     margin-left: 2rem;
+
+                    @include mobile {
+                        margin-left: 0;
+                    }
 
                     label{
                         font-size: 1.5rem;
@@ -102,6 +193,18 @@
                         font-size: 1rem;
                         font-family: $nsdFont;
                         font-weight: 300;
+
+                        @include mobile {
+                            width: 20rem;
+                        }
+
+                        @include md-mobile {
+                            width: 18rem;
+                        }
+
+                        @include sm-mobile {
+                            width: 16rem;
+                        }
 
                         ::placeholder{
                             color: $silverColor;
@@ -129,11 +232,19 @@
                     align-items: center;
                     justify-content: space-evenly;
 
+                    @include mobile {
+                        flex-direction: column;
+                    }
+
                     .phone{
                         margin-right: 2rem;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
+
+                        @include mobile {
+                            margin-right: 0;
+                        }
     
                         .label{
                             display: flex;
@@ -160,6 +271,18 @@
                             font-size: 1rem;
                             font-family: $nsdFont;
                             font-weight: 300;
+
+                            @include mobile {
+                                width: 20rem;
+                            }
+
+                            @include md-mobile {
+                                width: 18rem;
+                            }
+
+                            @include sm-mobile {
+                                width: 16rem;
+                            }
     
                             ::placeholder{
                                 color: $silverColor;
@@ -172,6 +295,10 @@
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
+
+                        @include mobile {
+                            margin-left: 0;
+                        }
     
                         .label{
                             display: flex;
@@ -198,6 +325,18 @@
                             font-size: 1rem;
                             font-family: $nsdFont;
                             font-weight: 300;
+
+                            @include mobile {
+                                width: 20rem;
+                            }
+
+                            @include md-mobile {
+                                width: 18rem;
+                            }
+
+                            @include sm-mobile {
+                                width: 16rem;
+                            }
     
                             ::placeholder{
                                 color: $silverColor;
@@ -213,17 +352,45 @@
                 align-items: center;
                 margin-bottom: 1.25rem;
 
+                @include mobile {
+                    align-items: flex-start;
+                }
+
                 label{
                     font-size: 1.5rem;
                     font-family: $qFont;
                     font-weight: 500;
                     //margin-bottom: -1rem;
+
+                    @include mobile {
+                        width: 90%;
+                        text-align: center;
+                    }
+
+                    @include sm-mobile {
+                        &:first-child {
+                            margin: auto;
+                        }
+                    }
                 }
 
                 .request-row{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+
+                    @include mobile {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    @include md-mobile {
+                        margin-left: 1rem;
+                    }
+
+                    @include sm-mobile {
+                        margin-left: 1rem;
+                    }
 
                     div{
                         //width: 8rem;
@@ -255,6 +422,11 @@
                     font-size: 1.5rem;
                     font-weight: 500;
                     font-family: $qFont;
+
+                    @include mobile {
+                        width: 90%;
+                        text-align: center;
+                    }
                 }
 
                 #text{
@@ -263,6 +435,19 @@
                     font-size: 1rem;
                     font-family: $nsdFont;
                     font-weight: 300;
+
+                    @include mobile {
+                        height: 10rem;
+                        width: 20rem;
+                    }
+
+                    @include md-mobile {
+                        width: 18rem;
+                    }
+
+                    @include sm-mobile {
+                        width: 16rem;
+                    }
 
                     ::placeholder{
                         color: $silverColor;
