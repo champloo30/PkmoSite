@@ -31,7 +31,7 @@ export default function Messages() {
                         </div>
                     </div>
                     <div className="previous-month">
-                        <h2>Decmeber 2021</h2>
+                        <h2>December 2021</h2>
                         <div className="carousel">
                             <div className="video-container">
                                 <iframe title="12/5/21" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPeaceMissionaryBaptistChurch%2Fvideos%2F1289352224871801%2F&show_text=false&width=267&t=0" width="304" height="440" className="video" scrolling="no" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={false}></iframe>
