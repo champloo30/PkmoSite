@@ -1,10 +1,10 @@
 /* Error: Undefined mixin.
  *    ,
- * 66 | /                 @include sm-mobile {
- * 67 | |                     margin-bottom: 1rem;
- * 68 | \                 }
+ * 71 | /                 @include sm-mobile {
+ * 72 | |                     margin-bottom: 1rem;
+ * 73 | \                 }
  *    '
- *   src/scss/location.scss 66:17  root stylesheet */
+ *   src/scss/location.scss 71:17  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 66 \2502  \250c                  @include sm-mobile {\a 67 \2502  \2502                      margin-bottom: 1rem;\a 68 \2502  \2514                  }\a    \2575 \a   src/scss/location.scss 66:17  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 71 \2502  \250c                  @include sm-mobile {\a 72 \2502  \2502                      margin-bottom: 1rem;\a 73 \2502  \2514                  }\a    \2575 \a   src/scss/location.scss 71:17  root stylesheet";
 }

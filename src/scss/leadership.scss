@@ -22,14 +22,18 @@
 }
 
 .bio{
-    height: 250vh;
+    height: 240vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fff;
 
+    @include tablet {
+        height: 250vh;
+    }
+
     @include mobile {
-        height: 385vh;
+        height: 395vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -37,11 +41,11 @@
     }
 
     @include md-mobile {
-        height: 420vh;
+        height: 430vh;
     }
 
     @include sm-mobile {
-        height: 470vh;
+        height: 480vh;
     }
 
     .bio-fp{
@@ -59,10 +63,6 @@
             align-items: center;
             justify-content: space-evenly;
             margin-right: 0;
-        }
-
-        @include sm-mobile {
-            margin-top: 1rem;
         }
 
         img{
@@ -92,7 +92,7 @@
         }
 
         .text{
-            height: 70rem;
+            height: 66rem;
             width: 50%;
             background-color: $mainColor;
             border-radius: 10px;
@@ -103,17 +103,21 @@
             text-align: justify;
             margin-top: .625rem;
 
-            @include mobile {
+            @include tablet {
                 height: 78rem;
+            }
+
+            @include mobile {
+                height: 74rem;
                 width: 90%;
             }
 
             @include md-mobile {
-                height: 85rem;
+                height: 80rem;
             }
 
             @include sm-mobile {
-                height: 107.5rem;
+                height: 101rem;
             }
 
             :first-child{
@@ -190,7 +194,7 @@
         }
 
         .text{
-            height: 70rem;
+            height: 66rem;
             width: 50%;
             background-color: $mainColor;
             border-radius: 10px;
@@ -200,6 +204,10 @@
             justify-content: flex-start;
             text-align: justify;
             margin-top: .625rem;
+
+            @include tablet {
+                height: 78rem;
+            }
             
             @include mobile {
                 height: 72.5rem;
@@ -213,7 +221,7 @@
 
             @include sm-mobile {
                 height: 100rem;
-                margin-top: -1rem;
+                margin-top: .5rem;
             }
 
             :first-child{

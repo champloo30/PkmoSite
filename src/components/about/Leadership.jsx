@@ -28,9 +28,6 @@ export default function Leadership() {
                         <p>
                             He is married to the beautiful Lady Dawn A. Dunn and has two incredible adult children Sarah Kae Evonne and Dalyn Joshua Lewis. He is also surrounded by three gregarious grandchildren Justen Rashaad Lewis, Jordyn Alise, and Parker Alexandria, with another grandson, Dalyn Kaleb Lewis, on the way.
                         </p>
-                        <p>
-                            They are truly excited at this new season. To God be the glory!
-                        </p>
                     </div>
                 </div>
                 <div className="bio-cp">

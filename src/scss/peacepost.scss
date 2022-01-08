@@ -13,6 +13,10 @@
     //background-position-x: 16px;
     background-position-y: 70px;
 
+    @include tablet {
+        height: 88.25vh;
+    }
+
     @include mobile {
         height: 115vh;
     }
@@ -45,6 +49,10 @@
         //align-items: center;
         justify-content: space-evenly;
         margin-top: 2rem;
+
+        @include tablet {
+            margin-top: 0;
+        }
 
         @include mobile {
             display: flex;

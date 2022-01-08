@@ -125,6 +125,7 @@
         font-size: 3.75rem;
         font-family: $qFont;
         font-weight: 500;
+        text-align: center;
 
         @include mobile {
             font-size: 3rem;

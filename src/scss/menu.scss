@@ -23,7 +23,11 @@
     .menu-items{
         width: 100%;
         //margin-top: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 1.5rem;
+
+        @include tablet {
+            margin-top: -3rem;
+        }
 
         @include mobile {
             margin-top: -210px;

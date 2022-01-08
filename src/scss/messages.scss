@@ -142,17 +142,21 @@
         //overflow: hidden;
         //background-color: $silverColor;
 
+        @include tablet {
+            height: 167.5vh;
+        }
+
         @include mobile {
-            height: 325vh;
+            height: 345vh;
             align-items: center;
         }
 
         @include md-mobile {
-            height: 330vh;
+            height: 350vh;
         }
 
         @include sm-mobile {
-            height: 325vh;
+            height: 340vh;
         }
 
         .current-month{
