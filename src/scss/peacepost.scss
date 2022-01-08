@@ -13,6 +13,10 @@
     //background-position-x: 16px;
     background-position-y: 70px;
 
+    @include mobile {
+        height: 115vh;
+    }
+
     h1{
         font-family: $qFont;
         font-size: 5rem;
@@ -20,6 +24,19 @@
         //margin-top: -3rem;
         color: black;
         margin-top: -1rem;
+
+        @include mobile {
+            font-size: 4rem;
+            margin-top: 3rem;
+        }
+
+        @include md-mobile {
+            font-size: 3.5rem;
+        }
+
+        @include sm-mobile {
+            font-size: 3.25rem;
+        }
     }
 
     .posts{
@@ -28,6 +45,21 @@
         //align-items: center;
         justify-content: space-evenly;
         margin-top: 2rem;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        @include md-mobile {
+            margin-top: -1rem;
+        }
+
+        @include sm-mobile {
+            margin-top: -2rem;
+        }
 
         .default-post{
             height: 15rem;
@@ -41,6 +73,10 @@
             cursor: not-allowed;
             margin: 0 4.5rem;
             box-shadow: 2px 4px 10px black;
+
+            @include mobile {
+                margin: 1rem 0;
+            }
 
             .pin{
                 height: 2rem;

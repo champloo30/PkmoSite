@@ -1,53 +1,18 @@
-.peacepost {
-  height: 87.5vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: 70px;
-}
-.peacepost h1 {
-  font-family: "Quattrocento", serif;
-  font-size: 5rem;
-  font-weight: 500;
-  color: black;
-  margin-top: -1rem;
-}
-.peacepost .posts {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 2rem;
-}
-.peacepost .posts .default-post {
-  height: 15rem;
-  width: 17rem;
-  background-color: #7C5296;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  cursor: not-allowed;
-  margin: 0 4.5rem;
-  box-shadow: 2px 4px 10px black;
-}
-.peacepost .posts .default-post .pin {
-  height: 2rem;
-  width: 2rem;
-  background-color: white;
-  border-radius: 50%;
-  box-shadow: 1px 3px 10px black;
-}
-.peacepost .posts .default-post h3 {
-  font-size: 1.5rem;
-}
-.peacepost .posts .default-post p {
-  text-align: center;
-  margin: 0 1.5rem;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 33 | /         @include md-mobile {
+ * 34 | |             font-size: 3.5rem;
+ * 35 | \         }
+ *    '
+ *   src/scss/peacepost.scss 33:9  root stylesheet */
 
-/*# sourceMappingURL=peacepost.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 33 \2502  \250c          @include md-mobile {\a 34 \2502  \2502              font-size: 3.5rem;\a 35 \2502  \2514          }\a    \2575 \a   src/scss/peacepost.scss 33:9  root stylesheet";
+}
