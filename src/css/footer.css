@@ -19,7 +19,7 @@
   color: white;
   margin-right: 0.625rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 425px) {
   .footer a h2 {
     font-size: 1.25rem;
     text-align: center;

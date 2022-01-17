@@ -171,13 +171,12 @@
         }
 
         .welcome-video{
-            width: 55rem;
-            height: 27.5rem;
-            background-color: black;
+            width: 48.5rem;
+            height: 27.3rem;
 
             @include mobile {
-                width: 90%;
-                height: 15rem;
+                width: 100%;
+                height: 10.55rem;
             }
         }
     }

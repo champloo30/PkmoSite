@@ -62,7 +62,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                             <li onClick={()=>setMenuOpen(false)}>
                                 <a className="link" href="/connect">Connect</a>
                             </li>
-                            <li className="link">Give</li>
+                            <li className="link-give">Give</li>
                         </ul>
                     </div>
                 </ul>

@@ -1,19 +1,96 @@
-/* Error: Undefined mixin.
- *    ,
- * 18 | /     @include sm-mobile {
- * 19 | |         width: 250px;
- * 20 | |         right: -250px;
- * 21 | \     }
- *    '
- *   src/scss/menu.scss 18:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 18 \2502  \250c      @include sm-mobile {\a 19 \2502  \2502          width: 250px;\a 20 \2502  \2502          right: -250px;\a 21 \2502  \2514      }\a    \2575 \a   src/scss/menu.scss 18:5  root stylesheet";
+.menu {
+  height: calc(100vh - 70px);
+  width: 300px;
+  background-color: #7C5296;
+  position: fixed;
+  right: -300px;
+  opacity: 0;
+  top: 70px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
 }
+@media (max-width: 320px) {
+  .menu {
+    width: 250px;
+    right: -250px;
+  }
+}
+.menu .menu-items {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .menu .menu-items {
+    margin-top: -3rem;
+  }
+}
+@media (max-width: 425px) {
+  .menu .menu-items {
+    margin-top: -210px;
+  }
+}
+.menu .menu-items .menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.menu .menu-items .menu-links .link-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  color: white;
+}
+.menu .menu-items .menu-links .link-name .title {
+  margin: 1.25rem 0;
+}
+.menu .menu-items .menu-links .link-name .title hr {
+  border: 1px solid #d8d8d8;
+  width: 220px;
+  margin: 5px 0;
+}
+@media (max-width: 320px) {
+  .menu .menu-items .menu-links .link-name .title hr {
+    width: 170px;
+  }
+}
+.menu .menu-items .menu-links .link-name .title h1 {
+  font-size: 2rem;
+  font-family: "Quattrocento", serif;
+  font-weight: 500;
+}
+.menu .menu-items .menu-links .link-name .list2 {
+  list-style-type: none;
+}
+.menu .menu-items .menu-links .link-name .list2 .link {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 320px) {
+  .menu .menu-items .menu-links .link-name .list2 .link {
+    margin-left: -1rem;
+  }
+}
+.menu .menu-items .menu-links .link-name .list2 .link:hover {
+  text-decoration: underline;
+}
+.menu .menu-items .menu-links .link-name .list2 .link-give {
+  font-weight: 300;
+  cursor: not-allowed;
+}
+.menu.active {
+  right: 0;
+  opacity: 1;
+  z-index: 2;
+  background-color: #7C5296;
+}
+
+/*# sourceMappingURL=menu.css.map */

@@ -22,7 +22,9 @@ export default function Home() {
                     </div>
                 </div>
                 <h1>Welcome to the Kingdom</h1>
-                <div className="welcome-video"></div>
+                <div>
+                    <iframe title="Welcome Video" className="welcome-video" width="560" height="315" src="https://www.youtube.com/embed/LL521D_1124" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
             </div>
             <div className="about" id="about">
                 <div className="left">
