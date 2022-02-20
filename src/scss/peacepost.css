@@ -1,0 +1,107 @@
+.peacepost {
+  height: 87.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 70px;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .peacepost {
+    height: 88.25vh;
+  }
+}
+@media (max-width: 425px) {
+  .peacepost {
+    height: 115vh;
+  }
+}
+.peacepost h1 {
+  font-family: "Quattrocento", serif;
+  font-size: 5rem;
+  font-weight: 500;
+  color: black;
+  margin-top: -1rem;
+}
+@media (max-width: 425px) {
+  .peacepost h1 {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 375px) {
+  .peacepost h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .peacepost h1 {
+    font-size: 3.25rem;
+  }
+}
+.peacepost .posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .peacepost .posts {
+    margin-top: 0;
+  }
+}
+@media (max-width: 425px) {
+  .peacepost .posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+}
+@media (max-width: 375px) {
+  .peacepost .posts {
+    margin-top: -1rem;
+  }
+}
+@media (max-width: 320px) {
+  .peacepost .posts {
+    margin-top: -2rem;
+  }
+}
+.peacepost .posts .default-post {
+  height: 15rem;
+  width: 17rem;
+  background-color: #7C5296;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: not-allowed;
+  margin: 0 4.5rem;
+  box-shadow: 2px 4px 10px black;
+}
+@media (max-width: 425px) {
+  .peacepost .posts .default-post {
+    margin: 1rem 0;
+  }
+}
+.peacepost .posts .default-post .pin {
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 1px 3px 10px black;
+}
+.peacepost .posts .default-post h3 {
+  font-size: 1.5rem;
+}
+.peacepost .posts .default-post p {
+  text-align: center;
+  margin: 0 1.5rem;
+}
+
+/*# sourceMappingURL=peacepost.css.map */

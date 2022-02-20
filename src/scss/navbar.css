@@ -1,0 +1,66 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  color: black;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: all 1s ease;
+}
+.navbar .container {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 425px) {
+  .navbar .container {
+    padding: 0 0.5rem;
+  }
+}
+.navbar .container .left {
+  margin-top: 0.2rem;
+}
+.navbar .container .left .logo-sec {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.navbar .container .right {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.navbar .container .right .hamburger {
+  width: 2rem;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar .container .right .hamburger span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform-origin: left;
+  transition: all 1s ease;
+}
+.navbar.on {
+  background-color: #7C5296;
+  color: white;
+}
+.navbar.on .hamburger span:first-child {
+  background-color: white;
+  transform: rotate(45deg);
+}
+.navbar.on .hamburger span:nth-child(2) {
+  background-color: white;
+  opacity: 0;
+}
+.navbar.on .hamburger span:last-child {
+  background-color: white;
+  transform: rotate(-45deg);
+}
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,17 +1,7 @@
 .app {
   height: 100vh;
-}
-
-.app .sections {
-  width: 100%;
-  height: calc(100vh - 80px);
+  top: 70px;
   background-color: #d8d8d8;
-  position: relative;
-  top: 80px;
 }
 
-.app .sections > * {
-  width: 100vw;
-  height: calc(100vh - 80px);
-}
 /*# sourceMappingURL=app.css.map */

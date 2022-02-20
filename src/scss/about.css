@@ -1,0 +1,227 @@
+.about-hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img-icon/james-coleman-cevIeBV1A3I-unsplash.jpg");
+  background-position-y: -450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .about-hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img-icon/james-coleman-cevIeBV1A3I-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -175px 0;
+  }
+}
+.about-hero h1 {
+  font-size: 5rem;
+  font-family: "Quattrocento", serif;
+  color: white;
+}
+@media (max-width: 425px) {
+  .about-hero h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+
+.wwb {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #d8d8d8;
+}
+@media (max-width: 425px) {
+  .wwb {
+    height: 97.5vh;
+  }
+}
+@media (max-width: 375px) {
+  .wwb {
+    height: 105vh;
+  }
+}
+@media (max-width: 320px) {
+  .wwb {
+    height: 120vh;
+  }
+}
+.wwb h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  color: #7C5296;
+}
+@media (max-width: 320px) {
+  .wwb h2 {
+    font-size: 3rem;
+  }
+}
+.wwb .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.wwb .container p {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 300;
+  width: 80%;
+  margin: 1rem 0;
+}
+@media (max-width: 425px) {
+  .wwb .container p {
+    width: 90%;
+    font-size: 1.25rem;
+    margin: auto;
+  }
+}
+@media (max-width: 375px) {
+  .wwb .container p {
+    margin: auto;
+  }
+}
+@media (max-width: 320px) {
+  .wwb .container p {
+    margin: auto;
+  }
+}
+
+.statements {
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem 6.25rem;
+}
+@media (max-width: 425px) {
+  .statements {
+    height: 115vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 375px) {
+  .statements {
+    height: 125vh;
+  }
+}
+@media (max-width: 320px) {
+  .statements {
+    height: 135vh;
+  }
+}
+.statements h1 {
+  font-size: 3.75rem;
+  font-family: "Quattrocento", serif;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  .statements h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+.statements span {
+  color: #7C5296;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: -3.125rem;
+}
+.statements h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #7C5296;
+}
+@media (max-width: 425px) {
+  .statements h2 {
+    font-size: 2.5rem;
+  }
+}
+.statements h3 {
+  font-size: 1.25rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.leadership {
+  height: 25vh;
+  background-color: #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.leadership h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+@media (max-width: 425px) {
+  .leadership h2 {
+    text-align: center;
+  }
+}
+.leadership .button {
+  height: 3.75rem;
+  width: 10rem;
+  background-color: #7C5296;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  border: 0.25rem solid #7C5296;
+  cursor: pointer;
+}
+.leadership .button:hover {
+  border: 0.25rem solid #d8d8d8;
+}
+
+.about-location {
+  height: 25vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about-location h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+@media (max-width: 425px) {
+  .about-location h2 {
+    text-align: center;
+  }
+}
+.about-location .button {
+  height: 3.75rem;
+  width: 10rem;
+  background-color: #7C5296;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  border: 0.25rem solid #7C5296;
+  cursor: pointer;
+}
+.about-location .button:hover {
+  border: 0.25rem solid white;
+}
+
+/*# sourceMappingURL=about.css.map */

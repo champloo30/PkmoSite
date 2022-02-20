@@ -1,0 +1,251 @@
+.l-hero {
+  height: 40vh;
+  width: 100%;
+  background-color: #7C5296;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.l-hero h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  font-family: "Quattrocento", serif;
+  color: white;
+}
+@media (max-width: 425px) {
+  .l-hero h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+
+.bio {
+  height: 240vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .bio {
+    height: 250vh;
+  }
+}
+@media (max-width: 425px) {
+  .bio {
+    height: 395vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 375px) {
+  .bio {
+    height: 430vh;
+  }
+}
+@media (max-width: 320px) {
+  .bio {
+    height: 480vh;
+  }
+}
+.bio .bio-fp {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: -6.25rem;
+}
+@media (max-width: 425px) {
+  .bio .bio-fp {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 0;
+  }
+}
+.bio .bio-fp img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  box-shadow: 2px 4px 10px black;
+}
+@media (max-width: 425px) {
+  .bio .bio-fp img {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .bio .bio-fp img {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+.bio .bio-fp h2 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+.bio .bio-fp .text {
+  height: 66rem;
+  width: 50%;
+  background-color: #7C5296;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  margin-top: 0.625rem;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .bio .bio-fp .text {
+    height: 78rem;
+  }
+}
+@media (max-width: 425px) {
+  .bio .bio-fp .text {
+    height: 74rem;
+    width: 90%;
+  }
+}
+@media (max-width: 375px) {
+  .bio .bio-fp .text {
+    height: 80rem;
+  }
+}
+@media (max-width: 320px) {
+  .bio .bio-fp .text {
+    height: 101rem;
+  }
+}
+.bio .bio-fp .text :first-child {
+  text-indent: 10%;
+}
+.bio .bio-fp .text p {
+  color: white;
+  font-size: 1.25rem;
+  margin: 0.5rem 2rem;
+  font-weight: 300;
+}
+.bio .bio-cp {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: -6.25rem;
+}
+@media (max-width: 425px) {
+  .bio .bio-cp {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .bio .bio-cp {
+    margin-top: 1rem;
+  }
+}
+.bio .bio-cp img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  box-shadow: 2px 4px 10px black;
+}
+@media (max-width: 425px) {
+  .bio .bio-cp img {
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .bio .bio-cp img {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+.bio .bio-cp h2 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+@media (max-width: 425px) {
+  .bio .bio-cp h2:first-child {
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 320px) {
+  .bio .bio-cp h2:first-child {
+    margin-top: -2rem;
+  }
+}
+.bio .bio-cp .text {
+  height: 66rem;
+  width: 50%;
+  background-color: #7C5296;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: justify;
+  margin-top: 0.625rem;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .bio .bio-cp .text {
+    height: 78rem;
+  }
+}
+@media (max-width: 425px) {
+  .bio .bio-cp .text {
+    height: 72.5rem;
+    width: 90%;
+    margin-top: -0.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .bio .bio-cp .text {
+    height: 85rem;
+  }
+}
+@media (max-width: 320px) {
+  .bio .bio-cp .text {
+    height: 100rem;
+    margin-top: 0.5rem;
+  }
+}
+.bio .bio-cp .text :first-child {
+  text-indent: 10%;
+  margin-top: 1rem;
+}
+@media (max-width: 425px) {
+  .bio .bio-cp .text :first-child {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .bio .bio-cp .text :first-child {
+    margin-top: 2rem;
+  }
+}
+.bio .bio-cp .text p {
+  color: white;
+  font-size: 1.25rem;
+  margin: 0.5rem 2rem;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=leadership.css.map */
