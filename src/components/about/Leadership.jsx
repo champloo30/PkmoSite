@@ -1,4 +1,6 @@
 import '../../scss/leadership.scss'
+import founding from "../../img-icon/Dalyn-Dunn-SS.png";
+import campus from "../../img-icon/David-Dunn-SS.png";
 
 export default function Leadership() {
     return (
@@ -9,7 +11,7 @@ export default function Leadership() {
             <div className="bio">
                 <div className="bio-fp">
                     <div className="img">
-                        <img src="https://scontent-iad3-2.xx.fbcdn.net/v/t31.18172-8/23117098_1658539967518045_7273596387559886878_o.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=oF9YZ0F-qBkAX9VD7cS&_nc_ht=scontent-iad3-2.xx&oh=00_AT-bqCSjDQFAtlRlpMLWBFeE_lnK1A3kbayz1joeeWefJg&oe=61F2DB07" alt="Pastor Dalyn Dunn" />
+                        <img src={founding}alt="Pastor Dalyn Dunn" />
                     </div>
                     <div className="title">
                         <h2>Founding Pastor,</h2>
@@ -32,7 +34,7 @@ export default function Leadership() {
                 </div>
                 <div className="bio-cp">
                     <div className="img">
-                        <img src="https://scontent-iad3-2.xx.fbcdn.net/v/t1.6435-9/72084650_2714971375208227_4299750613962457088_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=vQ-AL3HLaoYAX8xuIZ6&_nc_ht=scontent-iad3-2.xx&oh=00_AT8adR2g3nChovfGIOe_k6bbSrUBLxS9-Pnc6Dfd30HsSA&oe=61F177A5" alt="Pastor David Dunn" />
+                        <img src={campus} alt="Pastor David Dunn" />
                     </div>
                     <div className="title">
                         <h2>Campus Pastor,</h2>

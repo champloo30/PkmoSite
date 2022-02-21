@@ -44,6 +44,7 @@
 .navbar .container .left .logo-sec .logo-text h3 {
   font-size: 1rem;
   margin-bottom: -0.25rem;
+  font-family: lust-sans, sans-serif;
 }
 .navbar .container .right {
   display: flex;

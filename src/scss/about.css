@@ -32,7 +32,7 @@
   }
 }
 
-.wwb {
+.wwa {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,38 +41,38 @@
   background-color: #d8d8d8;
 }
 @media (max-width: 425px) {
-  .wwb {
-    height: 97.5vh;
-  }
-}
-@media (max-width: 375px) {
-  .wwb {
+  .wwa {
     height: 105vh;
   }
 }
-@media (max-width: 320px) {
-  .wwb {
-    height: 120vh;
+@media (max-width: 375px) {
+  .wwa {
+    height: 115vh;
   }
 }
-.wwb h2 {
+@media (max-width: 320px) {
+  .wwa {
+    height: 125vh;
+  }
+}
+.wwa h2 {
   font-size: 3.5rem;
   font-weight: 300;
   margin-top: 0.5rem;
   color: #7C5296;
 }
 @media (max-width: 320px) {
-  .wwb h2 {
+  .wwa h2 {
     font-size: 3rem;
   }
 }
-.wwb .container {
+.wwa .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-.wwb .container p {
+.wwa .container p {
   color: black;
   font-size: 1.5rem;
   font-weight: 300;
@@ -80,20 +80,23 @@
   margin: 1rem 0;
 }
 @media (max-width: 425px) {
-  .wwb .container p {
+  .wwa .container p {
     width: 90%;
     font-size: 1.25rem;
     margin: auto;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 375px) {
-  .wwb .container p {
+  .wwa .container p {
     margin: auto;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 320px) {
-  .wwb .container p {
+  .wwa .container p {
     margin: auto;
+    margin-bottom: 1rem;
   }
 }
 

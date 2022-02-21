@@ -6,7 +6,7 @@ export default function About() {
             <div className="about-hero" id="about-hero">
                 <h1>About PKMO</h1>
             </div>
-            <div className="wwb" id="wwb">
+            <div className="wwa" id="wwb">
                 <h2>Who We Are</h2>
                 <div className="container">
                     <p>

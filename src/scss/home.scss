@@ -91,6 +91,28 @@
             height: 90vh;
         }
     
+        h1{
+            font-size: 3.75rem;
+            font-weight: 400;
+            color: $mainColor;
+            font-family: $qFont;
+
+            @include mobile {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+        }
+
+        .welcome-video{
+            width: 55rem;
+            height: 27.3rem;
+
+            @include mobile {
+                width: 100%;
+                height: 10.55rem;
+            }
+        }
+
         .location-box{
             width: 55%;
             height: 25%;
@@ -160,28 +182,6 @@
                         }
                     }
                 }
-            }
-        }
-    
-        h1{
-            font-size: 3.75rem;
-            font-weight: 400;
-            color: $mainColor;
-            font-family: $qFont;
-
-            @include mobile {
-                font-size: 2.5rem;
-                text-align: center;
-            }
-        }
-
-        .welcome-video{
-            width: 55rem;
-            height: 27.3rem;
-
-            @include mobile {
-                width: 100%;
-                height: 10.55rem;
             }
         }
     }

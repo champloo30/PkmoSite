@@ -33,7 +33,7 @@
     }
 }
 
-.wwb{
+.wwa{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -42,15 +42,15 @@
     background-color: $silverColor;
 
     @include mobile {
-        height: 97.5vh;
-    }
-
-    @include md-mobile {
         height: 105vh;
     }
 
+    @include md-mobile {
+        height: 115vh;
+    }
+
     @include sm-mobile {
-        height: 120vh;
+        height: 125vh;
     }
 
     h2{
@@ -82,14 +82,17 @@
                 width: 90%;
                 font-size: 1.25rem;
                 margin: auto;
+                margin-bottom: 1rem;
             }
 
             @include md-mobile {
                 margin: auto;
+                margin-bottom: 1rem;
             }
 
             @include sm-mobile {
                 margin: auto;
+                margin-bottom: 1rem;
             }
         }
     }

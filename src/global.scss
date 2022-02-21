@@ -2,11 +2,13 @@ $mainColor: #7C5296;
 $silverColor: #d8d8d8;
 $qFont: 'Quattrocento', serif;
 $nsdFont: 'Noto Sans Display', sans-serif;
+$lust: lust-sans, sans-serif;
 
 $sm-mobile-width: 320px;
 $md-mobile-width: 375px;
 $mobile-width: 425px;
-$tablet-width: 768px;
+$sm-tablet-width: 768px;
+$lg-tablet-width: 1000px;
 $laptop-width: 1280px;
 $desktop-width: 1440px;
 
@@ -29,7 +31,7 @@ $desktop-width: 1440px;
 }
 
 @mixin tablet {
-    @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1}) {
+    @media (min-width: #{$lg-tablet-width}) and (max-width: #{$laptop-width - 1}) {
         @content;
     }
 }
