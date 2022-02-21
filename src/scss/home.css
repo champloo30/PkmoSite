@@ -79,7 +79,7 @@
 }
 .home .welcome {
   height: 150vh;
-  background-color: #7C5296;
+  background-color: #d8d8d8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,7 +93,7 @@
 .home .welcome .location-box {
   width: 55%;
   height: 25%;
-  background-color: #d8d8d8;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,8 +112,7 @@
 }
 .home .welcome .location-box h2 {
   font-size: 3rem;
-  font-family: "Quattrocento", serif;
-  font-weight: 200;
+  font-weight: 300;
   color: #7C5296;
 }
 @media (max-width: 425px) {
@@ -152,7 +151,7 @@
   cursor: pointer;
 }
 .home .welcome .location-box .container .button:hover {
-  border: 0.25rem solid #d8d8d8;
+  border: 0.25rem solid white;
 }
 @media (max-width: 425px) {
   .home .welcome .location-box .container .button {
@@ -165,7 +164,8 @@
 .home .welcome h1 {
   font-size: 3.75rem;
   font-weight: 400;
-  color: white;
+  color: #7C5296;
+  font-family: "Quattrocento", serif;
 }
 @media (max-width: 425px) {
   .home .welcome h1 {
@@ -174,7 +174,7 @@
   }
 }
 .home .welcome .welcome-video {
-  width: 48.5rem;
+  width: 55rem;
   height: 27.3rem;
 }
 @media (max-width: 425px) {

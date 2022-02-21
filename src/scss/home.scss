@@ -81,7 +81,7 @@
     
     .welcome{
         height: 150vh;
-        background-color: $mainColor;
+        background-color: $silverColor;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -94,7 +94,7 @@
         .location-box{
             width: 55%;
             height: 25%;
-            background-color: $silverColor;
+            background-color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -111,8 +111,7 @@
     
             h2{
                 font-size: 3rem;
-                font-family: $qFont;
-                font-weight: 200;
+                font-weight: 300;
                 color: $mainColor;
 
                 @include mobile {
@@ -150,7 +149,7 @@
                     cursor: pointer;
     
                     &:hover{
-                        border: 0.25rem solid $silverColor;
+                        border: 0.25rem solid white;
                     }
 
                     @include mobile {
@@ -167,7 +166,8 @@
         h1{
             font-size: 3.75rem;
             font-weight: 400;
-            color: white;
+            color: $mainColor;
+            font-family: $qFont;
 
             @include mobile {
                 font-size: 2.5rem;
@@ -176,7 +176,7 @@
         }
 
         .welcome-video{
-            width: 48.5rem;
+            width: 55rem;
             height: 27.3rem;
 
             @include mobile {
