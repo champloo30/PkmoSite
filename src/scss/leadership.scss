@@ -8,11 +8,27 @@
     align-items: center;
     justify-content: center;
 
+    @include sm-tablet {
+        height: 35vh;
+    }
+
+    @include lg-tablet {
+        height: 30vh;
+    }
+
     h1{
         font-size: 5rem;
         font-weight: 500;
         font-family: $qFont;
         color: white;
+
+        @include sm-tablet {
+            font-size: 4rem;
+        }
+
+        @include lg-tablet {
+            font-size: 4rem;
+        }
 
         @include mobile {
             font-size: 3.5rem;
@@ -28,8 +44,12 @@
     justify-content: center;
     background-color: #fff;
 
-    @include tablet {
-        height: 250vh;
+    @include sm-tablet {
+        height: 200vh;
+    }
+
+    @include lg-tablet {
+        height: 155vh;
     }
 
     @include mobile {
@@ -56,6 +76,14 @@
         justify-content: space-evenly;
         margin-right: -6.25rem;
 
+        @include sm-tablet {
+            margin-right: 0;
+        }
+
+        @include lg-tablet {
+            margin-right: -1rem;
+        }
+
         @include mobile {
             flex: 1;
             display: flex;
@@ -77,6 +105,11 @@
             //background-color: $silverColor;
             margin-bottom: 1.5rem;
             box-shadow: 2px 4px 10px black;
+
+            @include sm-tablet {
+                height: 17.5rem;
+                width: 17.5rem;
+            }
 
             @include mobile {
                 margin-top: 2rem;
@@ -108,8 +141,14 @@
             text-align: justify;
             margin-top: .625rem;
 
-            @include tablet {
+            @include sm-tablet {
+                height: 94rem;
+                width: 80%;
+            }
+
+            @include lg-tablet {
                 height: 78rem;
+                width: 83%;
             }
 
             @include mobile {
@@ -146,6 +185,14 @@
         justify-content: space-evenly;
         margin-left: -6.25rem;
 
+        @include sm-tablet {
+            margin-left: 0;
+        }
+
+        @include lg-tablet {
+            margin-left: -1rem;   
+        }
+
         @include mobile {
             flex: 1;
             display: flex;
@@ -168,6 +215,11 @@
             //background-color: $silverColor;
             margin-bottom: 1.5rem;
             box-shadow: 2px 4px 10px black;
+
+            @include sm-tablet {
+                height: 17.5rem;
+                width: 17.5rem;
+            }
 
             @include mobile {
                 margin-bottom: 2.5rem;
@@ -215,8 +267,14 @@
             text-align: justify;
             margin-top: .625rem;
 
-            @include tablet {
+            @include sm-tablet {
+                height: 94rem;
+                width: 80%;
+            }
+
+            @include lg-tablet {
                 height: 78rem;
+                width: 83%;
             }
             
             @include mobile {

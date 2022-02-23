@@ -12,8 +12,14 @@
         flex-direction: column;
         justify-content: center;
 
-        @include tablet {
-            background-position: 0 0px;
+        @include sm-tablet {
+            height: 50vh;
+            background-position: 0 0;
+        }
+
+        @include lg-tablet {
+            height: 50vh;
+            background-position: -50px 0px;
         }
 
         @include mobile {
@@ -45,8 +51,14 @@
                 margin-bottom: 3.125rem;
                 font-weight: 700;
 
-                @include tablet {
+                @include sm-tablet {
                     text-align: center;
+                    font-size: 3.5rem;
+                }
+
+                @include lg-tablet {
+                    text-align: center;
+                    font-size: 4rem;
                 }
 
                 @include mobile {
@@ -61,6 +73,14 @@
                 font-weight: 300;
                 margin-bottom: 3.125rem;
 
+                @include sm-tablet {
+                    font-size: 3rem;
+                }
+
+                @include lg-tablet {
+                    font-size: 3.5rem;
+                }
+
                 @include mobile {
                     font-size: 2.75rem;
                     margin-bottom: 2rem;
@@ -71,6 +91,15 @@
             h3{
                 font-size: 1.5rem;
                 font-weight: 200;
+
+                @include sm-tablet {
+                    text-align: center;
+                    width: 90%;   
+                }
+
+                @include lg-tablet {
+                    text-align: center;
+                }
 
                 @include mobile {
                     text-align: center;
@@ -86,6 +115,14 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+
+        @include sm-tablet {
+            height: 85vh;
+        }
+
+        @include lg-tablet {
+            height: 80vh;
+        }
     
         @include mobile {
             height: 90vh;
@@ -107,6 +144,16 @@
             width: 55rem;
             height: 27.3rem;
 
+            @include sm-tablet {
+                width: 40rem;
+                height: 22rem;
+            }
+
+            @include lg-tablet {
+                width: 40rem;
+                height: 20rem;
+            }
+
             @include mobile {
                 width: 100%;
                 height: 10.55rem;
@@ -121,6 +168,16 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
+
+            @include sm-tablet {
+                height: 15rem;
+                width: 80%;
+            }
+
+            @include lg-tablet {
+                width: 80%;
+                height: 15rem;
+            }
 
             @include mobile {
                 width: 90%;
@@ -174,6 +231,22 @@
                         border: 0.25rem solid white;
                     }
 
+                    @include sm-tablet {
+                        margin: 0 3rem;
+
+                        &:hover {
+                            border: none;
+                        }
+                    }
+
+                    @include lg-tablet {
+                        margin: 0 3rem;
+
+                        &:hover {
+                            border: none;
+                        }
+                    }
+
                     @include mobile {
                         margin: 1rem 0;
 
@@ -192,6 +265,16 @@
         background-color: white;
         display: flex;
         margin: auto;
+
+        @include sm-tablet {
+            height: 90vh;
+            flex-direction: column;
+        }
+
+        @include lg-tablet {
+            height: 85vh;
+            flex-direction: column;
+        }
         
         @include mobile {
             height: 95vh;
@@ -203,7 +286,7 @@
         }
 
         @include sm-mobile {
-            height: 85vh;
+            height: 90vh;
         }
     
         .left{
@@ -220,6 +303,15 @@
                 margin-top: 6rem;
                 margin-right: 5rem;
 
+                @include sm-tablet {
+                    height: 30rem;
+                    margin-top: 2rem;
+                }
+
+                @include lg-tablet {
+                    margin-top: 2rem;
+                }
+
                 @include mobile {
                     height: 20rem;
                     width: 18rem;
@@ -228,8 +320,7 @@
 
                 @include sm-mobile {
                     height: 18rem;
-                    width: 16rem;
-                    margin-top: 2rem;
+                    width: 17rem;
                 }
             }
         }
@@ -252,6 +343,14 @@
     
             .top-text{
                 text-align: center;
+
+                @include sm-tablet {
+                    margin-top: -4rem;
+                }
+
+                @include lg-tablet {
+                    margin-top: -4rem;
+                }
                 
                 h2{
                     font-weight: 200;
@@ -288,6 +387,14 @@
                     color: $mainColor;
                     margin-top: -0.625rem;
 
+                    @include sm-tablet {
+                        margin-top: -2rem;
+                    }
+
+                    @include lg-tablet {
+                        margin-top: -2rem;
+                    }
+
                     @include mobile {
                         font-size: 2.25rem;
                         margin-top: -2.5rem;
@@ -311,6 +418,14 @@
                 color: white;
                 font-weight: 300;
 
+                @include lg-tablet {
+                    margin-top: -1rem;
+
+                    &:hover {
+                        border: none;
+                    }
+                }
+
                 @include sm-mobile {
                     margin-top: -.5rem;
                 }
@@ -328,6 +443,14 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+
+        @include sm-tablet {
+            height: 30vh;
+        }
+
+        @include lg-tablet {
+            height: 25vh;
+        }
 
         @include mobile {
             height: 35vh;
@@ -348,6 +471,16 @@
             justify-content: space-evenly;
             margin-right: -2rem;
 
+            @include sm-tablet {
+                height: 80%;
+                margin-right: 0;
+            }
+
+            @include lg-tablet {
+                height: 80%;
+                margin-right: 0;
+            }
+
             @include mobile {
                 width: 90%;
                 height: 80%;
@@ -363,6 +496,10 @@
                 font-family: $qFont;
                 color: $mainColor;
                 font-weight: 500;
+
+                @include lg-tablet {
+                    font-size: 4rem;
+                }
 
                 @include mobile {
                     font-size: 3.5rem;
@@ -415,6 +552,14 @@
                 &:hover{
                     border: 0.25rem solid $silverColor;
 
+                    @include sm-tablet {
+                        border: none;
+                    }
+
+                    @include lg-tablet {
+                        border: none;
+                    }
+
                     @include mobile {
                         border: none;
                     }
@@ -426,6 +571,14 @@
             height: 25rem;
             width: 25rem;
             margin-left: -3.25rem;
+
+            @include sm-tablet {
+                display: none;
+            }
+
+            @include lg-tablet {
+                display: none;
+            }
 
             @include mobile {
                 display: none;

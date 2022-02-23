@@ -9,6 +9,16 @@
     align-items: center;
     justify-content: center;
 
+    @include sm-tablet {
+        height: 60vh;
+        background-position: -400px -450px;
+    }
+
+    @include lg-tablet {
+        height: 60vh;
+        background-position: -400px -400px;
+    }
+
     @include mobile {
         height: 60vh;
         display: flex;
@@ -26,6 +36,14 @@
         font-family: $qFont;
         color: white;
 
+        @include sm-tablet {
+            font-size: 4rem;
+        }
+
+        @include lg-tablet {
+            font-size: 4rem;
+        }
+
         @include mobile {
             font-size: 3.5rem;
             text-align: center;
@@ -40,6 +58,14 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: $silverColor;
+
+    @include sm-tablet {
+        height: 90vh;
+    }
+
+    @include lg-tablet {
+        height: 80vh;
+    }
 
     @include mobile {
         height: 105vh;
@@ -106,6 +132,14 @@
     justify-content: space-evenly;
     margin: 2rem 6.25rem;
 
+    @include sm-tablet {
+        height: 80vh;
+    }
+
+    @include lg-tablet {
+        height: 70vh;
+    }
+
     @include mobile {
         height: 115vh;
         margin: auto;
@@ -169,6 +203,15 @@
     align-items: center;
     justify-content: space-evenly;
 
+    @include sm-tablet {
+        height: 20vh;
+
+    }
+
+    @include lg-tablet {
+        height: 15vh;
+    }
+
     h2{
         font-size: 2rem;
         font-weight: 300;
@@ -202,6 +245,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+    @include sm-tablet {
+        height: 20vh;
+    }
+
+    @include lg-tablet {
+        height: 15vh;
+    }
 
     h2{
         font-size: 2rem;

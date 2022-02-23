@@ -11,39 +11,17 @@ export default function Messages() {
                     <h3><span>Just need to hear a recent message that spoke to you?</span></h3>
                 </div>
                 <div className="catalog-text">
-                    <h2>Here's our recent Catalog</h2>
-                    <h3>For our latest service, check out our Church Online page <a href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer"><span>here</span></a>!</h3>
+                    <h2>Here's our service of the month!</h2>
+                    <h3>For our latest service, check out our Church Online page <a href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer"><span>here</span></a>.</h3>
                 </div>
                 <div className="catalog">
                     <div className="current-month">
-                        <h2>January 2022</h2>
+                        <h2>February</h2>
                         <div className="carousel">
                             <div className="video-container">
-                            <iframe title='="1/2/22' src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPeaceMissionaryBaptistChurch%2Fvideos%2F428229325673500%2F&show_text=false&width=267&t=0" width="304" height="440" className="video" scrolling="no" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={false}></iframe>
-                                <h4>January 2, 2022</h4>
-                            </div>
-                            <div className="video-container">
-                                <div className="nca">
-                                    <h3>No Content Available</h3>
-                                </div>
-                                <h4>N/A</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="previous-month">
-                        <h2>December 2021</h2>
-                        <div className="carousel">
-                            <div className="video-container">
-                                <iframe title="12/5/21" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPeaceMissionaryBaptistChurch%2Fvideos%2F1289352224871801%2F&show_text=false&width=267&t=0" width="304" height="440" className="video" scrolling="no" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={false}></iframe>
-                                <h4>December 5, 2021</h4>
-                            </div>
-                            <div className="video-container">
-                                <iframe title="12/12/21" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPeaceMissionaryBaptistChurch%2Fvideos%2F4186449218126185%2F&show_text=false&width=267&t=0" width="304" height="440" className="video" scrolling="no" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={false}></iframe>
-                                <h4>December 12, 2021</h4>
-                            </div>
-                            <div className="video-container">
-                                <iframe title="12/19/21" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FPeaceMissionaryBaptistChurch%2Fvideos%2F1139558456848214%2F&show_text=false&width=267&t=0" width="304" height="440" className="video" scrolling="no" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={false}></iframe>
-                                <h4>December 19, 2021</h4>
+                            <iframe title='2/6/22' src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPeaceMissionaryBaptistChurch%2Fvideos%2F4789504987782708%2F&show_text=false&width=560&t=0" width="800" height="480" 
+                            className="video"
+                            scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={true}></iframe>
                             </div>
                         </div>
                     </div>

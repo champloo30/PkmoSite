@@ -23,7 +23,7 @@
   width: 100%;
   margin-bottom: 1.5rem;
 }
-@media (min-width: 1000px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1279px) {
   .menu .menu-items {
     margin-top: -3rem;
   }

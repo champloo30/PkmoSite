@@ -12,6 +12,16 @@
   font-weight: 500;
   font-family: "Quattrocento", serif;
 }
+@media (min-width: 768px) and (max-width: 799px) {
+  .messages h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .messages h1 {
+    font-size: 4rem;
+  }
+}
 @media (max-width: 425px) {
   .messages h1 {
     margin-bottom: 1.5rem;
@@ -29,6 +39,16 @@
   justify-content: space-evenly;
   margin-bottom: 4.5rem;
 }
+@media (min-width: 768px) and (max-width: 799px) {
+  .messages .message-questions {
+    height: 18vh;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .messages .message-questions {
+    height: 15vh;
+  }
+}
 @media (max-width: 425px) {
   .messages .message-questions {
     height: 30vh;
@@ -42,7 +62,7 @@
 }
 @media (max-width: 320px) {
   .messages .message-questions {
-    height: 30-vh;
+    height: 30vh;
   }
 }
 .messages .message-questions h3 {
@@ -80,31 +100,57 @@
   justify-content: space-evenly;
   margin-bottom: 2rem;
 }
+@media (min-width: 768px) and (max-width: 799px) {
+  .messages .catalog-text {
+    height: 20vh;
+    width: 90%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .messages .catalog-text {
+    height: 15vh;
+    width: 90%;
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 425px) {
   .messages .catalog-text {
-    height: 30vh;
+    height: 35vh;
     width: 100%;
   }
 }
 @media (max-width: 375px) {
   .messages .catalog-text {
-    height: 25vh;
+    height: 35vh;
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
   .messages .catalog-text {
-    height: 30vh;
+    height: 35vh;
+    width: 100%;
   }
 }
 .messages .catalog-text h2 {
   font-size: 4rem;
   font-weight: 300;
 }
+@media (min-width: 768px) and (max-width: 799px) {
+  .messages .catalog-text h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .messages .catalog-text h2 {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 425px) {
   .messages .catalog-text h2 {
     text-align: center;
     font-size: 3.5rem;
-    width: 90%;
   }
 }
 @media (max-width: 375px) {
@@ -122,6 +168,17 @@
   font-weight: 200;
   margin-top: -0.625rem;
 }
+@media (min-width: 768px) and (max-width: 799px) {
+  .messages .catalog-text h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .messages .catalog-text h3 {
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 425px) {
   .messages .catalog-text h3 {
     text-align: center;
@@ -134,51 +191,78 @@
   text-decoration: underline;
 }
 .messages .catalog {
-  height: 180vh;
+  height: 90vh;
   width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
 }
-@media (min-width: 1000px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 799px) {
   .messages .catalog {
-    height: 167.5vh;
+    height: 45vh;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .messages .catalog {
+    height: 40vh;
   }
 }
 @media (max-width: 425px) {
   .messages .catalog {
-    height: 345vh;
+    height: 40vh;
     align-items: center;
+    width: 100%;
   }
 }
 @media (max-width: 375px) {
   .messages .catalog {
-    height: 350vh;
+    height: 35vh;
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
   .messages .catalog {
-    height: 340vh;
+    height: 30vh;
+    width: 100%;
   }
 }
 .messages .catalog .current-month {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
   margin-left: 2rem;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .messages .catalog .current-month {
+    margin-left: 1.5rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .messages .catalog .current-month {
+    margin-left: 1.5rem;
+  }
 }
 @media (max-width: 425px) {
   .messages .catalog .current-month {
-    margin-top: -1rem;
-    align-items: center;
+    margin-top: -2rem;
     margin-left: 1.5rem;
   }
 }
 .messages .catalog .current-month h2 {
   font-size: 4rem;
   font-weight: 300;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .messages .catalog .current-month h2 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .messages .catalog .current-month h2 {
+    font-size: 3.5rem;
+  }
 }
 @media (max-width: 425px) {
   .messages .catalog .current-month h2 {
@@ -198,8 +282,9 @@
   }
 }
 .messages .catalog .current-month .carousel {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 @media (max-width: 425px) {
@@ -216,107 +301,44 @@
   cursor: pointer;
 }
 .messages .catalog .current-month .carousel .video-container .video {
-  height: 27.5rem;
-  width: 17.5rem;
+  height: 28rem;
+  width: 55rem;
   background-color: black;
   color: white;
   cursor: pointer;
   border: none;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .messages .catalog .current-month .carousel .video-container .video {
+    height: 20rem;
+    width: 40rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .messages .catalog .current-month .carousel .video-container .video {
+    height: 20rem;
+    width: 40rem;
+  }
 }
 @media (max-width: 425px) {
   .messages .catalog .current-month .carousel .video-container .video {
-    height: 32rem;
-  }
-}
-.messages .catalog .current-month .carousel .video-container .nca {
-  height: 27.5rem;
-  width: 17.5rem;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width: 425px) {
-  .messages .catalog .current-month .carousel .video-container .nca {
-    height: 32rem;
-  }
-}
-.messages .catalog .current-month .carousel .video-container .nca h3 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: white;
-}
-.messages .catalog .current-month .carousel .video-container h4 {
-  font-size: 1.25rem;
-  font-weight: 200;
-  text-align: center;
-}
-.messages .catalog .previous-month {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  margin-left: 2rem;
-}
-@media (max-width: 425px) {
-  .messages .catalog .previous-month {
-    align-items: center;
-    margin-left: 1.5rem;
-  }
-}
-.messages .catalog .previous-month h2 {
-  font-size: 4rem;
-  font-weight: 300;
-}
-@media (max-width: 425px) {
-  .messages .catalog .previous-month h2 {
-    font-size: 3rem;
-    text-align: center;
-    margin-right: 1rem;
+    height: 13rem;
+    width: 24rem;
   }
 }
 @media (max-width: 375px) {
-  .messages .catalog .previous-month h2 {
-    font-size: 2.75rem;
+  .messages .catalog .current-month .carousel .video-container .video {
+    height: 12rem;
+    width: 22rem;
   }
 }
 @media (max-width: 320px) {
-  .messages .catalog .previous-month h2 {
-    font-size: 2.5rem;
+  .messages .catalog .current-month .carousel .video-container .video {
+    height: 10rem;
+    width: 18rem;
   }
 }
-.messages .catalog .previous-month .carousel {
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
-}
-@media (max-width: 425px) {
-  .messages .catalog .previous-month .carousel {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.messages .catalog .previous-month .carousel .video-container {
-  margin-right: 1.5rem;
-  margin-top: 0.625rem;
-}
-.messages .catalog .previous-month .carousel .video-container .video {
-  height: 27.5rem;
-  width: 17.5rem;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  overflow: hidden;
-  border: none;
-}
-@media (max-width: 425px) {
-  .messages .catalog .previous-month .carousel .video-container .video {
-    height: 32rem;
-  }
-}
-.messages .catalog .previous-month .carousel .video-container h4 {
+.messages .catalog .current-month .carousel .video-container h4 {
   font-size: 1.25rem;
   font-weight: 200;
   text-align: center;
@@ -327,6 +349,16 @@
   margin: 2rem 0;
   text-align: center;
   background-color: white;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .messages h5 {
+    margin: 0 0 2rem 0;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .messages h5 {
+    margin: 0 0 2rem 0;
+  }
 }
 @media (max-width: 425px) {
   .messages h5 {

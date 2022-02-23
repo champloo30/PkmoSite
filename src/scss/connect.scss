@@ -9,28 +9,42 @@
     justify-content: space-evenly;
     margin-top: 1rem;
 
-    @include tablet {
-        height: 175vh;
+    @include sm-tablet {
+        height: 135vh;
+    }
+
+    @include lg-tablet {
+        height: 110vh;
         margin-top: 3rem;
     }
 
     @include mobile {
-        height: 200vh;
+        height: 210vh;
         margin-top: 4rem;
     }
 
     @include md-mobile {
-        height: 205vh;
+        height: 210vh;
     }
 
     @include sm-mobile {
-        height: 200vh;
+        height: 205vh;
     }
 
     h1{
         font-size: 5rem;
         font-weight: 500;
         font-family: $qFont;
+
+        @include sm-tablet {
+            font-size: 4;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        @include lg-tablet {
+            font-size: 4rem;
+        }
 
         @include mobile {
             font-size: 4rem;
@@ -85,18 +99,23 @@
         //margin: -1rem 0;
         box-shadow: 0 5px 8px black;
 
-        @include tablet {
-            height: 48rem;
-            width: 75%;
+        @include sm-tablet {
+            height: 49.5rem;
+            width: 85%;
+        }
+
+        @include lg-tablet {
+            height: 51.5rem;
+            width: 85%;
         }
 
         @include mobile {
-            height: 72.5rem;
+            height: 74rem;
             width: 90%;
         }
 
         @include md-mobile {
-            height: 74rem;
+            height: 76rem;
         }
 
         @include sm-mobile {
@@ -165,7 +184,7 @@
                         font-family: $nsdFont;
                         font-weight: 300;
 
-                        @include tablet {
+                        @include lg-tablet {
                             width: 17.5rem;
                         }
 
@@ -209,7 +228,7 @@
                         font-family: $nsdFont;
                         font-weight: 300;
 
-                        @include tablet {
+                        @include lg-tablet {
                             width: 17.5rem;
                         }
 
@@ -291,7 +310,7 @@
                             font-family: $nsdFont;
                             font-weight: 300;
 
-                            @include tablet {
+                            @include lg-tablet {
                                 width: 17.5rem;
                             }
 
@@ -349,7 +368,7 @@
                             font-family: $nsdFont;
                             font-weight: 300;
 
-                            @include tablet {
+                            @include lg-tablet {
                                 width: 17.5rem;
                             }
 
@@ -463,7 +482,7 @@
                     font-family: $nsdFont;
                     font-weight: 300;
 
-                    @include tablet {
+                    @include lg-tablet {
                         height: 8rem;
                         width: 30rem;
                     }

@@ -7,6 +7,18 @@
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 768px) and (max-width: 799px) {
+  .about-hero {
+    height: 60vh;
+    background-position: -400px -450px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .about-hero {
+    height: 60vh;
+    background-position: -400px -400px;
+  }
+}
 @media (max-width: 425px) {
   .about-hero {
     height: 60vh;
@@ -25,6 +37,16 @@
   font-family: "Quattrocento", serif;
   color: white;
 }
+@media (min-width: 768px) and (max-width: 799px) {
+  .about-hero h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .about-hero h1 {
+    font-size: 4rem;
+  }
+}
 @media (max-width: 425px) {
   .about-hero h1 {
     font-size: 3.5rem;
@@ -39,6 +61,16 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: #d8d8d8;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .wwa {
+    height: 90vh;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .wwa {
+    height: 80vh;
+  }
 }
 @media (max-width: 425px) {
   .wwa {
@@ -108,6 +140,16 @@
   justify-content: space-evenly;
   margin: 2rem 6.25rem;
 }
+@media (min-width: 768px) and (max-width: 799px) {
+  .statements {
+    height: 80vh;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .statements {
+    height: 70vh;
+  }
+}
 @media (max-width: 425px) {
   .statements {
     height: 115vh;
@@ -171,6 +213,16 @@
   align-items: center;
   justify-content: space-evenly;
 }
+@media (min-width: 768px) and (max-width: 799px) {
+  .leadership {
+    height: 20vh;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .leadership {
+    height: 15vh;
+  }
+}
 .leadership h2 {
   font-size: 2rem;
   font-weight: 300;
@@ -202,6 +254,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .about-location {
+    height: 20vh;
+  }
+}
+@media (min-width: 800px) and (max-width: 1279px) {
+  .about-location {
+    height: 15vh;
+  }
 }
 .about-location h2 {
   font-size: 2rem;

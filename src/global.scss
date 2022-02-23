@@ -8,7 +8,7 @@ $sm-mobile-width: 320px;
 $md-mobile-width: 375px;
 $mobile-width: 425px;
 $sm-tablet-width: 768px;
-$lg-tablet-width: 1000px;
+$lg-tablet-width: 800px;
 $laptop-width: 1280px;
 $desktop-width: 1440px;
 
@@ -30,7 +30,13 @@ $desktop-width: 1440px;
     }
 }
 
-@mixin tablet {
+@mixin sm-tablet {
+    @media (min-width: #{$sm-tablet-width}) and (max-width: #{$lg-tablet-width - 1}) {
+        @content;
+    }
+}
+
+@mixin lg-tablet {
     @media (min-width: #{$lg-tablet-width}) and (max-width: #{$laptop-width - 1}) {
         @content;
     }
