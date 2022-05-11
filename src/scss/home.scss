@@ -23,6 +23,10 @@
             background-position: 0px 0px;
         }
 
+        @include desktop {
+            background-position: 0 -75px;
+        }
+
         @include mobile {
             height: 80vh;
             display: flex;
