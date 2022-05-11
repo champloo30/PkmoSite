@@ -1,6 +1,7 @@
 import "../../scss/home.scss"
 import dove from "../../img-icon/dove-png-41736.png"
-import GlobeLogo from "../../img-icon/PKMO-Globe-Logo.png"
+import Logo from "../../img-icon/PKMO-Full-Logo-Big.png"
+import PKMOid from "../../img-icon/PKMO-ID-White.png"
 
 export default function Home() {
     return (
@@ -8,9 +9,7 @@ export default function Home() {
             <div className="hero">
                 <div className="hero-text">
                     <h2>Welcome to</h2>
-                    <h1>Peace Kingdom Ministries of Ohio</h1>
-                    <h3>"And let the peace of God rule in your hearts, to the which also ye are called in one body; and be ye thankful.”</h3>
-                    <h3>Colossians 3:15 KJV</h3>
+                    <img className="PKMOid" src={PKMOid} alt="Peace Kingdom Ministries of Ohio. Preaching the Gospel, empowering people, changing the world!" />
                 </div>
             </div>
             <div className="welcome" id="welcome">
@@ -29,7 +28,7 @@ export default function Home() {
             </div>
             <div className="about" id="about">
                 <div className="left">
-                    <img src={GlobeLogo} alt="PKMO Globe Logo" />
+                    <img src={Logo} alt="PKMO Logo" />
                 </div>
                 <div className="right">
                     <div className="top-text">

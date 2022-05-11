@@ -3,11 +3,12 @@
 .home{
 
     .hero{
-        height: 100vh;
+        height: 90vh;
+        max-height: 60rem;
         background-image: url("../img-icon/columbus_skyline.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 0 -125px;
+        background-position: -25px -75px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -40,38 +41,24 @@
             align-items: center;
             justify-content: center;
             color: white;
+            margin-top: 3rem;
 
             @include mobile {
                 width: 90%;
             }
-    
-            h1{
-                font-size: 5rem;
-                font-family: $qFont;
-                margin-bottom: 3.125rem;
-                font-weight: 700;
 
-                @include sm-tablet {
-                    text-align: center;
-                    font-size: 3.5rem;
-                }
-
-                @include lg-tablet {
-                    text-align: center;
-                    font-size: 4rem;
-                }
-
-                @include mobile {
-                    font-size: 3.5rem;
-                    text-align: center;
-                    margin-bottom: 2rem;
+            .PKMOid {
+                
+                @include laptop {
+                    height: 15rem;
+                    width: 45rem;
                 }
             }
     
             h2{
-                font-size: 4rem;
+                font-size: 3rem;
                 font-weight: 300;
-                margin-bottom: 3.125rem;
+                margin-bottom: 3.5rem;
 
                 @include sm-tablet {
                     font-size: 3rem;
@@ -86,24 +73,9 @@
                     margin-bottom: 2rem;
                     margin-top: 2rem;
                 }
-            }
-    
-            h3{
-                font-size: 1.5rem;
-                font-weight: 200;
 
-                @include sm-tablet {
-                    text-align: center;
-                    width: 90%;   
-                }
-
-                @include lg-tablet {
-                    text-align: center;
-                    width: 90%;
-                }
-
-                @include mobile {
-                    text-align: center;
+                @include desktop {
+                    font-size: 4rem;
                 }
             }
         }
@@ -111,6 +83,7 @@
     
     .welcome{
         height: 150vh;
+        max-height: 65rem;
         background-color: $silverColor;
         display: flex;
         flex-direction: column;
@@ -130,6 +103,7 @@
         }
     
         h1{
+            //margin-top: -2rem;
             font-size: 3.75rem;
             font-weight: 400;
             color: $mainColor;
@@ -262,6 +236,7 @@
     
     .about{
         height: 100vh;
+        max-height: 50rem;
         width: 90%;
         background-color: white;
         display: flex;
@@ -301,8 +276,10 @@
             }
     
             img{
-                margin-top: 6rem;
-                margin-right: 5rem;
+                //margin-top: 6rem;
+                //margin-right: 5rem;
+                // height: 40rem;
+                // width: 36rem;
 
                 @include sm-tablet {
                     height: 30rem;
@@ -332,6 +309,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
+            height: 40rem;
+            margin-top: 6rem;
 
             @include mobile {
                 width: 90%;
@@ -386,7 +365,8 @@
                     font-weight: 400;
                     text-align: center;
                     color: $mainColor;
-                    margin-top: -0.625rem;
+                    margin-top: -4rem;
+                    margin-bottom: -2rem;
 
                     @include sm-tablet {
                         margin-top: -2rem;
@@ -408,7 +388,7 @@
             }
     
             .button{
-                margin-top: -3.5rem;
+                margin-top: -5rem;
                 width: 10rem;
                 height: 3.75rem;
                 background-color: $mainColor;
@@ -440,6 +420,7 @@
     
     .peace-post{
         height: 70vh;
+        max-height: 30rem;
         background-color: $silverColor;
         display: flex;
         align-items: center;

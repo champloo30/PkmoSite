@@ -1,13 +1,19 @@
 import "../../scss/navbar.scss"
-import NavLogo from "../../img-icon/PKMO-Globe-Logo.png"
+import NavLogo from "../../img-icon/PKMO-Icon.png"
 
 export default function Navbar({ menuOpen, setMenuOpen }) {
 
     const changeNavbarColor = () => {
         if (window.scrollY >= 1) {
-            document.querySelector('.navbar').style.backgroundColor = 'var(--main)';
+            document.querySelector('.navbar').style.backgroundColor = 'var(--white)';
+            document.querySelector('.line1').style.backgroundColor = 'var(--main)';
+            document.querySelector('.line2').style.backgroundColor = 'var(--main)';
+            document.querySelector('.line3').style.backgroundColor = 'var(--main)';
         } else {
             document.querySelector('.navbar').style.backgroundColor = '';
+            document.querySelector('.line1').style.backgroundColor = '';
+            document.querySelector('.line2').style.backgroundColor = '';
+            document.querySelector('.line3').style.backgroundColor = '';
         }
     }
     window.addEventListener('scroll', changeNavbarColor)
@@ -18,11 +24,11 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
                 <div className="left">
                     <a className="logo-sec" href="/">
                         <img src={NavLogo} alt="Peace Kingdom Ministries of Ohio Globe Logo" className="logo-nav"/>
-                        <div className="logo-text">
-                            <h3>Peace Kingdom</h3>
-                            <h3>Ministries of</h3>
-                            <h3>Ohio</h3>
-                        </div>
+                        {/* <div className="logo-text">
+                            <span className="text">Peace Kingdom</span>
+                            <span className="text">Ministries of</span>
+                            <span className="text">Ohio</span>
+                        </div> */}
                     </a>
                 </div>
                 <div className="right">
