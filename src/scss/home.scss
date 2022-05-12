@@ -4,7 +4,6 @@
 
     .hero{
         height: 90vh;
-        max-height: 60rem;
         background-image: url("../img-icon/columbus_skyline.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -24,6 +23,7 @@
         }
 
         @include desktop {
+            height: 70vh;
             background-position: 0 -75px;
         }
 
@@ -87,7 +87,6 @@
     
     .welcome{
         height: 150vh;
-        max-height: 65rem;
         background-color: $silverColor;
         display: flex;
         flex-direction: column;
@@ -104,6 +103,10 @@
     
         @include mobile {
             height: 90vh;
+        }
+
+        @include desktop {
+            height: 80vh;
         }
     
         h1{
@@ -240,7 +243,6 @@
     
     .about{
         height: 100vh;
-        max-height: 50rem;
         width: 90%;
         background-color: white;
         display: flex;
@@ -267,6 +269,10 @@
 
         @include sm-mobile {
             height: 90vh;
+        }
+
+        @include desktop {
+            height: 65vh;
         }
     
         .left{
@@ -424,7 +430,6 @@
     
     .peace-post{
         height: 70vh;
-        max-height: 30rem;
         background-color: $silverColor;
         display: flex;
         align-items: center;
@@ -446,6 +451,10 @@
         }
 
         @include sm-mobile {
+            height: 40vh;
+        }
+
+        @include desktop {
             height: 40vh;
         }
     

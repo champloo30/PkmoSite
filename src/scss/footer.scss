@@ -2,14 +2,16 @@
 
 .footer{
     height: 85px;
-    background-color: $mainColor;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .logo{
-        margin-top: .6rem;
+        //margin-top: .6rem;
         margin-right: .625rem;
+        height: 4rem;
+        width: 4rem;
     }
 
     a{
@@ -19,7 +21,7 @@
             font-family: $qFont;
             font-weight: 500;
             font-size: 1.5rem;
-            color: white;
+            color: $mainColor;
             margin-right: .625rem;
             //text-decoration: none;
 

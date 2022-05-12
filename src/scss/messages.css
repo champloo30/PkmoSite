@@ -17,7 +17,7 @@
     font-size: 4rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .messages h1 {
     font-size: 4rem;
   }
@@ -44,7 +44,7 @@
     height: 18vh;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .messages .message-questions {
     height: 15vh;
   }
@@ -107,7 +107,7 @@
     margin-bottom: 0;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .messages .catalog-text {
     height: 15vh;
     width: 90%;
@@ -132,6 +132,11 @@
     width: 100%;
   }
 }
+@media (min-width: 1440px) {
+  .messages .catalog-text {
+    height: 25vh;
+  }
+}
 .messages .catalog-text h2 {
   font-size: 4rem;
   font-weight: 300;
@@ -142,7 +147,7 @@
     text-align: center;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .messages .catalog-text h2 {
     font-size: 3rem;
   }
@@ -174,7 +179,7 @@
     text-align: center;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .messages .catalog-text h3 {
     font-size: 1.5rem;
   }
@@ -203,7 +208,7 @@
     height: 45vh;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .messages .catalog {
     height: 40vh;
   }
@@ -227,6 +232,11 @@
     width: 100%;
   }
 }
+@media (min-width: 1440px) {
+  .messages .catalog {
+    height: 50vh;
+  }
+}
 .messages .catalog .current-month {
   display: flex;
   flex-direction: column;
@@ -239,7 +249,7 @@
     margin-left: 1.5rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .messages .catalog .current-month {
     margin-left: 1.5rem;
   }
@@ -259,7 +269,7 @@
     font-size: 3.5rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .messages .catalog .current-month h2 {
     font-size: 3.5rem;
   }
@@ -314,7 +324,7 @@
     width: 40rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .messages .catalog .current-month .carousel .video-container .video {
     height: 20rem;
     width: 40rem;
@@ -355,7 +365,7 @@
     margin: 0 0 2rem 0;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .messages h5 {
     margin: 0 0 2rem 0;
   }

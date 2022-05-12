@@ -36,12 +36,12 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-top: -0.75rem;
+  margin-top: 0.25rem;
   margin-left: 0.25rem;
   color: black;
   transition: all 1s ease;
 }
-.navbar .container .left .logo-sec .logo-text h3 {
+.navbar .container .left .logo-sec .logo-text .text {
   font-size: 1rem;
   margin-bottom: -0.25rem;
   font-family: lust-sans, sans-serif;
@@ -66,22 +66,22 @@
   transition: all 1s ease;
 }
 .navbar.on {
-  background-color: #7C5296;
-  color: white;
+  background-color: white;
+  color: #7C5296;
 }
 .navbar.on .left .logo-sec .logo-text {
-  color: white;
+  color: #7C5296;
 }
 .navbar.on .right .hamburger span:first-child {
-  background-color: white;
+  background-color: #7C5296;
   transform: rotate(45deg);
 }
 .navbar.on .right .hamburger span:nth-child(2) {
-  background-color: white;
+  background-color: #7C5296;
   opacity: 0;
 }
 .navbar.on .right .hamburger span:last-child {
-  background-color: white;
+  background-color: #7C5296;
   transform: rotate(-45deg);
 }
 

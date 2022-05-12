@@ -3,7 +3,7 @@
 .l-hero{
     height: 40vh;
     width: 100%;
-    background-color: $mainColor;
+    background-color: $silverColor;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@
         font-size: 5rem;
         font-weight: 500;
         font-family: $qFont;
-        color: white;
+        color: $mainColor;
 
         @include sm-tablet {
             font-size: 4rem;
@@ -43,6 +43,7 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    border-bottom: 2px solid $silverColor;
 
     @include sm-tablet {
         height: 200vh;
@@ -66,6 +67,10 @@
 
     @include sm-mobile {
         height: 485vh;
+    }
+
+    @include desktop {
+        height: 120vh;
     }
 
     .bio-fp{
@@ -162,6 +167,10 @@
 
             @include sm-mobile {
                 height: 101rem;
+            }
+
+            @include desktop {
+                height: 55rem;
             }
 
             :first-child{
@@ -289,6 +298,10 @@
 
             @include sm-mobile {
                 height: 100rem;
+            }
+
+            @include desktop {
+                height: 55rem;
             }
 
             :first-child{

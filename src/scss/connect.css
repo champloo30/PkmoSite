@@ -6,13 +6,14 @@
   align-items: center;
   justify-content: space-evenly;
   margin-top: 1rem;
+  border-bottom: 2px solid #d8d8d8;
 }
 @media (min-width: 768px) and (max-width: 799px) {
   .connect {
     height: 135vh;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .connect {
     height: 110vh;
     margin-top: 3rem;
@@ -34,6 +35,11 @@
     height: 205vh;
   }
 }
+@media (min-width: 1440px) {
+  .connect {
+    height: 110vh;
+  }
+}
 .connect h1 {
   font-size: 5rem;
   font-weight: 500;
@@ -46,7 +52,7 @@
     margin-top: 1rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .connect h1 {
     font-size: 4rem;
   }
@@ -111,7 +117,7 @@
     width: 85%;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .connect .formbox {
     height: 51.5rem;
     width: 85%;
@@ -131,6 +137,11 @@
 @media (max-width: 320px) {
   .connect .formbox {
     height: 76rem;
+  }
+}
+@media (min-width: 1440px) {
+  .connect .formbox {
+    height: 46.5rem;
   }
 }
 .connect .formbox .form {
@@ -198,7 +209,7 @@
   font-family: "Noto Sans Display", sans-serif;
   font-weight: 300;
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .connect .formbox .form .form-name .fname input {
     width: 17.5rem;
   }
@@ -242,7 +253,7 @@
   font-family: "Noto Sans Display", sans-serif;
   font-weight: 300;
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .connect .formbox .form .form-name .lname input {
     width: 17.5rem;
   }
@@ -322,7 +333,7 @@
   font-family: "Noto Sans Display", sans-serif;
   font-weight: 300;
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .connect .formbox .form .phone-email div .phone .text {
     width: 17.5rem;
   }
@@ -379,7 +390,7 @@
   font-family: "Noto Sans Display", sans-serif;
   font-weight: 300;
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .connect .formbox .form .phone-email div .email .text {
     width: 17.5rem;
   }
@@ -488,7 +499,7 @@
   font-family: "Noto Sans Display", sans-serif;
   font-weight: 300;
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .connect .formbox .form .textarea #text {
     height: 8rem;
     width: 30rem;

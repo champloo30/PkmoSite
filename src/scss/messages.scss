@@ -124,6 +124,10 @@
             width: 100%;
         }
 
+        @include desktop {
+            height: 25vh;
+        }
+
         h2{
             font-size: 4rem;
             font-weight: 300;
@@ -211,6 +215,10 @@
         @include sm-mobile {
             height: 30vh;
             width: 100%;
+        }
+
+        @include desktop {
+            height: 50vh;
         }
 
         .current-month{

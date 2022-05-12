@@ -5,16 +5,14 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: 70px;
+  border-bottom: 2px solid #d8d8d8;
 }
 @media (min-width: 768px) and (max-width: 799px) {
   .peacepost {
     height: 91.7vh;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .peacepost {
     height: 92.75vh;
   }
@@ -22,6 +20,11 @@
 @media (max-width: 425px) {
   .peacepost {
     height: 115vh;
+  }
+}
+@media (min-width: 1440px) {
+  .peacepost {
+    height: 93vh;
   }
 }
 .peacepost h1 {
@@ -36,7 +39,7 @@
     margin-top: 3rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .peacepost h1 {
     margin-top: 2rem;
   }
@@ -69,7 +72,7 @@
     flex-direction: column;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .peacepost .posts {
     margin-top: 0;
     flex-direction: column;
@@ -116,7 +119,7 @@
     margin: 1rem 0;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .peacepost .posts .default-post {
     margin: 1rem 0;
   }

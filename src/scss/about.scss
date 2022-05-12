@@ -31,6 +31,10 @@
         background-position: -175px 0;
     }
 
+    @include desktop {
+        height: 65vh;
+    }
+
     h1{
         font-size: 5rem;
         font-family: $qFont;
@@ -77,6 +81,10 @@
 
     @include sm-mobile {
         height: 125vh;
+    }
+
+    @include desktop {
+        height: 60vh;
     }
 
     h2{
@@ -158,6 +166,10 @@
         height: 135vh;
     }
 
+    @include desktop {
+        height: 40vh;
+    }
+
     h1{
         font-size: 3.75rem;
         font-family: $qFont;
@@ -212,6 +224,10 @@
         height: 15vh;
     }
 
+    @include desktop {
+        height: 20vh;
+    }
+
     h2{
         font-size: 2rem;
         font-weight: 300;
@@ -245,6 +261,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    border-bottom: 2px solid $silverColor;
 
     @include sm-tablet {
         height: 20vh;
@@ -252,6 +269,10 @@
 
     @include lg-tablet {
         height: 15vh;
+    }
+    
+    @include desktop {
+        height: 20vh;
     }
 
     h2{

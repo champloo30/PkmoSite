@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-evenly;
     margin-top: 1rem;
+    border-bottom: 2px solid $silverColor;
 
     @include sm-tablet {
         height: 135vh;
@@ -29,6 +30,10 @@
 
     @include sm-mobile {
         height: 205vh;
+    }
+
+    @include desktop {
+        height: 110vh;
     }
 
     h1{
@@ -120,6 +125,10 @@
 
         @include sm-mobile {
             height: 76rem;
+        }
+
+        @include desktop {
+            height: 46.5rem;
         }
 
         .form{

@@ -1,9 +1,9 @@
 .home .hero {
-  height: 100vh;
+  height: 90vh;
   background-image: url("../img-icon/columbus_skyline.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -125px;
+  background-position: -25px -75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,10 +14,16 @@
     background-position: 0 0;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .hero {
     height: 50vh;
     background-position: 0px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .home .hero {
+    height: 70vh;
+    background-position: 0 -75px;
   }
 }
 @media (max-width: 425px) {
@@ -39,48 +45,30 @@
   align-items: center;
   justify-content: center;
   color: white;
+  margin-top: 3rem;
 }
 @media (max-width: 425px) {
   .home .hero .hero-text {
     width: 90%;
   }
 }
-.home .hero .hero-text h1 {
-  font-size: 5rem;
-  font-family: "Quattrocento", serif;
-  margin-bottom: 3.125rem;
-  font-weight: 700;
-}
-@media (min-width: 768px) and (max-width: 799px) {
-  .home .hero .hero-text h1 {
-    text-align: center;
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 800px) and (max-width: 1279px) {
-  .home .hero .hero-text h1 {
-    text-align: center;
-    font-size: 4rem;
-  }
-}
-@media (max-width: 425px) {
-  .home .hero .hero-text h1 {
-    font-size: 3.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .home .hero .hero-text .PKMOid {
+    height: 15rem;
+    width: 45rem;
   }
 }
 .home .hero .hero-text h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 300;
-  margin-bottom: 3.125rem;
+  margin-bottom: 3.5rem;
 }
 @media (min-width: 768px) and (max-width: 799px) {
   .home .hero .hero-text h2 {
     font-size: 3rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .hero .hero-text h2 {
     font-size: 3.5rem;
   }
@@ -92,25 +80,9 @@
     margin-top: 2rem;
   }
 }
-.home .hero .hero-text h3 {
-  font-size: 1.5rem;
-  font-weight: 200;
-}
-@media (min-width: 768px) and (max-width: 799px) {
-  .home .hero .hero-text h3 {
-    text-align: center;
-    width: 90%;
-  }
-}
-@media (min-width: 800px) and (max-width: 1279px) {
-  .home .hero .hero-text h3 {
-    text-align: center;
-    width: 90%;
-  }
-}
-@media (max-width: 425px) {
-  .home .hero .hero-text h3 {
-    text-align: center;
+@media (min-width: 1440px) {
+  .home .hero .hero-text h2 {
+    font-size: 4rem;
   }
 }
 .home .welcome {
@@ -126,7 +98,7 @@
     height: 85vh;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .welcome {
     height: 80vh;
   }
@@ -134,6 +106,11 @@
 @media (max-width: 425px) {
   .home .welcome {
     height: 90vh;
+  }
+}
+@media (min-width: 1440px) {
+  .home .welcome {
+    height: 80vh;
   }
 }
 .home .welcome h1 {
@@ -158,7 +135,7 @@
     height: 22rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .welcome .welcome-video {
     width: 40rem;
     height: 20rem;
@@ -185,7 +162,7 @@
     width: 80%;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .welcome .location-box {
     width: 80%;
     height: 15rem;
@@ -253,7 +230,7 @@
     border: none;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .welcome .location-box .container .button {
     margin: 0 3rem;
   }
@@ -282,7 +259,7 @@
     flex-direction: column;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .about {
     height: 85vh;
     flex-direction: column;
@@ -303,6 +280,11 @@
     height: 90vh;
   }
 }
+@media (min-width: 1440px) {
+  .home .about {
+    height: 65vh;
+  }
+}
 .home .about .left {
   flex: 5;
   display: flex;
@@ -314,17 +296,13 @@
     flex: 4;
   }
 }
-.home .about .left img {
-  margin-top: 6rem;
-  margin-right: 5rem;
-}
 @media (min-width: 768px) and (max-width: 799px) {
   .home .about .left img {
     height: 30rem;
     margin-top: 2rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .about .left img {
     margin-top: 2rem;
   }
@@ -348,6 +326,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  height: 40rem;
+  margin-top: 6rem;
 }
 @media (max-width: 425px) {
   .home .about .right {
@@ -368,7 +348,7 @@
     margin-top: -4rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .about .right .top-text {
     margin-top: -4rem;
   }
@@ -405,14 +385,15 @@
   font-weight: 400;
   text-align: center;
   color: #7C5296;
-  margin-top: -0.625rem;
+  margin-top: -4rem;
+  margin-bottom: -2rem;
 }
 @media (min-width: 768px) and (max-width: 799px) {
   .home .about .right .bottom-text h1 {
     margin-top: -2rem;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .about .right .bottom-text h1 {
     margin-top: -2rem;
   }
@@ -429,7 +410,7 @@
   }
 }
 .home .about .right .button {
-  margin-top: -3.5rem;
+  margin-top: -5rem;
   width: 10rem;
   height: 3.75rem;
   background-color: #7C5296;
@@ -440,7 +421,7 @@
   color: white;
   font-weight: 300;
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .about .right .button {
     margin-top: -1rem;
   }
@@ -468,7 +449,7 @@
     height: 30vh;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .peace-post {
     height: 25vh;
   }
@@ -482,6 +463,11 @@
   }
 }
 @media (max-width: 320px) {
+  .home .peace-post {
+    height: 40vh;
+  }
+}
+@media (min-width: 1440px) {
   .home .peace-post {
     height: 40vh;
   }
@@ -500,7 +486,7 @@
     margin-right: 0;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .peace-post .container {
     height: 80%;
     margin-right: 0;
@@ -523,7 +509,7 @@
   color: #7C5296;
   font-weight: 500;
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .peace-post .container h1 {
     font-size: 4rem;
   }
@@ -587,7 +573,7 @@
     border: none;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .peace-post .container .button:hover {
     border: none;
   }
@@ -607,7 +593,7 @@
     display: none;
   }
 }
-@media (min-width: 800px) and (max-width: 1279px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .home .peace-post img {
     display: none;
   }
