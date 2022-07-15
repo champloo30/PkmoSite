@@ -40,7 +40,7 @@
 }
 
 .bio {
-  height: 240vh;
+  height: 200vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,7 @@
     height: 485vh;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .bio {
     height: 120vh;
   }
@@ -185,7 +185,7 @@
     height: 101rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .bio .bio-fp .text {
     height: 55rem;
   }
@@ -320,7 +320,7 @@
     height: 100rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .bio .bio-cp .text {
     height: 55rem;
   }

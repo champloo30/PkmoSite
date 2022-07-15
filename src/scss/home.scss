@@ -3,11 +3,11 @@
 .home{
 
     .hero{
-        height: 90vh;
+        height: 100vh;
         background-image: url("../img-icon/columbus_skyline.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: -25px -75px;
+        background-position: 0px -50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -52,8 +52,10 @@
             }
 
             .PKMOid {
+                height: 25rem;
+                width: 65rem;
                 
-                @include laptop {
+                @include desktop {
                     height: 15rem;
                     width: 45rem;
                 }
@@ -242,7 +244,7 @@
     }
     
     .about{
-        height: 100vh;
+        height: calc(100vh - 70px);
         width: 90%;
         background-color: white;
         display: flex;
@@ -288,8 +290,8 @@
             img{
                 //margin-top: 6rem;
                 //margin-right: 5rem;
-                // height: 40rem;
-                // width: 36rem;
+                height: 35rem;
+                width: 31rem;
 
                 @include sm-tablet {
                     height: 30rem;
@@ -320,7 +322,7 @@
             align-items: center;
             justify-content: space-evenly;
             height: 40rem;
-            margin-top: 6rem;
+            margin-top: 1rem;
 
             @include mobile {
                 width: 90%;

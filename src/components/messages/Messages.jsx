@@ -1,6 +1,17 @@
 import '../../scss/messages.scss'
 
 export default function Messages() {
+
+    let currentMonth = () => {
+        const today = new Date();
+
+        const options = {
+            month: 'long'
+        };
+
+        return today.toLocaleDateString('en-US', options); 
+    };
+
     return (
         <>
             <div className="messages">
@@ -16,12 +27,10 @@ export default function Messages() {
                 </div>
                 <div className="catalog">
                     <div className="current-month">
-                        <h2>February</h2>
+                        <h2>{currentMonth()}</h2>
                         <div className="carousel">
                             <div className="video-container">
-                            <iframe title='2/6/22' src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPeaceMissionaryBaptistChurch%2Fvideos%2F4789504987782708%2F&show_text=false&width=560&t=0" width="800" height="480" 
-                            className="video"
-                            scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen={true}></iframe>
+                            <iframe  title='7/10/22' src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPKMOhio%2Fvideos%2F725683081869047%2F&show_text=false&width=560&t=0" width="800" height="480" className='video' scrolling="no" frameBorder={0} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
                             </div>
                         </div>
                     </div>

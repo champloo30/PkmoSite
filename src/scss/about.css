@@ -32,7 +32,7 @@
     background-position: -175px 0;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .about-hero {
     height: 65vh;
   }
@@ -92,7 +92,7 @@
     height: 125vh;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .wwa {
     height: 60vh;
   }
@@ -181,7 +181,7 @@
     height: 135vh;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .statements {
     height: 40vh;
   }
@@ -238,7 +238,7 @@
     height: 15vh;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .leadership {
     height: 20vh;
   }
@@ -286,7 +286,7 @@
     height: 15vh;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .about-location {
     height: 20vh;
   }

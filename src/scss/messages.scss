@@ -129,7 +129,7 @@
             height: 25vh;
         }
 
-        h2{
+        h2 {
             font-size: 4rem;
             font-weight: 300;
 
@@ -184,7 +184,7 @@
     }
 
     .catalog{
-        height: 90vh;
+        height: 70vh;
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -228,7 +228,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            //margin-top: -1.5rem;
+            // margin-top: -1.5rem;
             margin-left: 2rem;
             //margin-bottom: 3rem;
 
@@ -279,6 +279,7 @@
                 justify-content: center;
                 width: 100%;
                 //overflow-x: auto;
+                margin-top: 2rem;
 
                 @include mobile {
                     margin-bottom: 1rem;

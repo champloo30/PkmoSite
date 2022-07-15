@@ -22,7 +22,7 @@
     margin-top: 3rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .location .loc-head {
     height: 90vh;
   }
@@ -98,7 +98,7 @@
     height: 80vh;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .location .direction {
     height: 40vh;
   }

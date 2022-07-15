@@ -35,7 +35,7 @@
     height: 205vh;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .connect {
     height: 110vh;
   }
@@ -139,7 +139,7 @@
     height: 76rem;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .connect .formbox {
     height: 46.5rem;
   }
