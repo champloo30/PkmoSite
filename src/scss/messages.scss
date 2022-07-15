@@ -144,7 +144,8 @@
 
             @include mobile {
                 text-align: center;
-                font-size: 3.5rem;
+                font-size: 3rem;
+                width: 90%;
             }
 
             @include md-mobile {
@@ -260,7 +261,7 @@
                 @include mobile {
                     font-size: 3rem;
                     text-align: center;
-                    margin-right: 1rem;
+                    margin-top: 1rem;
                 }
 
                 @include md-mobile {

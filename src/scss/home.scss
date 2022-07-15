@@ -54,6 +54,21 @@
             .PKMOid {
                 height: 25rem;
                 width: 65rem;
+
+                @include mobile {
+                    height: 9rem;
+                    width: 25rem;
+                }
+
+                @include sm-mobile {
+                    height: 6.5rem;
+                    width: 17.5rem;
+                }
+
+                @include md-mobile {
+                    height: 8rem;
+                    width: 21rem;
+                }
                 
                 @include desktop {
                     height: 15rem;
@@ -75,9 +90,17 @@
                 }
 
                 @include mobile {
-                    font-size: 2.75rem;
+                    font-size: 2.25rem;
                     margin-bottom: 2rem;
                     margin-top: 2rem;
+                }
+
+                @include sm-mobile {
+                    font-size: 1.75rem;
+                }
+
+                @include md-mobile {
+                    font-size: 2rem;
                 }
 
                 @include desktop {
@@ -261,7 +284,7 @@
         }
         
         @include mobile {
-            height: 95vh;
+            height: 110vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -270,7 +293,7 @@
         }
 
         @include sm-mobile {
-            height: 90vh;
+            height: 95vh;
         }
 
         @include desktop {
@@ -303,14 +326,14 @@
                 }
 
                 @include mobile {
-                    height: 20rem;
-                    width: 18rem;
-                    margin: 1rem 1.5rem 0 0;
+                    height: 24rem;
+                    width: 20rem;
+                    margin: 1rem 0;
                 }
 
                 @include sm-mobile {
                     height: 18rem;
-                    width: 17rem;
+                    width: 16rem;
                 }
             }
         }
@@ -326,7 +349,8 @@
 
             @include mobile {
                 width: 90%;
-                margin-bottom: -2rem;
+                // margin-bottom: -2rem;
+                margin-top: 2rem;
             }
 
             @include sm-mobile {
@@ -335,6 +359,14 @@
     
             .top-text{
                 text-align: center;
+
+                @include mobile {
+                    margin-top: 1rem;
+                }
+
+                @include sm-mobile {
+                    margin-top: -0.5rem;
+                }
 
                 @include sm-tablet {
                     margin-top: -4rem;
@@ -411,6 +443,10 @@
                 color: white;
                 font-weight: 300;
 
+                @include mobile {
+                    margin-top: 1rem;
+                }
+
                 @include lg-tablet {
                     margin-top: -1rem;
 
@@ -420,7 +456,7 @@
                 }
 
                 @include sm-mobile {
-                    margin-top: -.5rem;
+                    margin-top: 1rem;
                 }
     
                 &:hover{

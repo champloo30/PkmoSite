@@ -29,10 +29,6 @@
             margin-top: -3rem;
         }
 
-        @include mobile {
-            margin-top: -210px;
-        }
-
         .menu-links{
             display: flex;
             flex-direction: column;

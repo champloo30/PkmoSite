@@ -28,11 +28,6 @@
     margin-top: -3rem;
   }
 }
-@media (max-width: 425px) {
-  .menu .menu-items {
-    margin-top: -210px;
-  }
-}
 .menu .menu-items .menu-links {
   display: flex;
   flex-direction: column;

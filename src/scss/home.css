@@ -56,6 +56,24 @@
   height: 25rem;
   width: 65rem;
 }
+@media (max-width: 425px) {
+  .home .hero .hero-text .PKMOid {
+    height: 9rem;
+    width: 25rem;
+  }
+}
+@media (max-width: 320px) {
+  .home .hero .hero-text .PKMOid {
+    height: 6.5rem;
+    width: 17.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .home .hero .hero-text .PKMOid {
+    height: 8rem;
+    width: 21rem;
+  }
+}
 @media (min-width: 1441px) {
   .home .hero .hero-text .PKMOid {
     height: 15rem;
@@ -79,9 +97,19 @@
 }
 @media (max-width: 425px) {
   .home .hero .hero-text h2 {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .home .hero .hero-text h2 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 375px) {
+  .home .hero .hero-text h2 {
+    font-size: 2rem;
   }
 }
 @media (min-width: 1441px) {
@@ -271,7 +299,7 @@
 }
 @media (max-width: 425px) {
   .home .about {
-    height: 95vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -281,7 +309,7 @@
 }
 @media (max-width: 320px) {
   .home .about {
-    height: 90vh;
+    height: 95vh;
   }
 }
 @media (min-width: 1441px) {
@@ -317,15 +345,15 @@
 }
 @media (max-width: 425px) {
   .home .about .left img {
-    height: 20rem;
-    width: 18rem;
-    margin: 1rem 1.5rem 0 0;
+    height: 24rem;
+    width: 20rem;
+    margin: 1rem 0;
   }
 }
 @media (max-width: 320px) {
   .home .about .left img {
     height: 18rem;
-    width: 17rem;
+    width: 16rem;
   }
 }
 .home .about .right {
@@ -340,7 +368,7 @@
 @media (max-width: 425px) {
   .home .about .right {
     width: 90%;
-    margin-bottom: -2rem;
+    margin-top: 2rem;
   }
 }
 @media (max-width: 320px) {
@@ -350,6 +378,16 @@
 }
 .home .about .right .top-text {
   text-align: center;
+}
+@media (max-width: 425px) {
+  .home .about .right .top-text {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .home .about .right .top-text {
+    margin-top: -0.5rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 799px) {
   .home .about .right .top-text {
@@ -429,6 +467,11 @@
   color: white;
   font-weight: 300;
 }
+@media (max-width: 425px) {
+  .home .about .right .button {
+    margin-top: 1rem;
+  }
+}
 @media (min-width: 800px) and (max-width: 1023px) {
   .home .about .right .button {
     margin-top: -1rem;
@@ -439,7 +482,7 @@
 }
 @media (max-width: 320px) {
   .home .about .right .button {
-    margin-top: -0.5rem;
+    margin-top: 1rem;
   }
 }
 .home .about .right .button:hover {
