@@ -69,6 +69,16 @@
                     height: 8rem;
                     width: 21rem;
                 }
+
+                @include sm-tablet {
+                    height: 12.5rem;
+                    width: 35rem;
+                }
+
+                @include lg-tablet {
+                    height: 15rem;
+                    width: 40rem;
+                }
                 
                 @include desktop {
                     height: 15rem;
@@ -82,11 +92,13 @@
                 margin-bottom: 3.5rem;
 
                 @include sm-tablet {
-                    font-size: 3rem;
+                    font-size: 2.25rem;
+                    margin-bottom: 0.5rem;
                 }
 
                 @include lg-tablet {
-                    font-size: 3.5rem;
+                    font-size: 2.75rem;
+                    margin-bottom: 1.5rem;
                 }
 
                 @include mobile {
@@ -317,12 +329,15 @@
                 width: 31rem;
 
                 @include sm-tablet {
-                    height: 30rem;
+                    height: 22.5rem;
+                    width: 22.5rem;
                     margin-top: 2rem;
                 }
 
                 @include lg-tablet {
                     margin-top: 2rem;
+                    height: 27.5rem;
+                    width: 27.5rem;
                 }
 
                 @include mobile {
@@ -413,11 +428,11 @@
                     margin-bottom: -2rem;
 
                     @include sm-tablet {
-                        margin-top: -2rem;
+                        margin-top: -4rem;
                     }
 
                     @include lg-tablet {
-                        margin-top: -2rem;
+                        margin-top: -4rem;
                     }
 
                     @include mobile {
