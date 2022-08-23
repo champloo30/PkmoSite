@@ -3,5 +3,19 @@
   top: 70px;
   background-color: #d8d8d8;
 }
+.app .skip-to-content-link {
+  background: #7C5296;
+  color: #d8d8d8;
+  height: 30px;
+  margin-left: 50%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+.app .skip-to-content-link:focus {
+  transform: translateY(0%);
+}
 
 /*# sourceMappingURL=app.css.map */
