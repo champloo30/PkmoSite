@@ -32,11 +32,11 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
                     </a>
                 </div>
                 <div className="right">
-                    <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                    <button className="hamburger" aria-label="menu" onClick={() => setMenuOpen(!menuOpen)}>
                         <span className="line1"></span>
                         <span className="line2"></span>
                         <span className="line3"></span>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>

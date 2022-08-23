@@ -298,7 +298,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 2rem;
 }
 @media (max-width: 425px) {
   .messages .catalog .current-month .carousel {

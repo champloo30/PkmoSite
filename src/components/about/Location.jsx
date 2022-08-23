@@ -18,11 +18,11 @@ export default function Location() {
                     <div className="container">
                         <div className="item">
                             <h3>For <span>Directions</span> Click Here</h3>
-                            <a href="http://goo.gl/maps/2CJf1UEafdeuhvAB6" target="_blank" rel="noopener noreferrer"><button className="button">Here</button></a>
+                            <a href="http://goo.gl/maps/2CJf1UEafdeuhvAB6" target="_blank" rel="noopener noreferrer"><button className="button" aria-label="directions">Here</button></a>
                         </div>
                         <div className="item">
                             <h3>For <span>Church Online</span> Click Here</h3>
-                            <a href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer"><button className="button">Here</button></a>
+                            <a href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer"><button className="button" aria-label="church online">Here</button></a>
                         </div>
                     </div>
                 </div>

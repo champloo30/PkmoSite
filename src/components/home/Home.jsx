@@ -21,8 +21,8 @@ export default function Home() {
                 <div className="location-box">
                     <h2>Join us how ever you can!</h2>
                     <div className="container">
-                        <a href="/location"><button className="button">In Person</button></a>
-                        <a href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer"><button className="button">Online</button></a>
+                        <a href="/location"><button className="button" aria-label="in person">In Person</button></a>
+                        <a href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer"><button className="button" aria-label="church online">Online</button></a>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@ export default function Home() {
                     <div className="bottom-text">
                         <h1>Learn more about our church organiztion here</h1>
                     </div>
-                    <a href="/about"><button className="button">About Us</button></a>
+                    <a href="/about"><button className="button" aria-label="about us">About Us</button></a>
                 </div>
             </div>
             <div className="peace-post" id="peacepost">
@@ -46,7 +46,7 @@ export default function Home() {
                     <h1>Peace Post</h1>
                     <span className="line"></span>
                     <h3>Your one stop shop for all Peace updates and events!</h3>
-                    <a href="/peacepost"><button className="button">Here</button></a>
+                    <a href="/peacepost"><button className="button" aria-label="peace post">Here</button></a>
                 </div>
                 <img src={dove} alt="Dove" />
             </div>

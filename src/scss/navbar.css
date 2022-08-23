@@ -51,12 +51,14 @@
   align-items: center;
 }
 .navbar .container .right .hamburger {
-  width: 2rem;
+  width: 2.5rem;
   height: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 .navbar .container .right .hamburger span {
   width: 100%;

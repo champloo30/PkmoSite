@@ -52,11 +52,11 @@ export default function About() {
             </div>
             <div className="leadership">
                 <h2>Get to know our Kingdom Leaders</h2>
-                <a href="/leadership"><button className="button">Here</button></a>
+                <a href="/leadership"><button className="button" aria-label="leadership">Here</button></a>
             </div>
             <div className="about-location">
                 <h2>Our Location & Directions</h2>
-                <a href="/location"><button className="button">Here</button></a>
+                <a href="/location"><button className="button" aria-label="location and directions">Here</button></a>
             </div>
         </>
     )
