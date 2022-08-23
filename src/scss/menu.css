@@ -21,7 +21,6 @@
 }
 .menu .menu-items {
   width: 100%;
-  margin-bottom: 1.5rem;
 }
 @media (min-width: 800px) and (max-width: 1023px) {
   .menu .menu-items {
@@ -47,7 +46,7 @@
 .menu .menu-items .menu-links .link-name .title hr {
   border: 1px solid #d8d8d8;
   width: 220px;
-  margin: 5px 0;
+  margin: 2px 0;
 }
 @media (max-width: 320px) {
   .menu .menu-items .menu-links .link-name .title hr {
@@ -63,7 +62,7 @@
   list-style-type: none;
 }
 .menu .menu-items .menu-links .link-name .list2 li {
-  margin: 0.5rem 0;
+  margin: 0.25rem 0;
 }
 .menu .menu-items .menu-links .link-name .list2 li .link {
   font-size: 1.2rem;

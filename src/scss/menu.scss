@@ -23,7 +23,7 @@
     .menu-items{
         width: 100%;
         //margin-top: 100px;
-        margin-bottom: 1.5rem;
+        // margin-bottom: 1rem;
 
         @include lg-tablet {
             margin-top: -3rem;
@@ -47,7 +47,7 @@
                     hr{
                         border: 1px solid $silverColor;
                         width: 220px;
-                        margin: 5px 0;
+                        margin: 2px 0;
 
                         @include sm-mobile {
                             width: 170px;
@@ -65,7 +65,7 @@
                     list-style-type: none;
 
                     li {
-                        margin: 0.5rem 0;
+                        margin: 0.25rem 0;
 
                         .link{
                             font-size: 1.2rem;
