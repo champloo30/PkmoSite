@@ -33,9 +33,9 @@ export default function Navbar({ menuOpen, setMenuOpen }) {
                 </div>
                 <div className="right">
                     <button className="hamburger" aria-label="menu" onClick={() => setMenuOpen(!menuOpen)}>
-                        <span className="line1"></span>
-                        <span className="line2"></span>
-                        <span className="line3"></span>
+                        <span className="line1" aria-roledescription="hamburger"></span>
+                        <span className="line2" aria-roledescription="hamburger"></span>
+                        <span className="line3" aria-roledescription="hamburger"></span>
                     </button>
                 </div>
             </div>
