@@ -1,0 +1,55 @@
+$mainColor: #7C5296;
+$silverColor: #d8d8d8;
+$qFont: 'Quattrocento', serif;
+$nsdFont: 'Noto Sans Display', sans-serif;
+$lust: lust-sans, sans-serif;
+
+$sm-mobile-width: 320px;
+$md-mobile-width: 375px;
+$mobile-width: 425px;
+$sm-tablet-width: 768px;
+$lg-tablet-width: 800px;
+$laptop-width: 1024px;
+$desktop-width: 1440px;
+
+@mixin sm-mobile {
+    @media (max-width: #{$sm-mobile-width}) {
+        @content;
+    }
+}
+
+@mixin md-mobile {
+    @media (max-width: #{$md-mobile-width}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
+@mixin sm-tablet {
+    @media (min-width: #{$sm-tablet-width}) and (max-width: #{$lg-tablet-width - 1}) {
+        @content;
+    }
+}
+
+@mixin lg-tablet {
+    @media (min-width: #{$lg-tablet-width}) and (max-width: #{$laptop-width - 1}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width + 1}) {
+        @content;
+    }
+}

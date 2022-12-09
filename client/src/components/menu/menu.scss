@@ -1,0 +1,104 @@
+@import "../../global.scss";
+
+.menu{
+    height: calc(100vh - 70px);
+    width: 300px;
+    background-color: $mainColor;
+    position: fixed;
+    right: -300px;
+    opacity: 0;
+    top: 70px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 1s ease;
+
+    @include sm-mobile {
+        width: 250px;
+        right: -250px;
+    }
+
+    .menu-items{
+        width: 100%;
+        //margin-top: 100px;
+        // margin-bottom: 1rem;
+
+        @include lg-tablet {
+            margin-top: -3rem;
+        }
+
+        .menu-links{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            .link-name{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+                color: white;
+
+                .title{
+                    margin: 1.25rem 0;
+                    hr{
+                        border: 1px solid $silverColor;
+                        width: 220px;
+                        margin: 2px 0;
+
+                        @include sm-mobile {
+                            width: 170px;
+                        }
+                    }
+
+                    h1{
+                        font-size: 2rem; 
+                        font-family: $qFont;
+                        font-weight: 500;
+                    }
+                }
+
+                .list2{
+                    list-style-type: none;
+
+                    li {
+                        margin: 0.25rem 0;
+
+                        .link{
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                            text-decoration: none;
+                            color: inherit;
+                            margin-left: -1rem;
+    
+                            @include sm-mobile {
+                                margin-left: -1rem;
+                            }
+        
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .link-give{
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                        margin-left: -1rem;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
+    }
+
+    &.active{
+        right: 0;
+        opacity: 1;
+        z-index: 2;
+        background-color: $mainColor;
+    }
+}

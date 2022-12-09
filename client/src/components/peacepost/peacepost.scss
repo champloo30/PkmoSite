@@ -1,0 +1,138 @@
+@import "../../global.scss";
+
+.peacepost{
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+    //background-image: url("../img-icon/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // //background-position-x: 16px;
+    // background-position-y: 70px;
+    border-bottom: 2px solid $silverColor;
+
+    @include sm-tablet {
+        height: 91.7vh;
+    }
+
+    @include lg-tablet {
+        height: 92.75vh;
+    }
+
+    @include mobile {
+        height: 115vh;
+    }
+
+    @include desktop {
+        height: 93vh;
+    }
+
+    h1{
+        font-family: $qFont;
+        font-size: 5rem;
+        font-weight: 500;
+        //margin-top: -3rem;
+        color: black;
+        margin-top: -1rem;
+
+        @include sm-tablet {
+            margin-top: 3rem;
+        }
+
+        @include lg-tablet {
+            margin-top: 2rem;
+        }
+
+        @include mobile {
+            font-size: 4rem;
+            margin-top: 3rem;
+        }
+
+        @include md-mobile {
+            font-size: 3.5rem;
+        }
+
+        @include sm-mobile {
+            font-size: 3.25rem;
+        }
+    }
+
+    .posts{
+        display: flex;
+        flex-direction: row;
+        //align-items: center;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+
+        @include sm-tablet {
+            margin-top: 0;
+            flex-direction: column;
+        }
+
+        @include lg-tablet {
+            margin-top: 0;
+            flex-direction: column;
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        @include md-mobile {
+            margin-top: -1rem;
+        }
+
+        @include sm-mobile {
+            margin-top: -2rem;
+        }
+
+        .default-post{
+            height: 15rem;
+            width: 17rem;
+            background-color: $mainColor;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            cursor: not-allowed;
+            margin: 0 4.5rem;
+            box-shadow: 2px 4px 10px black;
+
+            @include sm-tablet {
+                margin: 0.5rem 0;
+            }
+
+            @include mobile {
+                margin: 1rem 0;
+            }
+
+            @include lg-tablet {
+                margin: 1rem 0;
+            }
+
+            .pin{
+                height: 2rem;
+                width: 2rem;
+                background-color: white;
+                border-radius: 50%;
+                box-shadow: 1px 3px 10px black;
+            }
+
+            h3{
+                font-size: 1.5rem;
+            }
+
+            p{
+                text-align: center;
+                margin: 0 1.5rem;
+            }
+        }
+    }
+}

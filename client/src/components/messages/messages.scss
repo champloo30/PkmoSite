@@ -1,0 +1,372 @@
+@import "../../global.scss";
+
+.messages{
+    //height: 210vh;
+    //width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-bottom: 2px solid $silverColor;
+
+    h1{
+        margin-top: 4.5rem;
+        margin-bottom: 3.25rem;
+        font-size: 5rem;
+        font-weight: 500;
+        font-family: $qFont;
+
+        @include sm-tablet {
+            font-size: 4rem;
+        }
+
+        @include lg-tablet {
+            font-size: 4rem;   
+        }
+
+        @include mobile {
+            margin-bottom: 1.5rem;
+            font-size: 4rem;
+            margin-top: 5rem;
+        }
+    }
+
+    .message-questions{
+        height: 20vh;
+        width: 100%;
+        background-color: $silverColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 4.5rem;
+
+        @include sm-tablet {
+            height: 18vh;
+        }
+
+        @include lg-tablet {
+            height: 15vh;
+        }
+
+        @include mobile {
+            height: 30vh;
+            margin-bottom: 2rem;
+        }
+
+        @include md-mobile {
+            height: 25vh;
+        }
+
+        @include sm-mobile {
+            height: 30vh;
+        }
+
+        h3{
+            font-size: 1.75rem;
+            font-weight: 300;
+            color: white;
+
+            @include mobile {
+                text-align: center;
+                width: 90%;
+            }
+
+            @include md-mobile {
+                font-size: 1.5rem;
+            }
+
+            @include sm-mobile {
+                font-size: 1.5rem;
+            }
+
+            span{
+                color: $mainColor;
+            }
+        }
+    }
+
+    .catalog-text{
+        height: 30vh;
+        width: 80%;
+        background-color: $mainColor;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+
+        @include sm-tablet {
+            height: 20vh;
+            width: 90%;
+            margin-bottom: 0;
+        }
+
+        @include lg-tablet {
+            height: 15vh;
+            width: 90%;
+            margin-bottom: 0;
+        }
+
+        @include mobile {
+            height: 35vh;
+            width: 100%;
+        }
+
+        @include md-mobile {
+            height: 35vh;
+            width: 100%;
+        }
+
+        @include sm-mobile {
+            height: 35vh;
+            width: 100%;
+        }
+
+        @include desktop {
+            height: 25vh;
+        }
+
+        h2 {
+            font-size: 4rem;
+            font-weight: 300;
+
+            @include sm-tablet {
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            @include lg-tablet {
+                font-size: 3rem;
+            }
+
+            @include mobile {
+                text-align: center;
+                font-size: 3rem;
+                width: 90%;
+            }
+
+            @include md-mobile {
+                font-size: 3rem;
+            }
+
+            @include sm-mobile {
+                font-size: 2.75rem;
+            }
+        }
+
+        h3{
+            font-size: 2rem;
+            font-weight: 200;
+            margin-top: -.625rem;
+
+            @include sm-tablet {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            @include lg-tablet {
+                font-size: 1.5rem;
+            }
+
+            @include mobile {
+                text-align: center;
+                font-size: 1.5rem;
+                width: 90%;
+            }
+
+            span{
+                color: $silverColor;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .catalog{
+        height: 70vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        //margin-left: 100px;
+        //overflow: hidden;
+        //background-color: $silverColor;
+
+        @include sm-tablet {
+            height: 45vh;
+        }
+
+        @include lg-tablet {
+            height: 40vh;
+        }
+
+        @include mobile {
+            height: 40vh;
+            align-items: center;
+            width: 100%;
+        }
+
+        @include md-mobile {
+            height: 35vh;
+            width: 100%;
+        }
+
+        @include sm-mobile {
+            height: 30vh;
+            width: 100%;
+        }
+
+        @include desktop {
+            height: 50vh;
+        }
+
+        .current-month{
+            //height: 160vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            // margin-top: -1.5rem;
+            margin-left: 2rem;
+            //margin-bottom: 3rem;
+
+            @include sm-tablet {
+                margin-left: 1.5rem;
+            }
+
+            @include lg-tablet {
+                margin-left: 1.5rem;
+            }
+
+            @include mobile {
+                margin-top: -2rem;
+                margin-left: 1.5rem;
+            }
+
+            h2{
+                font-size: 4rem;
+                font-weight: 300;
+
+                @include sm-tablet {
+                    font-size: 3.5rem;
+                }
+
+                @include lg-tablet {
+                    font-size: 3.5rem;
+                }
+
+                @include mobile {
+                    font-size: 3rem;
+                    text-align: center;
+                    margin-top: 1rem;
+                }
+
+                @include md-mobile {
+                    font-size: 2.75rem;
+                }
+
+                @include sm-mobile {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .carousel{
+                //height: 30rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                //overflow-x: auto;
+                // margin-top: 2rem;
+
+                @include mobile {
+                    margin-bottom: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .video-container{
+                    margin-right: 1.5rem;
+                    margin-top: .625rem;
+                    cursor: pointer;
+                    //overflow-x: auto;
+
+                    .video{
+                        height: 28rem;
+                        width: 55rem;
+                        background-color: black;
+                        color: white;
+                        cursor: pointer;
+                        //overflow: hidden;
+                        border: none;
+                        //margin-bottom: 10px;
+
+                        @include sm-tablet {
+                            height: 20rem;
+                            width: 40rem;
+                        }
+
+                        @include lg-tablet {
+                            height: 20rem;
+                            width: 40rem;   
+                        }
+
+                        @include mobile {
+                            height: 13rem;
+                            width: 24rem;
+                        }
+
+                        @include md-mobile {
+                            height: 12rem;
+                            width: 22rem;
+                        }
+
+                        @include sm-mobile {
+                            height: 10rem;
+                            width: 18rem;
+                        }
+                    }
+
+                    h4{
+                        font-size: 1.25rem;
+                        font-weight: 200;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    h5{
+        font-size: 1.5rem;
+        font-weight: 200;
+        margin: 2rem 0;
+        //margin-left: 140px;
+        //margin-bottom: 2rem;
+        text-align: center;
+        background-color: white;
+
+        @include sm-tablet {
+            margin: 0 0 2rem 0;
+        }
+
+        @include lg-tablet {
+            margin: 0 0 2rem 0;
+        }
+
+        @include mobile {
+            margin-top: 0;
+            width: 90%;
+        }
+
+        span{
+            color: $mainColor;
+            text-decoration: underline;
+            font-weight: 400;
+        }
+    }
+}
