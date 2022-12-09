@@ -4,7 +4,7 @@ import NavLogo from "../../assets/PKMO-Icon.png"
 export default function Navbar({ menuOpen, setMenuOpen }) {
 
     const changeNavbarColor = () => {
-        if (window.scrollY >= 1) {
+        if (window.scrollY >= 100) {
             document.querySelector('.navbar').style.backgroundColor = 'var(--white)';
             document.querySelector('.line1').style.backgroundColor = 'var(--main)';
             document.querySelector('.line2').style.backgroundColor = 'var(--main)';

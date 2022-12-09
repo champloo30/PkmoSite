@@ -202,15 +202,17 @@
                 .button{
                     height: 3.75rem;
                     width: 10rem;
-                    background-color: $mainColor;
-                    color: white;
+                    background-color: white;
+                    color: $mainColor;
                     font-size: 2rem;
-                    font-weight: 300;
+                    font-weight: 400;
                     border: .25rem solid $mainColor;
                     cursor: pointer;
+                    transition: all 0.5s ease;
     
                     &:hover{
-                        border: .25rem solid white;
+                        background-color: $mainColor;
+                        color: white;
 
                         @include sm-tablet {
                             border: none;

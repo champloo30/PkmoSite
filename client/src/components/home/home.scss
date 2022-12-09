@@ -8,6 +8,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0px -50px;
+        background-attachment: fixed;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -237,17 +238,19 @@
                 .button{
                     width: 10rem;
                     height: 3.75rem;
-                    background-color: $mainColor;
+                    background-color: white;
                     margin: 0 6.25rem;
-                    color: white;
+                    color: $mainColor;
                     font-size: 2rem;
-                    font-weight: 300;
+                    font-weight: 400;
                     text-align: center;
                     border: 0.25rem solid $mainColor;
                     cursor: pointer;
+                    transition: all 0.5s ease;
     
                     &:hover{
-                        border: 0.25rem solid white;
+                        background-color: $mainColor;
+                        color: white;
                     }
 
                     @include sm-tablet {
@@ -450,13 +453,14 @@
                 margin-top: -5rem;
                 width: 10rem;
                 height: 3.75rem;
-                background-color: $mainColor;
+                background-color: white;
                 text-align: center;
                 border: 0.25rem solid $mainColor;
                 cursor: pointer;
                 font-size: 2rem;
-                color: white;
-                font-weight: 300;
+                color: $mainColor;
+                font-weight: 400;
+                transition: all 0.5s ease;
 
                 @include mobile {
                     margin-top: 1rem;
@@ -464,18 +468,15 @@
 
                 @include lg-tablet {
                     margin-top: -1rem;
-
-                    &:hover {
-                        border: none;
-                    }
                 }
 
                 @include sm-mobile {
                     margin-top: 1rem;
                 }
     
-                &:hover{
-                    border: 0.25rem solid white;
+                &:hover {
+                    background-color: $mainColor;
+                    color: white;
                 }
             }
         }
@@ -590,15 +591,17 @@
             .button{
                 width: 10rem;
                 height: 3.75rem;
-                background-color: $mainColor;
+                background-color: $silverColor;
                 border: 0.25rem solid $mainColor;
-                color: white;
+                color: $mainColor;
                 font-size: 2rem;
-                font-weight: 300;
+                font-weight: 400;
                 cursor: pointer;
+                transition: all 0.5s ease;
     
                 &:hover{
-                    border: 0.25rem solid $silverColor;
+                    background-color: $mainColor;
+                    color: white;
 
                     @include sm-tablet {
                         border: none;

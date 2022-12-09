@@ -185,7 +185,7 @@
     }
 
     .catalog{
-        height: 70vh;
+        height: 80vh;
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -249,6 +249,7 @@
             h2{
                 font-size: 4rem;
                 font-weight: 300;
+                margin-bottom: 1rem;
 
                 @include sm-tablet {
                     font-size: 3.5rem;
@@ -344,7 +345,7 @@
     h5{
         font-size: 1.5rem;
         font-weight: 200;
-        margin: 2rem 0;
+        margin: 3rem 0 2rem;
         //margin-left: 140px;
         //margin-bottom: 2rem;
         text-align: center;

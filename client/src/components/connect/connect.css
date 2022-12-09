@@ -5,7 +5,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 1rem;
   border-bottom: 2px solid #d8d8d8;
 }
 @media (min-width: 768px) and (max-width: 799px) {
@@ -106,7 +105,7 @@
   }
 }
 .connect .formbox {
-  height: 46rem;
+  height: 48rem;
   width: 60%;
   background-color: #d8d8d8;
   box-shadow: 0 5px 8px black;
@@ -149,7 +148,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .connect .formbox .form h3 {
   font-size: 3rem;

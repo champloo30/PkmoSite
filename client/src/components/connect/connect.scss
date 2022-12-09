@@ -7,7 +7,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 1rem;
     border-bottom: 2px solid $silverColor;
 
     @include sm-tablet {
@@ -98,7 +97,7 @@
     }
 
     .formbox{
-        height: 46rem;
+        height: 48rem;
         width: 60%;
         background-color: $silverColor;
         //margin: -1rem 0;
@@ -136,7 +135,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
-            margin-top: 2rem;
+            margin-top: 3rem;
 
             h3{
                 font-size: 3rem;

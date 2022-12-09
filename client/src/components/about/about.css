@@ -3,6 +3,7 @@
   width: 100%;
   background-image: url("../../assets/james-coleman-cevIeBV1A3I-unsplash.jpg");
   background-position-y: -450px;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -255,16 +256,18 @@
 .leadership .button {
   height: 3.75rem;
   width: 10rem;
-  background-color: #7C5296;
-  color: white;
+  background-color: #d8d8d8;
+  color: #7C5296;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   border: 0.25rem solid #7C5296;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 .leadership .button:hover {
-  border: 0.25rem solid #d8d8d8;
+  background-color: #7C5296;
+  color: #d8d8d8;
 }
 
 .about-location {
@@ -303,16 +306,18 @@
 .about-location .button {
   height: 3.75rem;
   width: 10rem;
-  background-color: #7C5296;
-  color: white;
+  background-color: white;
+  color: #7C5296;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   border: 0.25rem solid #7C5296;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 .about-location .button:hover {
-  border: 0.25rem solid white;
+  background-color: #7C5296;
+  color: white;
 }
 
 /*# sourceMappingURL=about.css.map */

@@ -211,15 +211,17 @@
 .location .direction .container .item .button {
   height: 3.75rem;
   width: 10rem;
-  background-color: #7C5296;
-  color: white;
+  background-color: white;
+  color: #7C5296;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   border: 0.25rem solid #7C5296;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 .location .direction .container .item .button:hover {
-  border: 0.25rem solid white;
+  background-color: #7C5296;
+  color: white;
 }
 @media (min-width: 768px) and (max-width: 799px) {
   .location .direction .container .item .button:hover {
