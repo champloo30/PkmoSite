@@ -23,7 +23,7 @@ export default function Home() {
                         <a href="/location">
                             <button className="button" aria-label="in person">In Person</button>
                         </a>
-                        <a href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/search/top?q=peace%20kingdom%20ministries%20of%20ohio" target="_blank" rel="noopener noreferrer">
                             <button className="button" aria-label="church online">Online</button>
                         </a>
                     </div>
