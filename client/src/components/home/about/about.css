@@ -1,0 +1,214 @@
+.about {
+  height: calc(90vh - 70px);
+  width: 90%;
+  background-color: white;
+  display: flex;
+  margin: auto;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .about {
+    height: 90vh;
+    flex-direction: column;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .about {
+    height: 85vh;
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px) {
+  .about {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+@media (max-width: 320px) {
+  .about {
+    height: 95vh;
+  }
+}
+@media (min-width: 1441px) {
+  .about {
+    height: 65vh;
+  }
+}
+.about .left {
+  flex: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 320px) {
+  .about .left {
+    flex: 4;
+  }
+}
+.about .left img {
+  height: 35rem;
+  width: 31rem;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .about .left img {
+    height: 22.5rem;
+    width: 22.5rem;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .about .left img {
+    margin-top: 2rem;
+    height: 27.5rem;
+    width: 27.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .about .left img {
+    height: 24rem;
+    width: 20rem;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 320px) {
+  .about .left img {
+    height: 18rem;
+    width: 16rem;
+  }
+}
+.about .right {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 40rem;
+  margin-top: 1rem;
+}
+@media (max-width: 425px) {
+  .about .right {
+    width: 90%;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .about .right {
+    flex: 8;
+  }
+}
+.about .right .top-text {
+  text-align: center;
+}
+@media (max-width: 425px) {
+  .about .right .top-text {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .about .right .top-text {
+    margin-top: -0.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .about .right .top-text {
+    margin-top: -4rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .about .right .top-text {
+    margin-top: -4rem;
+  }
+}
+.about .right .top-text h2 {
+  font-weight: 200;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+@media (max-width: 425px) {
+  .about .right .top-text h2 {
+    font-size: 1.5rem;
+  }
+  .about .right .top-text h2:first-child {
+    margin-top: -5rem;
+  }
+}
+@media (max-width: 320px) {
+  .about .right .top-text h2 {
+    font-size: 1.25rem;
+  }
+  .about .right .top-text h2:first-child {
+    margin-top: -4rem;
+  }
+}
+.about .right .bottom-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about .right .bottom-text h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  color: #7C5296;
+  margin-top: -4rem;
+  margin-bottom: -2rem;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .about .right .bottom-text h1 {
+    margin-top: -4rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .about .right .bottom-text h1 {
+    margin-top: -4rem;
+  }
+}
+@media (max-width: 425px) {
+  .about .right .bottom-text h1 {
+    font-size: 2.25rem;
+    margin-top: -2.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .about .right .bottom-text h1 {
+    font-size: 2rem;
+  }
+}
+.about .right .button {
+  margin-top: -5rem;
+  width: 10rem;
+  height: 3.75rem;
+  background-color: white;
+  text-align: center;
+  border: 0.25rem solid #7C5296;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #7C5296;
+  font-weight: 400;
+  transition: all 0.5s ease;
+}
+@media (max-width: 425px) {
+  .about .right .button {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .about .right .button {
+    margin-top: -1rem;
+  }
+}
+@media (max-width: 320px) {
+  .about .right .button {
+    margin-top: 1rem;
+  }
+}
+.about .right .button:hover {
+  background-color: #7C5296;
+  color: white;
+}
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,30 @@
+@import '../../global.scss';
+
+.button{
+  width: 10rem;
+  height: 3.75rem;
+  background-color: transparent;
+  border: 0.25rem solid $mainColor;
+  color: $mainColor;
+  font-size: 2rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover{
+    background-color: $mainColor;
+    color: white;
+
+    @include sm-tablet {
+      border: none;
+    }
+
+    @include lg-tablet {
+      border: none;
+    }
+
+    @include mobile {
+      border: none;
+    }
+  }
+}

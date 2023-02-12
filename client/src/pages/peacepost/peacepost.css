@@ -1,0 +1,103 @@
+.peacepost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #7C5296;
+  border-bottom: 2px solid #d8d8d8;
+  margin-top: 70px;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .peacepost {
+    height: 91.7vh;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .peacepost {
+    height: 92.75vh;
+  }
+}
+@media (max-width: 425px) {
+  .peacepost {
+    height: 115vh;
+  }
+}
+@media (min-width: 1441px) {
+  .peacepost {
+    height: 93vh;
+  }
+}
+.peacepost .post-hero {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.peacepost .post-hero h1 {
+  font-family: "Quattrocento", serif;
+  font-size: 5rem;
+  font-weight: 500;
+  color: white;
+  margin-top: -1rem;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .peacepost .post-hero h1 {
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .peacepost .post-hero h1 {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 425px) {
+  .peacepost .post-hero h1 {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 375px) {
+  .peacepost .post-hero h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .peacepost .post-hero h1 {
+    font-size: 3.25rem;
+  }
+}
+.peacepost .post-hero .bhm-container {
+  width: 25.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+.peacepost .post-hero .bhm-container .bhm-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.peacepost .post-hero .bhm-container .bhm-text p {
+  width: 25.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+.peacepost .post-hero .bhm-container .bhm-text span {
+  width: 25.5rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: white;
+}
+.peacepost .center {
+  height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=peacepost.css.map */

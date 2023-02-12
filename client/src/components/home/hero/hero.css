@@ -1,0 +1,139 @@
+.hero {
+  height: 100vh;
+  background-image: url("../../../assets/skyline-dusk.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -50px;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .hero {
+    height: 50vh;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .hero {
+    height: 50vh;
+    background-position: 0px 0px;
+  }
+}
+@media (min-width: 1441px) {
+  .hero {
+    height: 70vh;
+    background-position: 0 -75px;
+  }
+}
+@media (max-width: 425px) {
+  .hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../assets/skyline-dusk.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -415px 0;
+  }
+}
+.hero .hero-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  margin-top: 70px;
+}
+@media (max-width: 425px) {
+  .hero .hero-text {
+    width: 90%;
+  }
+}
+.hero .hero-text .PKMOid {
+  height: 25rem;
+  width: 65rem;
+}
+@media (max-width: 425px) {
+  .hero .hero-text .PKMOid {
+    height: 9rem;
+    width: 25rem;
+  }
+}
+@media (max-width: 320px) {
+  .hero .hero-text .PKMOid {
+    height: 6.5rem;
+    width: 17.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .hero .hero-text .PKMOid {
+    height: 8rem;
+    width: 21rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .hero .hero-text .PKMOid {
+    height: 12.5rem;
+    width: 35rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .hero .hero-text .PKMOid {
+    height: 15rem;
+    width: 40rem;
+  }
+}
+@media (min-width: 1441px) {
+  .hero .hero-text .PKMOid {
+    height: 15rem;
+    width: 45rem;
+  }
+}
+.hero .hero-text h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 3.5rem;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .hero .hero-text h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .hero .hero-text h2 {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .hero .hero-text h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .hero .hero-text h2 {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 375px) {
+  .hero .hero-text h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1441px) {
+  .hero .hero-text h2 {
+    font-size: 4rem;
+  }
+}
+
+/*# sourceMappingURL=hero.css.map */

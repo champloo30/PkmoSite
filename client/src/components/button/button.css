@@ -1,0 +1,32 @@
+.button {
+  width: 10rem;
+  height: 3.75rem;
+  background-color: transparent;
+  border: 0.25rem solid #7C5296;
+  color: #7C5296;
+  font-size: 2rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button:hover {
+  background-color: #7C5296;
+  color: white;
+}
+@media (min-width: 768px) and (max-width: 799px) {
+  .button:hover {
+    border: none;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+  .button:hover {
+    border: none;
+  }
+}
+@media (max-width: 425px) {
+  .button:hover {
+    border: none;
+  }
+}
+
+/*# sourceMappingURL=button.css.map */

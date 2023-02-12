@@ -1,0 +1,101 @@
+@import "../../global.scss";
+
+.peacepost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $mainColor;
+    border-bottom: 2px solid $silverColor;
+    margin-top: 70px;
+
+    @include sm-tablet {
+        height: 91.7vh;
+    }
+
+    @include lg-tablet {
+        height: 92.75vh;
+    }
+
+    @include mobile {
+        height: 115vh;
+    }
+
+    @include desktop {
+        height: 93vh;
+    }
+
+    .post-hero {
+        height: calc(100vh - 70px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        h1{
+            font-family: $qFont;
+            font-size: 5rem;
+            font-weight: 500;
+            color: white;
+            margin-top: -1rem;
+
+            @include sm-tablet {
+                margin-top: 3rem;
+            }
+
+            @include lg-tablet {
+                margin-top: 2rem;
+            }
+
+            @include mobile {
+                font-size: 4rem;
+                margin-top: 3rem;
+            }
+
+            @include md-mobile {
+                font-size: 3.5rem;
+            }
+
+            @include sm-mobile {
+                font-size: 3.25rem;
+            }
+        }
+
+        .bhm-container {
+            width: 25.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 3rem;
+
+            .bhm-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                p {
+                    width: 25.5rem;
+                    font-size: 1.5rem;
+                    color: white;
+                }
+                span {
+                    width: 25.5rem;
+                    font-size: 1.5rem;
+                    font-weight: 200;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .center {
+        height: calc(100vh - 70px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+}

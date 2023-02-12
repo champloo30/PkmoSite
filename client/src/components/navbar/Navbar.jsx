@@ -3,23 +3,8 @@ import NavLogo from "../../assets/PKMO-Icon.png"
 
 export default function Navbar({ menuOpen, setMenuOpen }) {
 
-    const changeNavbarColor = () => {
-        if (window.scrollY >= 100) {
-            document.querySelector('.navbar').style.backgroundColor = 'var(--white)';
-            document.querySelector('.line1').style.backgroundColor = 'var(--main)';
-            document.querySelector('.line2').style.backgroundColor = 'var(--main)';
-            document.querySelector('.line3').style.backgroundColor = 'var(--main)';
-        } else {
-            document.querySelector('.navbar').style.backgroundColor = '';
-            document.querySelector('.line1').style.backgroundColor = '';
-            document.querySelector('.line2').style.backgroundColor = '';
-            document.querySelector('.line3').style.backgroundColor = '';
-        }
-    }
-    window.addEventListener('scroll', changeNavbarColor)
-
     return (
-        <div className={"navbar " + (menuOpen && "on")} onScroll={changeNavbarColor}>
+        <div className={"navbar " + (menuOpen && "on")}>
             <div className="container">
                 <div className="left">
                     <a className="logo-sec" href="/">

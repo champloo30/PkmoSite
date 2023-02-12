@@ -1,0 +1,44 @@
+.men {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+}
+.men .left {
+  height: 27.5rem;
+}
+.men .left img {
+  height: 100%;
+}
+.men .right {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+.men .right h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  color: #7C5296;
+}
+.men .right p {
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+}
+.men .right span {
+  font-size: 2rem;
+  color: #7C5296;
+}
+
+.not-shown {
+  margin-left: -100%;
+}
+
+/*# sourceMappingURL=men.css.map */

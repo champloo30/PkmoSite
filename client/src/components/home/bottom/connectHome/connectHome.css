@@ -1,0 +1,34 @@
+.connect-home {
+  height: 30rem;
+  width: 40rem;
+  background-image: url("https://scontent.fosu2-2.fna.fbcdn.net/v/t1.18169-9/1620916_759367974106566_8544687933303278531_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=n-ySAn82hhIAX8nZzt4&tn=Sz9VXVa9MPglNcmw&_nc_ht=scontent.fosu2-2.fna&oh=00_AfCm2zdeAPgeBR1SYAwrob3U4y9xw65bjXQtmU9mCUSo9Q&oe=640B8C48");
+  background-repeat: no-repeat;
+  background-position: -125px -50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.connect-home .connect-home-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(216, 216, 216, 0.7);
+  color: #7C5296;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.connect-home .connect-home-container h1 {
+  font-size: 2.75rem;
+}
+.connect-home .connect-home-container .icons img {
+  width: 2.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+.connect-home .connect-home-container p {
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=connectHome.css.map */

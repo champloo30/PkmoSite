@@ -18,9 +18,6 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                             <li onClick={()=>setMenuOpen(false)}>
                                 <a className="link" href="/leadership">Our Leadership</a>
                             </li>
-                            <li onClick={()=>setMenuOpen(false)}>
-                                <a className="link" href="/location">Location & Directions</a>
-                            </li>
                         </ul>
                     </div>
                     <div className="link-name">
@@ -34,7 +31,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
                                 <a className="link" href="/messages">Our Sunday Services</a>
                             </li>
                             <li onClick={()=>setMenuOpen(false)}>
-                                <a className="link" href="http://peacekmo.online.church" target="_blank" rel="noopener noreferrer" aria-label="Church Online">
+                                <a className="link" href="https://www.facebook.com/PKMOhio" target="_blank" rel="noopener noreferrer" aria-label="Church Online">
                                     Church Online
                                 </a>
                             </li>

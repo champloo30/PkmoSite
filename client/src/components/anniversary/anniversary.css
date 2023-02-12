@@ -1,0 +1,74 @@
+.anniversary {
+  height: 100%;
+  width: 50vw;
+  border-right: 2px solid #d8d8d8;
+  background: url("../../assets/PKMO-Full-Logo-Big.png"), white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.anniversary .anniversary-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.75);
+  gap: 1rem;
+}
+.anniversary .anniversary-container .top {
+  width: 80%;
+}
+.anniversary .anniversary-container .top h1 {
+  width: 10rem;
+  font-size: 3rem;
+  color: #7C5296;
+  margin-bottom: 1rem;
+}
+.anniversary .anniversary-container .top .hr-line {
+  height: 0.5rem;
+  width: 12.5rem;
+  background-color: black;
+}
+.anniversary .anniversary-container .middle {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.anniversary .anniversary-container .middle p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #7C5296;
+  border-bottom: 2px solid black;
+  margin-bottom: 0.5rem;
+}
+.anniversary .anniversary-container .middle p:first-child {
+  border: none;
+  margin: 0;
+}
+.anniversary .anniversary-container .middle .ross {
+  width: 12.5rem;
+}
+.anniversary .anniversary-container .bottom {
+  height: 5rem;
+  width: 75%;
+  padding: 16px;
+  background-color: #d8d8d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.anniversary .anniversary-container .bottom p {
+  font-weight: 300;
+}
+.anniversary .anniversary-container .bottom p span {
+  color: #7C5296;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=anniversary.css.map */

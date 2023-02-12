@@ -1,15 +1,15 @@
 import { useState } from "react"
 import "./app.scss";
 import Navbar from "./components/navbar/Navbar";
-import About from "./components/about/About";
-import Home from "./components/home/Home";
-import Leadership from "./components/about/leadership/Leadership";
-import Location from "./components/about/location/Location";
+import About from "./pages/about/About";
+import Home from "./pages/home/Home";
+import Leadership from "./pages/leadership/Leadership";
+import Location from "./pages/location/Location";
 import Menu from "./components/menu/Menu";
-import Messages from "./components/messages/Messages"
+import Messages from "./pages/messages/Messages"
 import Footer from "./components/footer/Footer";
-import PeacePost from "./components/peacepost/PeacePost";
-import Connect from "./components/connect/Connect";
+import PeacePost from "./pages/peacepost/PeacePost";
+import Connect from "./pages/connect/Connect";
 import { Route, Routes } from "react-router-dom";
 
 function App() {

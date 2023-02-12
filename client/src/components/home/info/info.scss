@@ -1,0 +1,87 @@
+@import '../../../global.scss';
+
+.info {
+  height: 50vh;
+  width: 100%;
+  background-image: url('https://scontent.fosu2-2.fna.fbcdn.net/v/t1.18169-9/10366315_760468150663215_4749506532969777846_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=YH9QP_6do2EAX-k6Hg0&_nc_ht=scontent.fosu2-2.fna&oh=00_AfBwCKbaMJlAFpboDrUhSxGShFELrdfz1NH5QXv-5tMxuw&oe=640B9BD1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .left {
+    flex: 1;
+    height: 100%;
+    background-color: rgba($color: #7C5296, $alpha: 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 400;
+    }
+
+    .times {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      .time {
+        height: 7.5rem;
+        width: 12.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.25rem;
+
+        h2 {
+          font-size: 2rem;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+        
+        p {
+          font-size: 1.25rem;
+          font-weight: 300;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+
+    span {
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+
+    .or {
+      font-size: 0.85rem;
+    }
+  }
+
+  .right {
+    flex: 1;
+    height: 100%;
+    background-color: rgba($color: #7C5296, $alpha: 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .googlemaps {
+      height: 20rem;
+      width: 30rem;
+    }
+  }
+}

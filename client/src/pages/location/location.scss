@@ -1,0 +1,229 @@
+@import "../../global.scss";
+
+.location {
+
+    .loc-head{
+        height: 130vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        @include sm-tablet {
+            height: 90vh;
+        }
+
+        @include lg-tablet {
+            height: 85vh;
+        }
+    
+        @include mobile {
+            height: 80vh;
+            margin-top: 3rem;
+        }
+
+        @include desktop {
+            height: 90vh;
+        }
+    
+        h1{
+            font-size: 5rem;
+            font-weight: 500;
+            font-family: $qFont;
+            color: $mainColor;
+            //margin-top: 20px;
+            text-align: center;
+
+            @include sm-tablet {
+                font-size: 4rem;
+                margin-top: 2rem;
+            }
+
+            @include lg-tablet {
+                font-size: 4rem;
+                margin-top: 2rem;
+            }
+    
+            @include mobile {
+                font-size: 3.5rem;
+                text-align: center;
+            }
+        }
+    
+        .googlemaps{
+            border: 0;
+            height: 37.5rem;
+            width: 50rem;
+
+            @include sm-tablet {
+                height: 35rem;
+                width: 40rem;
+            }
+
+            @include lg-tablet {
+                height: 35rem;
+                width: 45rem;
+            }
+    
+            @include mobile {
+                height: 25rem;
+                width: 90%;
+            }
+        }
+    }
+    
+    .direction{
+        height: 60vh;
+        background-color: $silverColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        @include sm-tablet {
+            height: 60vh;   
+        }
+
+        @include lg-tablet {
+            height: 40vh;
+        }
+    
+        @include mobile {
+            height: 80vh;
+        }
+
+        @include desktop {
+            height: 40vh;
+        }
+    
+        .loc-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            //justify-content: center;
+
+            @include sm-tablet {
+                margin-top: -1rem;
+            }
+
+            @include lg-tablet {
+                margin-top: -1rem;
+            }
+    
+            h2{
+                font-size: 3rem;
+                font-weight: 400;
+                color: $mainColor;
+
+                @include sm-mobile {
+                    margin-bottom: 1rem;
+                }
+            }
+    
+            h3{
+                font-size: 1.5rem;
+                font-weight: 300;
+    
+                @include mobile {
+                    text-align: center;
+                }
+    
+                @include sm-mobile {
+                    width: 90%;
+                }
+    
+                span{
+                    color: $mainColor;
+                }
+            }
+        }
+    
+        .container{
+            display: flex;
+            align-items: center;
+            //justify-content: space-evenly;
+
+            @include sm-tablet {
+                flex-direction: column;
+            }
+    
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+    
+            .item{
+                height: 10rem;
+                width: 25rem;
+                background-color: white;
+                margin: 0 3.25rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                @include sm-tablet {
+                    width: 27.5rem;
+                    margin: 1rem 0;
+                }
+
+                @include lg-tablet {
+                    width: 22.5rem;
+                    margin: 0 1rem;
+                }
+    
+                @include mobile {
+                    height: 12rem;
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin: 1rem 0;
+                }
+    
+                h3{
+                    font-size: 1.75rem;
+                    font-weight: 400;
+    
+                    @include mobile {
+                        text-align: center;
+                        width: 90%;
+                    }
+    
+                    span{
+                        color: $mainColor;
+                    }
+                }
+    
+                .button{
+                    height: 3.75rem;
+                    width: 10rem;
+                    background-color: white;
+                    color: $mainColor;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    border: .25rem solid $mainColor;
+                    cursor: pointer;
+                    transition: all 0.5s ease;
+    
+                    &:hover{
+                        background-color: $mainColor;
+                        color: white;
+
+                        @include sm-tablet {
+                            border: none;
+                        }
+
+                        @include lg-tablet {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

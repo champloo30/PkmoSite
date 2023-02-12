@@ -1,0 +1,45 @@
+@import '../../global.scss';
+
+.slider {
+  height: 27.5rem;
+  width: 100%;
+  background-color: $silverColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  .arrows {
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+  }
+
+  .slide-indicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 0.5rem;
+    position: absolute;
+    bottom: 2.5%;
+    left: 47.25%;
+    z-index: 4;
+
+    .indicator {
+      height: 0.75rem;
+      width: 0.75rem;
+      background-color: white;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    
+    .active {
+      background-color: $mainColor;
+    }
+  }
+}

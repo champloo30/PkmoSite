@@ -1,0 +1,44 @@
+.bible-study {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+}
+.bible-study .left {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+.bible-study .left h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  color: #7C5296;
+}
+.bible-study .left p {
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+}
+.bible-study .left span {
+  font-size: 2rem;
+  color: #7C5296;
+}
+.bible-study .right {
+  height: 27.5rem;
+}
+.bible-study .right img {
+  height: 100%;
+}
+
+.not-shown {
+  margin-left: -100%;
+}
+
+/*# sourceMappingURL=biblestudy.css.map */

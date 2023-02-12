@@ -1,0 +1,53 @@
+.sickandshutin {
+  height: 100%;
+  width: 50vw;
+  background-color: white;
+  border-left: 2px solid #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sickandshutin .sickandshutin-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sickandshutin .sickandshutin-container h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #7C5296;
+}
+.sickandshutin .sickandshutin-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.sickandshutin .sickandshutin-container ul li {
+  font-size: 1.5rem;
+  font-weight: 300;
+  list-style: none;
+  text-align: center;
+}
+.sickandshutin .sasi-bottom {
+  height: 20rem;
+  width: 100%;
+  background-color: #7C5296;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sickandshutin .sasi-bottom p {
+  width: 80%;
+  font-size: 1.75rem;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+/*# sourceMappingURL=sickandshutin.css.map */

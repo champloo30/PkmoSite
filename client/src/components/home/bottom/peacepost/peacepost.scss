@@ -1,0 +1,115 @@
+@import '../../../../global.scss';
+
+.peace-post{
+  height: 30rem;
+  width: 40rem;
+  background-color: $silverColor;
+  background-image: url('https://peacekmo.org/static/media/dove-png-41736.24be7a4ccb0b7ce9e39a.png');
+  background-repeat: no-repeat;
+  background-size: 25rem 25rem;
+  background-position: 75px 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @include sm-tablet {
+    height: 30vh;
+  }
+
+  @include lg-tablet {
+    height: 25vh;
+  }
+
+  @include mobile {
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include sm-mobile {
+    height: 40vh;
+  }
+
+  @include desktop {
+    height: 40vh;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    justify-content: center;
+    background-color: rgba($color: #d8d8d8, $alpha: 0.5);
+    gap: 1rem;
+
+    @include sm-tablet {
+      height: 80%;
+      margin-right: 0;
+    }
+
+    @include lg-tablet {
+      height: 80%;
+      margin-right: 0;
+    }
+
+    @include mobile {
+      width: 90%;
+      height: 80%;
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    h1{
+      font-size: 4.75rem;
+      font-family: $qFont;
+      color: $mainColor;
+      font-weight: 500;
+
+      @include lg-tablet {
+        font-size: 4rem;
+      }
+
+      @include mobile {
+        font-size: 3.5rem;
+      }
+    }
+
+    .line{
+      width: 110%;
+      height: 0.35rem;
+      background-color: white;
+
+      @include mobile {
+        width: 80%;
+      }
+
+      @include md-mobile {
+        width: 85%;
+      }
+
+      @include sm-mobile {
+        width: 95%;
+      }
+    }
+
+    h3{
+      font-size: 1.5rem;
+      text-align: center;
+      font-weight: 200;
+
+      @include mobile {
+        width: 80%;
+      }
+
+      @include sm-mobile {
+        width: 85%;
+      }
+    }
+  }
+}

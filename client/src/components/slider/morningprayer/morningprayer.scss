@@ -1,0 +1,51 @@
+@import '../../../global.scss';
+
+.morning-prayer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  // margin-left: 100vw;
+
+  .left {
+    height: 27.5rem;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .right {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      text-decoration: underline;
+      text-decoration-thickness: 3px;
+      color: $mainColor;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 200;
+      text-align: center;
+    }
+
+    span {
+      font-size: 2rem;
+      color: $mainColor;
+    }
+  }
+}
+
+.not-shown {
+  margin-left: -100%;
+}
