@@ -1,0 +1,155 @@
+@import '../../global.scss';
+@import 'react-big-calendar/lib/sass/styles';
+
+.post-calendar {
+  height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .cal-container {
+    height: 100%;
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .cal-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .button{
+        width: 10rem;
+        height: 3.75rem;
+        background-color: transparent;
+        border: 0.25rem solid $mainColor;
+        color: $mainColor;
+        font-size: 1.5rem;
+        font-weight: 400;
+        cursor: pointer;
+        transition: all 0.5s ease;
+      
+        &:hover{
+          background-color: $mainColor;
+          color: white;
+      
+          @include sm-tablet {
+            border: none;
+          }
+      
+          @include lg-tablet {
+            border: none;
+          }
+      
+          @include mobile {
+            border: none;
+          }
+        }
+      }
+    }
+
+    .cal-modal {
+      height: 20rem;
+      width: 32.5rem;
+      background-color: white;
+      border: 5px solid $mainColor;
+      position: absolute;
+      z-index: 5;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .input {
+        height: 2rem;
+        width: 90%;
+        border: 2px solid $mainColor;
+        padding: 0 0.5rem;
+        font-size: 1.25rem;
+      }
+
+      .picker {
+        margin-left: 1rem;
+      }
+
+      .modal-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .button{
+          width: 10rem;
+          height: 3.75rem;
+          background-color: transparent;
+          border: 0.25rem solid $mainColor;
+          color: $mainColor;
+          font-size: 1.5rem;
+          font-weight: 400;
+          cursor: pointer;
+          transition: all 0.5s ease;
+        
+          &:hover{
+            background-color: $mainColor;
+            color: white;
+        
+            @include sm-tablet {
+              border: none;
+            }
+        
+            @include lg-tablet {
+              border: none;
+            }
+        
+            @include mobile {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+
+    .cal-size {
+      height: 85%;
+      width: 100%;
+
+      .rbc-today {
+        background-color: #e6caf8;
+      }
+
+      .rbc-event {
+        background-color: $mainColor;
+      }
+
+      .rbc-date-cell {
+        &.rbc-now {
+          color: white;
+        }
+      }
+
+      .rbc-month-header {
+        background-color: $mainColor;
+        color: white;
+      }
+
+      .rbc-toolbar-label {
+        font-size: 2rem;
+        font-weight: 300;
+      }
+    }
+  }
+}

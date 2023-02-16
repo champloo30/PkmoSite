@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #7C5296;
+  background-color: white;
   border-bottom: 2px solid #d8d8d8;
   margin-top: 70px;
 }
@@ -29,6 +29,8 @@
 }
 .peacepost .post-hero {
   height: calc(100vh - 70px);
+  width: 100%;
+  background-color: #7C5296;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -3,6 +3,7 @@ import BHM from '../../assets/bhm.png'
 import Anniversary from '../../components/anniversary/Anniversary'
 import SickAndShutIn from '../../components/sickandshutin/SickAndShutIn'
 import Slider from '../../components/slider/Slider'
+import PostCalendar from '../../components/post-calendar/PostCalendar'
 
 export default function PeacePost() {
     return (
@@ -26,6 +27,7 @@ export default function PeacePost() {
                 <SickAndShutIn />
             </div>
             <Slider />
+            <PostCalendar />
         </div>
     )
 }
