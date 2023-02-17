@@ -9,6 +9,13 @@
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 425px) {
+  .info {
+    height: 85vh;
+    flex-direction: column;
+    background-position: 0;
+  }
+}
 .info .left {
   flex: 1;
   height: 100%;
@@ -19,11 +26,22 @@
   justify-content: center;
   color: white;
 }
+@media (max-width: 425px) {
+  .info .left {
+    width: 100%;
+  }
+}
 .info .left h1 {
   font-size: 3.5rem;
   font-weight: 400;
 }
+@media (max-width: 425px) {
+  .info .left h1 {
+    font-size: 3rem;
+  }
+}
 .info .left .times {
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,26 +56,56 @@
   justify-content: flex-start;
   gap: 0.25rem;
 }
+@media (max-width: 425px) {
+  .info .left .times .time {
+    width: 10rem;
+  }
+}
 .info .left .times .time h2 {
   font-size: 2rem;
   font-weight: 400;
   text-decoration: underline;
 }
+@media (max-width: 425px) {
+  .info .left .times .time h2 {
+    font-size: 1.5rem;
+  }
+}
 .info .left .times .time p {
   font-size: 1.25rem;
   font-weight: 300;
+}
+@media (max-width: 425px) {
+  .info .left .times .time p {
+    font-size: 1rem;
+  }
 }
 .info .left h2 {
   font-size: 2rem;
   font-weight: 400;
   text-decoration: underline;
 }
+@media (max-width: 425px) {
+  .info .left h2 {
+    font-size: 1.5rem;
+  }
+}
 .info .left span {
   font-size: 1.25rem;
   font-weight: 300;
 }
+@media (max-width: 425px) {
+  .info .left span {
+    font-size: 1rem;
+  }
+}
 .info .left .or {
   font-size: 0.85rem;
+}
+@media (max-width: 425px) {
+  .info .left .or {
+    font-size: 0.65rem;
+  }
 }
 .info .right {
   flex: 1;
@@ -68,9 +116,20 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 425px) {
+  .info .right {
+    width: 100%;
+  }
+}
 .info .right .googlemaps {
   height: 20rem;
   width: 30rem;
+}
+@media (max-width: 425px) {
+  .info .right .googlemaps {
+    height: 90%;
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=info.css.map */

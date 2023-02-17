@@ -31,7 +31,7 @@
     background-image: url("../../assets/james-coleman-cevIeBV1A3I-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -175px 0;
+    background-position: -300px -200px;
   }
 }
 @media (min-width: 1441px) {
@@ -81,7 +81,7 @@
 }
 @media (max-width: 425px) {
   .wwa {
-    height: 105vh;
+    height: 115vh;
   }
 }
 @media (max-width: 375px) {
@@ -163,7 +163,7 @@
 }
 @media (max-width: 425px) {
   .statements {
-    height: 115vh;
+    height: 125vh;
     margin: auto;
     display: flex;
     flex-direction: column;

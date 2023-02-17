@@ -17,11 +17,6 @@
     height: 92.75vh;
   }
 }
-@media (max-width: 425px) {
-  .peacepost {
-    height: 115vh;
-  }
-}
 @media (min-width: 1441px) {
   .peacepost {
     height: 93vh;
@@ -35,6 +30,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+@media (max-width: 425px) {
+  .peacepost .post-hero {
+    height: 115vh;
+  }
 }
 .peacepost .post-hero h1 {
   font-family: "Quattrocento", serif;
@@ -56,7 +56,7 @@
 @media (max-width: 425px) {
   .peacepost .post-hero h1 {
     font-size: 4rem;
-    margin-top: 3rem;
+    margin-top: 0;
   }
 }
 @media (max-width: 375px) {
@@ -76,6 +76,15 @@
   justify-content: space-evenly;
   gap: 3rem;
 }
+@media (max-width: 425px) {
+  .peacepost .post-hero .bhm-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.peacepost .post-hero .bhm-container img {
+  width: 85%;
+}
 .peacepost .post-hero .bhm-container .bhm-text {
   display: flex;
   flex-direction: column;
@@ -88,18 +97,32 @@
   font-size: 1.5rem;
   color: white;
 }
+@media (max-width: 425px) {
+  .peacepost .post-hero .bhm-container .bhm-text p {
+    width: 85%;
+  }
+}
 .peacepost .post-hero .bhm-container .bhm-text span {
   width: 25.5rem;
   font-size: 1.5rem;
   font-weight: 200;
   color: white;
 }
+@media (max-width: 425px) {
+  .peacepost .post-hero .bhm-container .bhm-text span {
+    width: 85%;
+  }
+}
 .peacepost .center {
-  height: calc(100vh - 70px);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 425px) {
+  .peacepost .center {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=peacepost.css.map */

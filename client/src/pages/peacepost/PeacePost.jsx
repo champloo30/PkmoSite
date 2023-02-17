@@ -1,9 +1,9 @@
 import './peacepost.scss'
 import BHM from '../../assets/bhm.png'
-import Anniversary from '../../components/anniversary/Anniversary'
-import SickAndShutIn from '../../components/sickandshutin/SickAndShutIn'
-import Slider from '../../components/slider/Slider'
-import PostCalendar from '../../components/post-calendar/PostCalendar'
+import Anniversary from '../../components/peace-post/anniversary/Anniversary'
+import SickAndShutIn from '../../components/peace-post/sickandshutin/SickAndShutIn'
+import Slider from '../../components/peace-post/slider/Slider'
+import PostCalendar from '../../components/peace-post/post-calendar/PostCalendar'
 
 export default function PeacePost() {
     return (

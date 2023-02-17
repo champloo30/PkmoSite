@@ -19,7 +19,7 @@
     }
 
     @include mobile {
-        height: 210vh;
+        height: 220vh;
         margin-top: 4rem;
     }
 
@@ -97,11 +97,13 @@
     }
 
     .formbox{
-        height: 48rem;
+        height: 50rem;
         width: 60%;
         background-color: $silverColor;
-        //margin: -1rem 0;
         box-shadow: 0 5px 8px black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         @include sm-tablet {
             height: 49.5rem;
@@ -114,7 +116,7 @@
         }
 
         @include mobile {
-            height: 74rem;
+            height: 75rem;
             width: 90%;
         }
 
@@ -131,17 +133,22 @@
         }
 
         .form{
+            height: 90%;
+            width: 90%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
-            margin-top: 3rem;
+            gap: 2rem;
+
+            @include mobile {
+                gap: 1rem;
+            }
 
             h3{
                 font-size: 3rem;
                 font-family: $qFont;
                 font-weight: 500;
-                margin-bottom: 1.5rem;
                 color: $mainColor;
                 text-align: center;
 
@@ -162,15 +169,15 @@
 
             .form-name{
                 display: flex;
-                flex-direction: row;
+                gap: 2rem;
 
                 @include mobile {
                     flex-direction: column;
                     align-items: center;
+                    gap: 1rem;
                 }
 
-                .fname{
-                    margin-right: 2rem;
+                .name{
 
                     @include mobile {
                         margin-right: 0;
@@ -213,50 +220,6 @@
                         }
                     }
                 }
-
-                .lname{
-                    margin-left: 2rem;
-
-                    @include mobile {
-                        margin-left: 0;
-                    }
-
-                    label{
-                        font-size: 1.5rem;
-                        font-weight: 500;
-                        font-family: $qFont;
-                        //margin-bottom: 1rem;
-                    }
-
-                    input{
-                        margin-top: .5rem;
-                        width: 15rem;
-                        height: 1.75rem;
-                        font-size: 1rem;
-                        font-family: $nsdFont;
-                        font-weight: 300;
-
-                        @include lg-tablet {
-                            width: 17.5rem;
-                        }
-
-                        @include mobile {
-                            width: 20rem;
-                        }
-
-                        @include md-mobile {
-                            width: 18rem;
-                        }
-
-                        @include sm-mobile {
-                            width: 16rem;
-                        }
-
-                        ::placeholder{
-                            color: $silverColor;
-                        }
-                    }
-                }
             }
 
             .phone-email{
@@ -264,7 +227,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
-                margin: 1.5rem 0;
+                // margin: 1.5rem 0;
 
                 label{
                     font-size: 1.5rem;
@@ -277,16 +240,19 @@
                     flex-direction: row;
                     align-items: center;
                     justify-content: space-evenly;
+                    gap: 2rem;
 
                     @include mobile {
                         flex-direction: column;
+                        gap: 0.5rem;
                     }
 
-                    .phone{
-                        margin-right: 2rem;
+                    .p-e{
+                        // margin-right: 2rem;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
+                        gap: 0.25rem;
 
                         @include mobile {
                             margin-right: 0;
@@ -294,65 +260,12 @@
     
                         .label{
                             display: flex;
-                            flex-direction: row;
-                            
-                            .checkbox{
-                                height: 1rem;
-                                width: 1rem;
-                                background-color: $mainColor;
-                            }
-        
-                            label{
-                                font-size: 1.25rem;
-                                font-family: $nsdFont;
-                                font-weight: 300;
-                                margin-left: .625rem;
-                            }
-                        }
-    
-                        .text{
-                            margin-top: .25rem;
-                            width: 15rem;
-                            height: 1.75rem;
-                            font-size: 1rem;
-                            font-family: $nsdFont;
-                            font-weight: 300;
-
-                            @include lg-tablet {
-                                width: 17.5rem;
-                            }
 
                             @include mobile {
-                                width: 20rem;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: center;
                             }
-
-                            @include md-mobile {
-                                width: 18rem;
-                            }
-
-                            @include sm-mobile {
-                                width: 16rem;
-                            }
-    
-                            ::placeholder{
-                                color: $silverColor;
-                            }
-                        }
-                    }
-    
-                    .email{
-                        margin-left: 2rem;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-
-                        @include mobile {
-                            margin-left: 0;
-                        }
-    
-                        .label{
-                            display: flex;
-                            flex-direction: row;
                             
                             .checkbox{
                                 height: 1rem;
@@ -364,7 +277,11 @@
                                 font-size: 1.25rem;
                                 font-family: $nsdFont;
                                 font-weight: 300;
-                                margin-left: .625rem;
+                                margin-left: -1.5rem;
+
+                                @include mobile {
+                                    margin-left: 0;
+                                }
                             }
                         }
     
@@ -404,7 +321,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-bottom: 1.25rem;
+                margin-bottom: 1rem;
 
                 @include mobile {
                     align-items: flex-start;
@@ -414,7 +331,6 @@
                     font-size: 1.5rem;
                     font-family: $qFont;
                     font-weight: 500;
-                    //margin-bottom: -1rem;
 
                     @include mobile {
                         width: 90%;
@@ -448,7 +364,7 @@
 
                     div{
                         //width: 8rem;
-                        margin-bottom: .25rem;
+                        // margin-bottom: .25rem;
                         margin-right: 1rem;
     
                         .radio{
@@ -515,7 +431,6 @@
             }
 
             .button{
-                margin-top: 1.75rem;
                 height: 3.75rem;
                 width: 10rem;
                 background-color: $mainColor;

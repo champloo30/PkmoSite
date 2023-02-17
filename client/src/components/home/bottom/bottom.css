@@ -5,5 +5,11 @@
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 425px) {
+  .bottom {
+    height: 90vh;
+    flex-direction: column;
+  }
+}
 
 /*# sourceMappingURL=bottom.css.map */

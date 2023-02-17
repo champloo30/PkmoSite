@@ -172,7 +172,7 @@
 }
 @media (max-width: 425px) {
   .bio .bio-fp .text {
-    height: 74rem;
+    height: 78rem;
     width: 90%;
   }
 }
@@ -306,7 +306,7 @@
 }
 @media (max-width: 425px) {
   .bio .bio-cp .text {
-    height: 72.5rem;
+    height: 78rem;
     width: 90%;
     margin-top: -0.5rem;
   }

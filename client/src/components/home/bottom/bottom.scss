@@ -6,4 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  @include mobile {
+    height: 90vh;
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,68 @@
+.men {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+}
+.men .left {
+  height: 27.5rem;
+}
+@media (max-width: 425px) {
+  .men .left {
+    display: none;
+  }
+}
+.men .left img {
+  height: 100%;
+}
+.men .right {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5rem;
+}
+.men .right h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  color: #7C5296;
+}
+@media (max-width: 425px) {
+  .men .right h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.men .right p {
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  .men .right p {
+    width: 140%;
+    font-size: 1.5rem;
+  }
+}
+.men .right span {
+  font-size: 2rem;
+  color: #7C5296;
+}
+@media (max-width: 425px) {
+  .men .right span {
+    width: 140%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+.not-shown {
+  margin-left: -100%;
+}
+
+/*# sourceMappingURL=men.css.map */

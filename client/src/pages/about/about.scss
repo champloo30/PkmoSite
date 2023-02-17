@@ -30,7 +30,7 @@
         background-image: url("../../assets/james-coleman-cevIeBV1A3I-unsplash.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: -175px 0;
+        background-position: -300px -200px;
     }
 
     @include desktop {
@@ -74,7 +74,7 @@
     }
 
     @include mobile {
-        height: 105vh;
+        height: 115vh;
     }
 
     @include md-mobile {
@@ -150,7 +150,7 @@
     }
 
     @include mobile {
-        height: 115vh;
+        height: 125vh;
         margin: auto;
         display: flex;
         flex-direction: column;

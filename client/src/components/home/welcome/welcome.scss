@@ -17,7 +17,7 @@
   }
 
   @include mobile {
-    height: 90vh;
+    height: 110vh;
   }
 
   @include desktop {
@@ -43,6 +43,10 @@
     justify-content: center;
     gap: 2rem;
 
+    @include mobile {
+      flex-direction: column;
+    }
+
     .welcome-video{
       width: 45rem;
       height: 25rem;
@@ -58,8 +62,8 @@
       }
 
       @include mobile {
-        width: 100%;
-        height: 10.55rem;
+        width: 22.5rem;
+        height: 12rem;
       }
     }
 
@@ -83,8 +87,8 @@
       }
 
       @include mobile {
-        width: 90%;
-        height: 20rem;
+        width: 100%;
+        height: 15rem;
       }
 
       @include md-mobile {
@@ -98,7 +102,8 @@
 
         @include mobile {
           text-align: center;
-          width: 80%;
+          width: 90%;
+          font-size: 3rem;
         }
 
         @include sm-mobile {
@@ -107,6 +112,7 @@
       }
 
       .container{
+        height: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -117,7 +123,6 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          //justify-content: space-evenly;
         }
 
         .button{
@@ -155,7 +160,7 @@
           }
 
           @include mobile {
-            margin: 1rem 0;
+            margin: 0;
 
             &:hover{
               border: none;
@@ -173,6 +178,11 @@
       align-items: center;
       justify-content: space-evenly;
       background-color: white;
+
+      @include mobile {
+        height: 15rem;
+        width: 100%;
+      }
 
       .text-container {
         display: flex;

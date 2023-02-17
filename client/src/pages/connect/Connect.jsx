@@ -65,7 +65,7 @@ export default function Connect() {
                     <form className="form" onSubmit={handleSubmit}>
                         <h3>Get Connected With The Kingdom</h3>
                         <div className="form-name">
-                            <div className="fname">
+                            <div className="name">
                                 <label htmlFor="fname">First Name</label><br />
                                 <input 
                                     type="text" 
@@ -78,7 +78,7 @@ export default function Connect() {
                                 />
                                 <br />
                             </div>
-                            <div className="lname">
+                            <div className="name">
                                 <label htmlFor="lname">Last Name</label><br />
                                 <input 
                                     type="text" 
@@ -95,7 +95,7 @@ export default function Connect() {
                         <div className="phone-email">
                             <label htmlFor="phone">How can we reach you?</label><br />
                             <div>
-                                <div className="phone">
+                                <div className="p-e">
                                     <div className="label">
                                         <input className="checkbox" type="checkbox" name="phone-email" id="phone" value="Phone" minLength="10" maxLength="14" />
                                         <label htmlFor="phone">Phone Number</label><br />
@@ -112,7 +112,7 @@ export default function Connect() {
                                     />
                                     <br />
                                 </div>
-                                <div className="email">
+                                <div className="p-e">
                                     <div className="label">
                                         <input className="checkbox" type="checkbox" name="phone-email" id="email" value="Email" />
                                         <label htmlFor="email">Email Address</label><br />

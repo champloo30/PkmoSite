@@ -335,8 +335,8 @@
 }
 @media (max-width: 425px) {
   .messages .catalog .current-month .carousel .video-container .video {
-    height: 13rem;
-    width: 24rem;
+    height: 12rem;
+    width: 22rem;
   }
 }
 @media (max-width: 375px) {

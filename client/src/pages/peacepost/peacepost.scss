@@ -17,10 +17,6 @@
         height: 92.75vh;
     }
 
-    @include mobile {
-        height: 115vh;
-    }
-
     @include desktop {
         height: 93vh;
     }
@@ -33,6 +29,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+
+        @include mobile {
+            height: 115vh;
+        }
 
         h1{
             font-family: $qFont;
@@ -51,7 +51,7 @@
 
             @include mobile {
                 font-size: 4rem;
-                margin-top: 3rem;
+                margin-top: 0;
             }
 
             @include md-mobile {
@@ -70,34 +70,54 @@
             justify-content: space-evenly;
             gap: 3rem;
 
+            @include mobile {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            img {
+                width: 85%;
+            }
+
             .bhm-text {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 gap: 1rem;
+
                 p {
                     width: 25.5rem;
                     font-size: 1.5rem;
                     color: white;
+
+                    @include mobile {
+                        width: 85%;
+                    }
                 }
+
                 span {
                     width: 25.5rem;
                     font-size: 1.5rem;
                     font-weight: 200;
                     color: white;
+
+                    @include mobile {
+                        width: 85%;
+                    }
                 }
             }
         }
     }
 
     .center {
-        height: calc(100vh - 70px);
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
 
-    
+        @include mobile {
+            flex-direction: column;
+        }
+    }
 }

@@ -29,7 +29,7 @@
 }
 @media (max-width: 425px) {
   .hero {
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +37,7 @@
     background-image: url("../../../assets/skyline-dusk.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -415px 0;
+    background-position: -415px -300px;
   }
 }
 .hero .hero-text {
@@ -53,7 +53,8 @@
 }
 @media (max-width: 425px) {
   .hero .hero-text {
-    width: 90%;
+    width: 100%;
+    margin-top: 35px;
   }
 }
 .hero .hero-text .PKMOid {
@@ -62,8 +63,8 @@
 }
 @media (max-width: 425px) {
   .hero .hero-text .PKMOid {
-    height: 9rem;
-    width: 25rem;
+    height: 8rem;
+    width: 22.5rem;
   }
 }
 @media (max-width: 320px) {
@@ -115,7 +116,7 @@
 }
 @media (max-width: 425px) {
   .hero .hero-text h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }

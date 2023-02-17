@@ -20,7 +20,7 @@
 }
 @media (max-width: 425px) {
   .connect {
-    height: 210vh;
+    height: 220vh;
     margin-top: 4rem;
   }
 }
@@ -105,10 +105,13 @@
   }
 }
 .connect .formbox {
-  height: 48rem;
+  height: 50rem;
   width: 60%;
   background-color: #d8d8d8;
   box-shadow: 0 5px 8px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 799px) {
   .connect .formbox {
@@ -124,7 +127,7 @@
 }
 @media (max-width: 425px) {
   .connect .formbox {
-    height: 74rem;
+    height: 75rem;
     width: 90%;
   }
 }
@@ -144,17 +147,23 @@
   }
 }
 .connect .formbox .form {
+  height: 90%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 3rem;
+  gap: 2rem;
+}
+@media (max-width: 425px) {
+  .connect .formbox .form {
+    gap: 1rem;
+  }
 }
 .connect .formbox .form h3 {
   font-size: 3rem;
   font-family: "Quattrocento", serif;
   font-weight: 500;
-  margin-bottom: 1.5rem;
   color: #7C5296;
   text-align: center;
 }
@@ -177,30 +186,28 @@
 }
 .connect .formbox .form .form-name {
   display: flex;
-  flex-direction: row;
+  gap: 2rem;
 }
 @media (max-width: 425px) {
   .connect .formbox .form .form-name {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
 }
-.connect .formbox .form .form-name .fname {
-  margin-right: 2rem;
-}
 @media (max-width: 425px) {
-  .connect .formbox .form .form-name .fname {
+  .connect .formbox .form .form-name .name {
     margin-right: 0;
     margin-bottom: 1rem;
   }
 }
-.connect .formbox .form .form-name .fname label {
+.connect .formbox .form .form-name .name label {
   font-size: 1.5rem;
   font-weight: 500;
   font-family: "Quattrocento", serif;
   margin-bottom: 1rem;
 }
-.connect .formbox .form .form-name .fname input {
+.connect .formbox .form .form-name .name input {
   margin-top: 0.5rem;
   width: 15rem;
   height: 1.75rem;
@@ -209,70 +216,26 @@
   font-weight: 300;
 }
 @media (min-width: 800px) and (max-width: 1023px) {
-  .connect .formbox .form .form-name .fname input {
+  .connect .formbox .form .form-name .name input {
     width: 17.5rem;
   }
 }
 @media (max-width: 425px) {
-  .connect .formbox .form .form-name .fname input {
+  .connect .formbox .form .form-name .name input {
     width: 20rem;
   }
 }
 @media (max-width: 375px) {
-  .connect .formbox .form .form-name .fname input {
+  .connect .formbox .form .form-name .name input {
     width: 18rem;
   }
 }
 @media (max-width: 320px) {
-  .connect .formbox .form .form-name .fname input {
+  .connect .formbox .form .form-name .name input {
     width: 16rem;
   }
 }
-.connect .formbox .form .form-name .fname input ::placeholder {
-  color: #d8d8d8;
-}
-.connect .formbox .form .form-name .lname {
-  margin-left: 2rem;
-}
-@media (max-width: 425px) {
-  .connect .formbox .form .form-name .lname {
-    margin-left: 0;
-  }
-}
-.connect .formbox .form .form-name .lname label {
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-family: "Quattrocento", serif;
-}
-.connect .formbox .form .form-name .lname input {
-  margin-top: 0.5rem;
-  width: 15rem;
-  height: 1.75rem;
-  font-size: 1rem;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 300;
-}
-@media (min-width: 800px) and (max-width: 1023px) {
-  .connect .formbox .form .form-name .lname input {
-    width: 17.5rem;
-  }
-}
-@media (max-width: 425px) {
-  .connect .formbox .form .form-name .lname input {
-    width: 20rem;
-  }
-}
-@media (max-width: 375px) {
-  .connect .formbox .form .form-name .lname input {
-    width: 18rem;
-  }
-}
-@media (max-width: 320px) {
-  .connect .formbox .form .form-name .lname input {
-    width: 16rem;
-  }
-}
-.connect .formbox .form .form-name .lname input ::placeholder {
+.connect .formbox .form .form-name .name input ::placeholder {
   color: #d8d8d8;
 }
 .connect .formbox .form .phone-email {
@@ -280,7 +243,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 1.5rem 0;
 }
 .connect .formbox .form .phone-email label {
   font-size: 1.5rem;
@@ -292,96 +254,52 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  gap: 2rem;
 }
 @media (max-width: 425px) {
   .connect .formbox .form .phone-email div {
     flex-direction: column;
+    gap: 0.5rem;
   }
 }
-.connect .formbox .form .phone-email div .phone {
-  margin-right: 2rem;
+.connect .formbox .form .phone-email div .p-e {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 0.25rem;
 }
 @media (max-width: 425px) {
-  .connect .formbox .form .phone-email div .phone {
+  .connect .formbox .form .phone-email div .p-e {
     margin-right: 0;
   }
 }
-.connect .formbox .form .phone-email div .phone .label {
+.connect .formbox .form .phone-email div .p-e .label {
   display: flex;
-  flex-direction: row;
 }
-.connect .formbox .form .phone-email div .phone .label .checkbox {
+@media (max-width: 425px) {
+  .connect .formbox .form .phone-email div .p-e .label {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.connect .formbox .form .phone-email div .p-e .label .checkbox {
   height: 1rem;
   width: 1rem;
   background-color: #7C5296;
 }
-.connect .formbox .form .phone-email div .phone .label label {
+.connect .formbox .form .phone-email div .p-e .label label {
   font-size: 1.25rem;
   font-family: "Noto Sans Display", sans-serif;
   font-weight: 300;
-  margin-left: 0.625rem;
-}
-.connect .formbox .form .phone-email div .phone .text {
-  margin-top: 0.25rem;
-  width: 15rem;
-  height: 1.75rem;
-  font-size: 1rem;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 300;
-}
-@media (min-width: 800px) and (max-width: 1023px) {
-  .connect .formbox .form .phone-email div .phone .text {
-    width: 17.5rem;
-  }
+  margin-left: -1.5rem;
 }
 @media (max-width: 425px) {
-  .connect .formbox .form .phone-email div .phone .text {
-    width: 20rem;
-  }
-}
-@media (max-width: 375px) {
-  .connect .formbox .form .phone-email div .phone .text {
-    width: 18rem;
-  }
-}
-@media (max-width: 320px) {
-  .connect .formbox .form .phone-email div .phone .text {
-    width: 16rem;
-  }
-}
-.connect .formbox .form .phone-email div .phone .text ::placeholder {
-  color: #d8d8d8;
-}
-.connect .formbox .form .phone-email div .email {
-  margin-left: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-@media (max-width: 425px) {
-  .connect .formbox .form .phone-email div .email {
+  .connect .formbox .form .phone-email div .p-e .label label {
     margin-left: 0;
   }
 }
-.connect .formbox .form .phone-email div .email .label {
-  display: flex;
-  flex-direction: row;
-}
-.connect .formbox .form .phone-email div .email .label .checkbox {
-  height: 1rem;
-  width: 1rem;
-  background-color: #7C5296;
-}
-.connect .formbox .form .phone-email div .email .label label {
-  font-size: 1.25rem;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 300;
-  margin-left: 0.625rem;
-}
-.connect .formbox .form .phone-email div .email .text {
+.connect .formbox .form .phone-email div .p-e .text {
   margin-top: 0.25rem;
   width: 15rem;
   height: 1.75rem;
@@ -390,33 +308,33 @@
   font-weight: 300;
 }
 @media (min-width: 800px) and (max-width: 1023px) {
-  .connect .formbox .form .phone-email div .email .text {
+  .connect .formbox .form .phone-email div .p-e .text {
     width: 17.5rem;
   }
 }
 @media (max-width: 425px) {
-  .connect .formbox .form .phone-email div .email .text {
+  .connect .formbox .form .phone-email div .p-e .text {
     width: 20rem;
   }
 }
 @media (max-width: 375px) {
-  .connect .formbox .form .phone-email div .email .text {
+  .connect .formbox .form .phone-email div .p-e .text {
     width: 18rem;
   }
 }
 @media (max-width: 320px) {
-  .connect .formbox .form .phone-email div .email .text {
+  .connect .formbox .form .phone-email div .p-e .text {
     width: 16rem;
   }
 }
-.connect .formbox .form .phone-email div .email .text ::placeholder {
+.connect .formbox .form .phone-email div .p-e .text ::placeholder {
   color: #d8d8d8;
 }
 .connect .formbox .form .request-options {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 @media (max-width: 425px) {
   .connect .formbox .form .request-options {
@@ -461,7 +379,6 @@
   }
 }
 .connect .formbox .form .request-options .request-row div {
-  margin-bottom: 0.25rem;
   margin-right: 1rem;
 }
 .connect .formbox .form .request-options .request-row div .radio {
@@ -524,7 +441,6 @@
   color: #d8d8d8;
 }
 .connect .formbox .form .button {
-  margin-top: 1.75rem;
   height: 3.75rem;
   width: 10rem;
   background-color: #7C5296;
