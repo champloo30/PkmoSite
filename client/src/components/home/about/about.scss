@@ -3,6 +3,7 @@
 .about{
   height: calc(90vh - 70px);
   width: 90%;
+  max-width: 1440px;
   background-color: white;
   display: flex;
   margin: auto;
@@ -31,7 +32,7 @@
   }
 
   @include desktop {
-    height: 65vh;
+    height: 45rem;
   }
 
   .left{

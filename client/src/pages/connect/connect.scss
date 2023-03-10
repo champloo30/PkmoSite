@@ -32,7 +32,7 @@
     }
 
     @include desktop {
-        height: 110vh;
+        max-height: 75rem;
     }
 
     h1{

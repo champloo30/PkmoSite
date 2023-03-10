@@ -17,12 +17,8 @@
         height: 92.75vh;
     }
 
-    @include desktop {
-        height: 93vh;
-    }
-
     .post-hero {
-        height: calc(100vh - 70px);
+        height: calc(50vh);
         width: 100%;
         background-color: $mainColor;
         display: flex;

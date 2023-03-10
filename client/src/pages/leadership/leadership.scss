@@ -71,7 +71,7 @@
     }
 
     @include desktop {
-        height: 120vh;
+        max-height: 95rem;
     }
 
     .bio-fp{
@@ -171,7 +171,7 @@
             }
 
             @include desktop {
-                height: 55rem;
+                height: 60rem;
             }
 
             :first-child{
@@ -302,7 +302,7 @@
             }
 
             @include desktop {
-                height: 55rem;
+                height: 60rem;
             }
 
             :first-child{
