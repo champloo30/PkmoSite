@@ -15,7 +15,7 @@ function SickAndShutIn() {
           <li>Sis Sandra Cole & Family</li>
           <li>Pastor Neil Stephans & Family</li>
           <li>Sis Carletta Upchurch & Family</li>
-          <li>Bro Corinthians Williams</li>
+          <li>Bro Coron Williams</li>
         </ul>
       </div>
       <div className="sasi-bottom">
