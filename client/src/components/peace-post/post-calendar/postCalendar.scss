@@ -72,6 +72,26 @@
         }
       }
 
+      .dates {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .date {
+          height: 2rem;
+          width: 40%;
+          border: 2px solid $mainColor;
+          padding: 0 0.5rem;
+          font-size: 1.25rem;
+
+          @include mobile {
+            height: 2.5rem;
+            width: 80%;
+          }
+        }
+      }
+
       .verified {
         display: flex;
         align-items: center;

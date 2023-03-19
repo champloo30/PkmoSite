@@ -93,7 +93,7 @@ function PostCalendar() {
   }
 
   function handleNewEventModal() {
-    if (openNewEvent === true) {
+    if (verify === true && openNewEvent === true) {
       document.getElementById('new-event-modal').style.display = 'flex'
     } else if (openNewEvent === false) {
       handleModal()
@@ -158,7 +158,7 @@ function PostCalendar() {
             </>
           }
         </form>
-        <form id='new-event-modal' className='cal-modal-ne'>
+        <form id='new-event-modal' className='cal-modal'>
           <h2>New Event</h2>
           <input 
             className='input'
