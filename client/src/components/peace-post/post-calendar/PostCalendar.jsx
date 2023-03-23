@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './postCalendar.scss'
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
@@ -12,58 +12,86 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 const events = [
   {
     title: '42nd Anniversary',
-    start: '2023-02-19'
+    start: '2023-02-19',
+    end: ''
   }
 ]
 
 function PostCalendar() {
-  const [newEvent, setNewEvent] = useState({ id: '', title: '', start: '', end: ''})
-  const [allEvents, setAllEvents] = useState(events)
+  const [newEvent, setNewEvent] = useState({
+    title: '',
+    start: '',
+    end: ''
+  })
+  const [allEvents, setAllEvents] = useState(
+    () => {
+      const savedEvents = localStorage.getItem('events')
+      if (savedEvents) {
+        return JSON.parse(savedEvents)
+      } else {
+        return []
+      }
+    }
+  )
   const [openForm, setOpenForm] = useState(true)
   const [openNewEvent, setOpenNewEvent] = useState(true)
   const [verify, setVerify] = useState(false)
-  const [adminData, setAdminData] = useState({username: '', password: ''})
+  const [adminData,  setAdminData] = useState({username: '', password: ''})
   
   const adminCredentials = {
     username: 'peaceadmin',
     password: 'peacekmo1981'
   }
 
-  function handleDateSelect(info) {
-    let title = newEvent.title
-    let start = newEvent.start
-    let end = newEvent.end
-    let calendarApi = info.view.calendar
+  // function handleDateSelect(info) {
+  //   let title = prompt()
+  //   let calendarApi = info.view.calendar
 
-    calendarApi.unselect()
+  //   calendarApi.unselect()
     
-    if (title) {
-      calendarApi.addEvent({
-        id: nanoid(),
-        title,
-        start,
-        end,
-        allDay: info.allDay
-      })
-    }
-  }
+  //   if (title) {
+  //     setNewEvent(
+  //       calendarApi.addEvent({
+  //         id: nanoid(),
+  //         title,
+  //         start: info.startStr,
+  //         end: info.endStr,
+  //         allDay: info.allDay
+  //       })
+  //     )
+      
+  //     // setNewEvent(calendarApi.getEvents().map(item => (
+  //     //   item.title
+  //     // )))
+  //     setAllEvents([...allEvents, newEvent])
+  //     console.log(allEvents);
+  //   }
+
+    // console.log(newEvent);
+
+    // console.log(calendarApi.getEvents().startStr);
+    // console.log(calendarApi.getEvents().map(item => (
+    //   item._def.title + ' ' + item.startStr
+    // )));
+
+    // calendarApi.getEvents().map(item => (
+    //   item.getEventById(item.id)
+    //   // localStorage.setItem('event', [item.id + ' - ' + item.title])
+    // ))
+  // }
 
   function handleNewEvent(e) {
     e.preventDefault()
-    events.push({
+    setNewEvent({
       title: newEvent.title,
       start: newEvent.start,
       end: newEvent.end
     })
-    localStorage.setItem(events, newEvent)
-    
-    console.log(newEvent.title, newEvent.start, newEvent.end);
-    console.log(events);
-  }
+    const newE = [...allEvents, newEvent]
+    setAllEvents(newE)
+    localStorage.setItem('events', JSON.stringify(newE))
 
-  function handleEvents(events) {
-   setAllEvents(events)
-   console.log(allEvents);
+    handleNewEventModal()
   }
 
   function handleVerify() {
@@ -191,7 +219,6 @@ function PostCalendar() {
         <div className="calendar-container">
           <FullCalendar
             height={500}
-            // aspectRatio={1.5}
             plugins={[ dayGridPlugin, timeGridPlugin, interactionPlugin, multiMonthPlugin ]}
             initialView='dayGridMonth'
             headerToolbar={{
@@ -200,8 +227,9 @@ function PostCalendar() {
               right: 'dayGridMonth,timeGridWeek,timeGridDay'
             }}
             selectable={true}
-            events={events}
-            select={handleDateSelect}
+            events={allEvents}
+            eventColor='#7C5296'
+            // select={handleDateSelect}
           />
         </div>
         
