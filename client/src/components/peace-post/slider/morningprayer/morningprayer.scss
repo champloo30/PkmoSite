@@ -1,13 +1,13 @@
 @import '../../../../global.scss';
 
-.morning-prayer {
+.morning {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  // margin-left: 100vw;
+  // left: 100vw;
 
   .left {
     height: 27.5rem;
@@ -67,5 +67,5 @@
 }
 
 .not-shown {
-  margin-left: -100%;
+  left: 0;
 }

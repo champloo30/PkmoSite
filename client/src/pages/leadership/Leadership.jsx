@@ -37,7 +37,7 @@ export default function Leadership() {
                         <img src={campus} alt="Pastor David Dunn" />
                     </div>
                     <div className="title">
-                        <h2>Campus Pastor,</h2>
+                        <h2>Pastor,</h2>
                         <h2>David L. Dunn</h2>
                     </div>
                     <div className="text">

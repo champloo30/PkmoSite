@@ -9,34 +9,112 @@ import { nanoid } from 'nanoid'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
-const events = [
-  {
-    title: '42nd Anniversary',
-    start: '2023-02-19',
-    end: ''
-  }
-]
+// const events = [
+//   {
+//     title: '42nd Anniversary',
+//     start: '2023-02-19',
+//     end: ''
+//   }
+// ]
 
 function PostCalendar() {
-  const [newEvent, setNewEvent] = useState({
-    title: '',
-    start: '',
-    end: ''
+  // const [newEvent, setNewEvent] = useState({
+  //   title: '',
+  //   start: '',
+  //   end: ''
+  // })
+  const [events, setEvents] = useState(null)
+  // const [openForm, setOpenForm] = useState(true)
+  // const [openNewEvent, setOpenNewEvent] = useState(true)
+  // const [verify, setVerify] = useState(false)
+  // const [adminData,  setAdminData] = useState({username: '', password: ''})
+
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.async = true
+    script.defer = true
+    script.src = 'https://apis.google.com/js/api.js'
+
+    document.body.appendChild(script)
+
+    script.addEventListener('load', () => {
+      if (window.gapi) handleClientLoad()
+    })
   })
-  const [allEvents, setAllEvents] = useState(
-    () => {
-      const savedEvents = localStorage.getItem('events')
-      if (savedEvents) {
-        return JSON.parse(savedEvents)
-      } else {
-        return []
+
+  const SCOPES = 
+    "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/calendar.events https://www.googleapis.com/auth/calendar"
+  ;
+
+  function openSignInPopup() {
+    window.gapi.auth2.authorize(
+      {client_id: process.env.CLIENT_ID, scopes: SCOPES },
+      (res) => {
+        if (res) {
+          if (res.access_token) localStorage.setItem('access_token', res.access_token)
+
+          window.gapi.client.load('calendar', 'v3', listUpcomingEvents)
+        }
       }
+    )
+  }
+
+  function handleClientLoad() {
+    window.gapi.load('client:auth2', initClient)
+  }
+
+  function initClient() {
+    if (!localStorage.getItem('access_token')) {
+      openSignInPopup()
+    } else {
+      fetch(
+        `https://www.googleapis.com/calendar/v3/calendars/primary/events?key=${process.env.API_KEY}&orderBy=startTime&singleEvents=true`,
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('access_token')}`,
+          },
+        }
+      )
+      .then((res) => {
+        if (res.status !== 401) {
+          return res.json()
+        } else {
+          localStorage.removeItem('access_token')
+
+          openSignInPopup()
+        }
+      })
+      .then((data) => {
+        if (data?.items) {
+          setEvents(formatEvents(data.items))
+        }
+      })
     }
-  )
-  const [openForm, setOpenForm] = useState(true)
-  const [openNewEvent, setOpenNewEvent] = useState(true)
-  const [verify, setVerify] = useState(false)
-  const [adminData,  setAdminData] = useState({username: '', password: ''})
+  }
+
+  function listUpcomingEvents() {
+    window.gapi.client.calendar.events
+      .list({
+        calendarId: 'primary',
+        showDeleted: true,
+        singleEvents: true
+      })
+      .then(function (response) {
+        let events = response.result.items
+
+        if (events.length > 0) {
+          setEvents(formatEvents(events))
+        }
+      })
+  }
+
+  function formatEvents(list) {
+    return list.map((item) => ({
+      title: item.summary,
+      start: item.start.dateTime || item.start.date,
+      end: item.end.dateTime || item.end.date
+    }))
+  }
   
   const adminCredentials = {
     username: 'peaceadmin',
@@ -80,71 +158,71 @@ function PostCalendar() {
     // ))
   // }
 
-  function handleNewEvent(e) {
-    e.preventDefault()
-    setNewEvent({
-      title: newEvent.title,
-      start: newEvent.start,
-      end: newEvent.end
-    })
-    const newE = [...allEvents, newEvent]
-    setAllEvents(newE)
-    localStorage.setItem('events', JSON.stringify(newE))
+  // function handleNewEvent(e) {
+  //   e.preventDefault()
+  //   setNewEvent({
+  //     title: newEvent.title,
+  //     start: newEvent.start,
+  //     end: newEvent.end
+  //   })
+  //   const newE = [...allEvents, newEvent]
+  //   setAllEvents(newE)
+  //   localStorage.setItem('events', JSON.stringify(newE))
 
-    handleNewEventModal()
-  }
+  //   handleNewEventModal()
+  // }
 
-  function handleVerify() {
-    if (adminData.username === adminCredentials.username && adminData.password === adminCredentials.password) {
-      setVerify(true)
-      window.alert('Peace Admin Verified')
-      setAdminData({
-        username: '',
-        password: ''
-      })
-    } else {
-      window.alert('Unauthorized User')
-    }
-  }
+  // function handleVerify() {
+  //   if (adminData.username === adminCredentials.username && adminData.password === adminCredentials.password) {
+  //     setVerify(true)
+  //     window.alert('Peace Admin Verified')
+  //     setAdminData({
+  //       username: '',
+  //       password: ''
+  //     })
+  //   } else {
+  //     window.alert('Unauthorized User')
+  //   }
+  // }
 
-  function handleModal() {
-    if (openForm === true) {
-      document.getElementById('form-modal').style.display = 'flex'
-    } else if (openForm === false) {
-      document.getElementById('form-modal').style.display = 'none'
-      setAdminData({
-        username: '',
-        password: ''
-      })
-    }
-    setOpenForm(!openForm)
-  }
+  // function handleModal() {
+  //   if (openForm === true) {
+  //     document.getElementById('form-modal').style.display = 'flex'
+  //   } else if (openForm === false) {
+  //     document.getElementById('form-modal').style.display = 'none'
+  //     setAdminData({
+  //       username: '',
+  //       password: ''
+  //     })
+  //   }
+  //   setOpenForm(!openForm)
+  // }
 
-  function handleNewEventModal() {
-    if (verify === true && openNewEvent === true) {
-      document.getElementById('new-event-modal').style.display = 'flex'
-    } else if (openNewEvent === false) {
-      handleModal()
-      document.getElementById('new-event-modal').style.display = 'none'
-      setNewEvent({
-        title: '',
-        start: '',
-        end: ''
-      })
-    }
-    setOpenNewEvent(!openNewEvent)
-  }
+  // function handleNewEventModal() {
+  //   if (verify === true && openNewEvent === true) {
+  //     document.getElementById('new-event-modal').style.display = 'flex'
+  //   } else if (openNewEvent === false) {
+  //     handleModal()
+  //     document.getElementById('new-event-modal').style.display = 'none'
+  //     setNewEvent({
+  //       title: '',
+  //       start: '',
+  //       end: ''
+  //     })
+  //   }
+  //   setOpenNewEvent(!openNewEvent)
+  // }
 
   return (
     <div className='post-calendar'>
       <div className="cal-container">
         <div className="cal-header">
           <h1>Calendar</h1>
-          <div className="more-icon" onClick={handleModal}>
+          {/* <div className="more-icon" onClick={handleModal}>
             <MoreVertIcon sx={{ color: 'black', cursor: 'pointer' }} />
-          </div>
+          </div> */}
         </div>
-        <form id='form-modal' className='cal-modal'>
+        {/* <form id='form-modal' className='cal-modal'>
           {verify === false ? 
             <>
               <h2>Admin Check</h2>
@@ -185,8 +263,8 @@ function PostCalendar() {
               </div>
             </>
           }
-        </form>
-        <form id='new-event-modal' className='cal-modal'>
+        </form> */}
+        {/* <form id='new-event-modal' className='cal-modal'>
           <h2>New Event</h2>
           <input 
             className='input'
@@ -215,7 +293,7 @@ function PostCalendar() {
             <button className='button' type='submit' onClick={handleNewEvent}>Add</button>
             <button className='button' type='button' onClick={handleNewEventModal}>Cancel</button>
           </div>
-        </form>
+        </form> */}
         <div className="calendar-container">
           <FullCalendar
             height={500}
@@ -227,7 +305,7 @@ function PostCalendar() {
               right: 'dayGridMonth,timeGridWeek,timeGridDay'
             }}
             selectable={true}
-            events={allEvents}
+            events={events}
             eventColor='#7C5296'
             // select={handleDateSelect}
           />

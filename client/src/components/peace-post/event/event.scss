@@ -1,6 +1,6 @@
 @import '../../../global.scss';
 
-.revival {
+.event {
   height: calc(100vh - 70px);
   width: 50vw;
   border-right: 2px solid $silverColor;
@@ -16,15 +16,20 @@
   justify-content: center;
 
   @include mobile {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     background-size: 23rem;
     border-bottom: 2px solid $silverColor;
   }
 
   img {
-    height: 90%;
-    width: 85%;
+    height: 40rem;
+    width: 38rem;
     opacity: 0.9;
+
+    @include mobile {
+      height: 35rem;
+      width: 95%;
+    }
   }
 }

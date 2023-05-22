@@ -9,6 +9,7 @@ import Men from './men/Men'
 
 function Slider() {
   const [slideIndex, setSlideIndex] = useState(0)
+  const [isActive, setIsActive] = useState(false)
 
   const slides = [
     {
@@ -29,17 +30,42 @@ function Slider() {
     },
   ]
 
-  function handleLeft() {
-    setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 3)
+  function toggleActive() {
+    document.getElementById(`${slideIndex}`).classList.remove('active')
+    document.getElementById(`${slideIndex}`).classList.add('active')
+  }
 
+  function handleLeft() {
+    document.getElementById(`${slideIndex}`).classList.remove('active')
+    setIsActive(false)
+    if (slideIndex > 0) {
+      setSlideIndex(slideIndex - 1)
+      document.getElementById(`${slideIndex - 1}`).classList.add('active')
+    } else {
+      setSlideIndex(slideIndex + 3)
+      document.getElementById(`${slideIndex + 3}`).classList.add('active')
+    }
+    console.log(slideIndex)
   }
 
   function handleRight() {
-    setSlideIndex(slideIndex < 3 ? slideIndex + 1 : 0)
+    document.getElementById(`${slideIndex}`).classList.remove('active')
+    setIsActive(false)
+    if (slideIndex < 3) {
+      setSlideIndex(slideIndex + 1)
+      document.getElementById(`${slideIndex + 1}`).classList.add('active')
+    } else{
+      setSlideIndex(slideIndex - 3)
+      document.getElementById(`${slideIndex - 3}`).classList.add('active')
+    }
   }
 
   function handleJump(slideIndex) {
     setSlideIndex(slideIndex)
+    // document.getElementById(`${slideIndex}`).classList.remove('active')
+    // setSlideIndex(slideIndex)
+    // document.getElementById(`${slideIndex}`).classList.add('active')
+    // console.log(slideIndex);
   }
 
   return (
@@ -51,7 +77,7 @@ function Slider() {
       {slides[slideIndex].slide}
       <div className="slide-indicators">
         {slides.map((slide, slideIndex) => (
-          <div key={slideIndex} className='indicator' onClick={() => handleJump(slideIndex)}></div>
+          <div id={slideIndex} key={slideIndex} className={slideIndex ? 'indicator' : 'indicator active'} onClick={() => handleJump(slideIndex)}></div>
         ))}
       </div>
     </div>

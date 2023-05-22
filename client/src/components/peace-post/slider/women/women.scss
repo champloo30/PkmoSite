@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  // margin-left: 200vw;
+  // left: 200vw;
 
   .left {
     height: 90%;
@@ -68,5 +68,5 @@
 }
 
 .not-shown {
-  margin-left: -100%;
+  margin-left: 0;
 }

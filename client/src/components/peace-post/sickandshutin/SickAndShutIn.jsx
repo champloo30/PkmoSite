@@ -8,7 +8,6 @@ function SickAndShutIn() {
         <h1>Sick and Shut In Prayer List</h1>
         <ul>
           <li>Sis Dickerson & Family</li>
-          <li>Sis Ileta Smith</li>
           <li>Bro Kevin Smith & Family</li>
           <li>Deacon Andre Moore & Family</li>
           <li>Sis Marsha Williams & Family</li>

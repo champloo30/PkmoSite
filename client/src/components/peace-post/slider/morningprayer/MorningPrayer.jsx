@@ -4,7 +4,7 @@ import prayer from '../../../../assets/prayer.jpeg'
 
 function MorningPrayer() {
   return (
-    <div className='morning-prayer'>
+    <div className='morning'>
       <div className="left">
         <img src={prayer} alt="" />
       </div>

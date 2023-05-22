@@ -10,7 +10,7 @@ $mobile-width: 425px;
 $sm-tablet-width: 768px;
 $lg-tablet-width: 800px;
 $laptop-width: 1024px;
-$desktop-width: 1440px;
+$desktop-width: 1441px;
 
 @mixin sm-mobile {
     @media (max-width: #{$sm-mobile-width}) {
@@ -43,7 +43,7 @@ $desktop-width: 1440px;
 }
 
 @mixin laptop {
-    @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width}) {
+    @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width - 1}) {
         @content;
     }
 }

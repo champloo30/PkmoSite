@@ -3,22 +3,21 @@
 .peace-post{
   height: 30rem;
   width: 40rem;
-  background-color: $silverColor;
-  background-image: url('https://peacekmo.org/static/media/dove-png-41736.24be7a4ccb0b7ce9e39a.png');
+  background-image: url('../../../../assets/church-pic-2.jpg');
   background-repeat: no-repeat;
-  background-size: 25rem 25rem;
-  background-position: 75px 75px;
+  background-size: auto;
+  background-position: 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
-  @include sm-tablet {
-    height: 30vh;
-  }
+  // @include sm-tablet {
+  //   height: 30vh;
+  // }
 
-  @include lg-tablet {
-    height: 25vh;
-  }
+  // @include lg-tablet {
+  //   height: 25vh;
+  // }
 
   @include mobile {
     height: 45vh;
@@ -37,9 +36,9 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 80%;
+    width: 100%;
     justify-content: center;
-    background-color: rgba($color: #d8d8d8, $alpha: 0.5);
+    background-color: rgba($color: $silverColor, $alpha: 0.75);
     gap: 1rem;
 
     @include sm-tablet {
@@ -53,8 +52,6 @@
     }
 
     @include mobile {
-      width: 90%;
-      height: 80%;
       margin-right: 0;
       display: flex;
       flex-direction: column;
@@ -78,7 +75,7 @@
     }
 
     .line{
-      width: 110%;
+      width: 85%;
       height: 0.35rem;
       background-color: white;
 

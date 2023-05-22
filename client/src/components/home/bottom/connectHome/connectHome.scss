@@ -3,9 +3,10 @@
 .connect-home {
   height: 30rem;
   width: 40rem;
-  background-image: url('https://scontent.fosu2-2.fna.fbcdn.net/v/t1.18169-9/1620916_759367974106566_8544687933303278531_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=n-ySAn82hhIAX8nZzt4&tn=Sz9VXVa9MPglNcmw&_nc_ht=scontent.fosu2-2.fna&oh=00_AfCm2zdeAPgeBR1SYAwrob3U4y9xw65bjXQtmU9mCUSo9Q&oe=640B8C48');
+  background-image: url('../../../../assets/church-pic-1.jpg');
   background-repeat: no-repeat;
-  background-position: -125px -50px;
+  background-size: auto;
+  background-position: -50px -50px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -18,19 +19,22 @@
   .connect-home-container {
     height: 100%;
     width: 100%;
-    background-color: rgba($color: #d8d8d8, $alpha: 0.7);
     color: $mainColor;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba($color: #d8d8d8, $alpha: 0.75);
     gap: 1rem;
 
     h1 {
-      font-size: 2.75rem;
+      font-size: 4em;
+      font-weight: 300;
+      font-family: $qFont;
 
       @include mobile {
         text-align: center;
+        font-size: 3.25rem;
       }
     }
 

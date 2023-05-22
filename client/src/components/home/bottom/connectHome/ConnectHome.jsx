@@ -8,10 +8,14 @@ function Connect() {
   return (
     <div className='connect-home'>
       <div className="connect-home-container">
-        <h1>Join the Kingdom Connection</h1>
+        <h1>Get Connected</h1>
         <div className="icons">
-          <img src={facebook} alt="" />
-          <img src={youtube} alt="" />
+          <a href="http://www.facebook.com/pkmohio" target="_blank" rel="noopener noreferrer">
+            <img src={facebook} alt="" />
+          </a>
+          <a href="http://www.youtube.com/@PeaceKingdomMinistriesofOhio" target="_blank" rel="noopener noreferrer">
+            <img src={youtube} alt="" />
+          </a>
         </div>
         <p>- OR -</p>
         <Button link={'/connect'} label={'connect'} text={'Here'} />

@@ -1,3 +1,4 @@
+import './home.scss'
 import Hero from "../../components/home/hero/Hero"
 import Welcome from "../../components/home/welcome/Welcome"
 import About from "../../components/home/about/About"

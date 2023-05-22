@@ -10,6 +10,7 @@ function Welcome() {
         <div className="location-box">
           <h2>Join Us</h2>
           <div className="container">
+            
             <Button link={'/location'} label={'in person'} text={'In Person'} />
             <Button target={'_blank'} link={'https://www.facebook.com/search/top?q=peace%20kingdom%20ministries%20of%20ohio'} label={'church online'} text={'Online'} />
           </div>

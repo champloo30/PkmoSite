@@ -4,7 +4,7 @@ import study from '../../../../assets/biblestudy.jpeg'
 
 function BibleStudy() {
   return (
-    <div className="bible-study">
+    <div className="bible">
       <div className="left">
         <h1>Tune In Live</h1>
         <p>

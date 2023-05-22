@@ -39,6 +39,7 @@
         font-size: 5rem;
         font-weight: 500;
         font-family: $qFont;
+        color: $mainColor;
 
         @include sm-tablet {
             font-size: 4;
